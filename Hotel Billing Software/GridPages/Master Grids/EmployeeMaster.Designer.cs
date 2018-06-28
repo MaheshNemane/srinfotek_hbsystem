@@ -158,9 +158,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmployeeMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Employee Master";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlHeadingButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridEmployeeMaster)).EndInit();
             this.ResumeLayout(false);

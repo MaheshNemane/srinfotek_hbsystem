@@ -163,9 +163,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RoleMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "RoleMaster";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlHeadingButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridRoleMaster)).EndInit();
             this.ResumeLayout(false);

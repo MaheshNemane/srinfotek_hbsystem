@@ -30,28 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMaster));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnRemoveCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEditCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNewCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gridCustomerMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCustomerMaster)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // pnlHeadingButtons
             // 
-            this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnRemoveCustomer);
             this.pnlHeadingButtons.Controls.Add(this.btnEditCustomer);
             this.pnlHeadingButtons.Controls.Add(this.btnNewCustomer);
@@ -60,19 +53,6 @@
             this.pnlHeadingButtons.Name = "pnlHeadingButtons";
             this.pnlHeadingButtons.Size = new System.Drawing.Size(847, 55);
             this.pnlHeadingButtons.TabIndex = 2;
-            // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 45);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(847, 10);
-            this.bunifuSeparator1.TabIndex = 2;
-            this.bunifuSeparator1.Transparency = 100;
-            this.bunifuSeparator1.Vertical = false;
             // 
             // btnRemoveCustomer
             // 
@@ -152,6 +132,11 @@
             this.btnNewCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewCustomer.Click += new System.EventHandler(this.btnNewCustomer_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // gridCustomerMaster
             // 
             this.gridCustomerMaster.AllowUserToAddRows = false;
@@ -159,38 +144,38 @@
             this.gridCustomerMaster.AllowUserToOrderColumns = true;
             this.gridCustomerMaster.AllowUserToResizeColumns = false;
             this.gridCustomerMaster.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomerMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCustomerMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridCustomerMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCustomerMaster.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.gridCustomerMaster.BackgroundColor = System.Drawing.Color.White;
             this.gridCustomerMaster.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCustomerMaster.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridCustomerMaster.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomerMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCustomerMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridCustomerMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomerMaster.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCustomerMaster.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridCustomerMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridCustomerMaster.DoubleBuffered = true;
             this.gridCustomerMaster.EnableHeadersVisualStyles = false;
@@ -214,9 +199,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CustomerMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Customer Master";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlHeadingButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridCustomerMaster)).EndInit();
             this.ResumeLayout(false);
@@ -224,13 +209,11 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewCustomer;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditCustomer;
         private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveCustomer;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridCustomerMaster;
     }
 }

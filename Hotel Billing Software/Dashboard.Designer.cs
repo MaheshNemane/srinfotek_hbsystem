@@ -33,12 +33,6 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.seperatorSidebarRight = new Bunifu.Framework.UI.BunifuSeparator();
-            this.seperatorSidebarHeader = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pnlPageHeading = new System.Windows.Forms.Panel();
-            this.lblPageHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.sepratorPageHeader = new Bunifu.Framework.UI.BunifuSeparator();
-            this.pnlMain = new System.Windows.Forms.Panel();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUser = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSetting = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -46,7 +40,13 @@
             this.btnMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTransaction = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBilling = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.seperatorSidebarHeader = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pnlPageHeading = new System.Windows.Forms.Panel();
+            this.lblPageHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.sepratorPageHeader = new Bunifu.Framework.UI.BunifuSeparator();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlTitleBar.SuspendLayout();
             this.pnlSidebar.SuspendLayout();
             this.pnlPageHeading.SuspendLayout();
@@ -96,83 +96,16 @@
             // seperatorSidebarRight
             // 
             this.seperatorSidebarRight.BackColor = System.Drawing.Color.Transparent;
+            this.seperatorSidebarRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.seperatorSidebarRight.ForeColor = System.Drawing.Color.Gray;
             this.seperatorSidebarRight.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.seperatorSidebarRight.LineThickness = 1;
-            this.seperatorSidebarRight.Location = new System.Drawing.Point(189, -1);
+            this.seperatorSidebarRight.Location = new System.Drawing.Point(190, 0);
             this.seperatorSidebarRight.Name = "seperatorSidebarRight";
-            this.seperatorSidebarRight.Size = new System.Drawing.Size(10, 716);
+            this.seperatorSidebarRight.Size = new System.Drawing.Size(10, 736);
             this.seperatorSidebarRight.TabIndex = 9;
             this.seperatorSidebarRight.Transparency = 80;
             this.seperatorSidebarRight.Vertical = true;
-            // 
-            // seperatorSidebarHeader
-            // 
-            this.seperatorSidebarHeader.BackColor = System.Drawing.Color.Transparent;
-            this.seperatorSidebarHeader.ForeColor = System.Drawing.Color.Gray;
-            this.seperatorSidebarHeader.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.seperatorSidebarHeader.LineThickness = 1;
-            this.seperatorSidebarHeader.Location = new System.Drawing.Point(16, 43);
-            this.seperatorSidebarHeader.Name = "seperatorSidebarHeader";
-            this.seperatorSidebarHeader.Size = new System.Drawing.Size(160, 10);
-            this.seperatorSidebarHeader.TabIndex = 2;
-            this.seperatorSidebarHeader.Transparency = 80;
-            this.seperatorSidebarHeader.Vertical = false;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 12);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(155, 21);
-            this.bunifuCustomLabel1.TabIndex = 1;
-            this.bunifuCustomLabel1.Text = "Hotel Billing System";
-            // 
-            // pnlPageHeading
-            // 
-            this.pnlPageHeading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.pnlPageHeading.Controls.Add(this.lblPageHeader);
-            this.pnlPageHeading.Controls.Add(this.sepratorPageHeader);
-            this.pnlPageHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPageHeading.ForeColor = System.Drawing.Color.White;
-            this.pnlPageHeading.Location = new System.Drawing.Point(200, 13);
-            this.pnlPageHeading.Name = "pnlPageHeading";
-            this.pnlPageHeading.Size = new System.Drawing.Size(1084, 47);
-            this.pnlPageHeading.TabIndex = 5;
-            // 
-            // lblPageHeader
-            // 
-            this.lblPageHeader.AutoSize = true;
-            this.lblPageHeader.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPageHeader.ForeColor = System.Drawing.Color.White;
-            this.lblPageHeader.Location = new System.Drawing.Point(36, 12);
-            this.lblPageHeader.Name = "lblPageHeader";
-            this.lblPageHeader.Size = new System.Drawing.Size(97, 21);
-            this.lblPageHeader.TabIndex = 5;
-            this.lblPageHeader.Text = "Dashboard";
-            // 
-            // sepratorPageHeader
-            // 
-            this.sepratorPageHeader.BackColor = System.Drawing.Color.Transparent;
-            this.sepratorPageHeader.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sepratorPageHeader.ForeColor = System.Drawing.Color.White;
-            this.sepratorPageHeader.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.sepratorPageHeader.LineThickness = 1;
-            this.sepratorPageHeader.Location = new System.Drawing.Point(0, 37);
-            this.sepratorPageHeader.Name = "sepratorPageHeader";
-            this.sepratorPageHeader.Size = new System.Drawing.Size(1084, 10);
-            this.sepratorPageHeader.TabIndex = 4;
-            this.sepratorPageHeader.Transparency = 255;
-            this.sepratorPageHeader.Vertical = false;
-            // 
-            // pnlMain
-            // 
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(200, 60);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1084, 689);
-            this.pnlMain.TabIndex = 6;
             // 
             // btnLogout
             // 
@@ -439,6 +372,29 @@
             this.btnBilling.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBilling.Click += new System.EventHandler(this.btnBilling_Click);
             // 
+            // seperatorSidebarHeader
+            // 
+            this.seperatorSidebarHeader.BackColor = System.Drawing.Color.Transparent;
+            this.seperatorSidebarHeader.ForeColor = System.Drawing.Color.Gray;
+            this.seperatorSidebarHeader.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.seperatorSidebarHeader.LineThickness = 1;
+            this.seperatorSidebarHeader.Location = new System.Drawing.Point(16, 43);
+            this.seperatorSidebarHeader.Name = "seperatorSidebarHeader";
+            this.seperatorSidebarHeader.Size = new System.Drawing.Size(160, 10);
+            this.seperatorSidebarHeader.TabIndex = 2;
+            this.seperatorSidebarHeader.Transparency = 80;
+            this.seperatorSidebarHeader.Vertical = false;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(155, 21);
+            this.bunifuCustomLabel1.TabIndex = 1;
+            this.bunifuCustomLabel1.Text = "Hotel Billing System";
+            // 
             // btnDashboard
             // 
             this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
@@ -476,6 +432,51 @@
             this.btnDashboard.Textcolor = System.Drawing.Color.Black;
             this.btnDashboard.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // pnlPageHeading
+            // 
+            this.pnlPageHeading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.pnlPageHeading.Controls.Add(this.lblPageHeader);
+            this.pnlPageHeading.Controls.Add(this.sepratorPageHeader);
+            this.pnlPageHeading.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPageHeading.ForeColor = System.Drawing.Color.White;
+            this.pnlPageHeading.Location = new System.Drawing.Point(200, 13);
+            this.pnlPageHeading.Name = "pnlPageHeading";
+            this.pnlPageHeading.Size = new System.Drawing.Size(1084, 47);
+            this.pnlPageHeading.TabIndex = 5;
+            // 
+            // lblPageHeader
+            // 
+            this.lblPageHeader.AutoSize = true;
+            this.lblPageHeader.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPageHeader.ForeColor = System.Drawing.Color.White;
+            this.lblPageHeader.Location = new System.Drawing.Point(36, 12);
+            this.lblPageHeader.Name = "lblPageHeader";
+            this.lblPageHeader.Size = new System.Drawing.Size(97, 21);
+            this.lblPageHeader.TabIndex = 5;
+            this.lblPageHeader.Text = "Dashboard";
+            // 
+            // sepratorPageHeader
+            // 
+            this.sepratorPageHeader.BackColor = System.Drawing.Color.Transparent;
+            this.sepratorPageHeader.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.sepratorPageHeader.ForeColor = System.Drawing.Color.White;
+            this.sepratorPageHeader.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.sepratorPageHeader.LineThickness = 1;
+            this.sepratorPageHeader.Location = new System.Drawing.Point(0, 37);
+            this.sepratorPageHeader.Name = "sepratorPageHeader";
+            this.sepratorPageHeader.Size = new System.Drawing.Size(1084, 10);
+            this.sepratorPageHeader.TabIndex = 4;
+            this.sepratorPageHeader.Transparency = 255;
+            this.sepratorPageHeader.Vertical = false;
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(200, 60);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1084, 689);
+            this.pnlMain.TabIndex = 6;
             // 
             // Dashboard
             // 

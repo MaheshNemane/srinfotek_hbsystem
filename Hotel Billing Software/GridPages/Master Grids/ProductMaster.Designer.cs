@@ -155,9 +155,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProductMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Product Master";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gridProductMaster)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
             this.ResumeLayout(false);

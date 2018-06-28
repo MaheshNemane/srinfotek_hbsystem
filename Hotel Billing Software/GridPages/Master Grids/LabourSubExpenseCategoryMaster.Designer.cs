@@ -96,7 +96,6 @@
             this.gridLabourSubExpenseCategoryMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridLabourSubExpenseCategoryMaster.Size = new System.Drawing.Size(847, 549);
             this.gridLabourSubExpenseCategoryMaster.TabIndex = 13;
-
             // 
             // pnlHeadingButtons
             // 
@@ -157,9 +156,9 @@
             this.Controls.Add(this.pnlHeadingButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LabourSubExpenseCategoryMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Labour Sub Expense Category Master";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gridLabourSubExpenseCategoryMaster)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
             this.ResumeLayout(false);

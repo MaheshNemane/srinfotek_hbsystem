@@ -96,11 +96,12 @@
             // bunifuSeparator4
             // 
             this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator4.LineThickness = 1;
             this.bunifuSeparator4.Location = new System.Drawing.Point(211, 0);
             this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 717);
+            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 650);
             this.bunifuSeparator4.TabIndex = 8;
             this.bunifuSeparator4.Transparency = 100;
             this.bunifuSeparator4.Vertical = true;
@@ -629,7 +630,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TransactionDashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Transaction Dashboard";
             this.pnlPageHeading.ResumeLayout(false);
             this.pnlPageHeading.PerformLayout();

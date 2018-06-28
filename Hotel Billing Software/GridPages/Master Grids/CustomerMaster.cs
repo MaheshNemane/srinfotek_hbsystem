@@ -25,7 +25,7 @@ namespace Hotel_Billing_Software.GridPages
         {
             try
             {
-              
+
                 gridCustomerMaster.DataSource = CustomerMst.getAllCustomer().Tables[0];
                 gridCustomerMaster.Columns[0].HeaderText = "Customer Id";
                 gridCustomerMaster.Columns[1].HeaderText = "Customer Name";
@@ -104,9 +104,9 @@ namespace Hotel_Billing_Software.GridPages
             }
         }
 
-        private void gridCustomerMaster_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void gridCustomerMaster_MouseClick(object sender, MouseEventArgs e)
         {
-            
+            gridCustomerMaster.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
     }
 }

@@ -156,9 +156,9 @@
             this.Controls.Add(this.pnlHeadingButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PaymentModeMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PaymentModeMaster";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gridPaymentModeMaster)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -40,9 +40,9 @@
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlPage = new System.Windows.Forms.Panel();
             this.lblMasterName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.pnlPage = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -150,11 +150,12 @@
             // bunifuSeparator4
             // 
             this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator4.LineThickness = 1;
             this.bunifuSeparator4.Location = new System.Drawing.Point(211, 0);
             this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 717);
+            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 689);
             this.bunifuSeparator4.TabIndex = 8;
             this.bunifuSeparator4.Transparency = 100;
             this.bunifuSeparator4.Vertical = true;
@@ -229,14 +230,6 @@
             this.panel1.Size = new System.Drawing.Size(863, 47);
             this.panel1.TabIndex = 7;
             // 
-            // pnlPage
-            // 
-            this.pnlPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPage.Location = new System.Drawing.Point(221, 47);
-            this.pnlPage.Name = "pnlPage";
-            this.pnlPage.Size = new System.Drawing.Size(863, 642);
-            this.pnlPage.TabIndex = 8;
-            // 
             // lblMasterName
             // 
             this.lblMasterName.AutoSize = true;
@@ -259,6 +252,14 @@
             this.bunifuSeparator3.Transparency = 100;
             this.bunifuSeparator3.Vertical = false;
             // 
+            // pnlPage
+            // 
+            this.pnlPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPage.Location = new System.Drawing.Point(221, 47);
+            this.pnlPage.Name = "pnlPage";
+            this.pnlPage.Size = new System.Drawing.Size(863, 642);
+            this.pnlPage.TabIndex = 8;
+            // 
             // UserDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,7 +272,8 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserDashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "UserDashboard";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlSidebar.PerformLayout();

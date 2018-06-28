@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasterDashboard));
-            this.elipsMasterDashboard = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.btnPaymentMode = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLabourExpensesubCategory = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -53,11 +51,6 @@
             this.pnlSidebar.SuspendLayout();
             this.pnlPageHeading.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // elipsMasterDashboard
-            // 
-            this.elipsMasterDashboard.ElipseRadius = 5;
-            this.elipsMasterDashboard.TargetControl = this;
             // 
             // pnlSidebar
             // 
@@ -502,11 +495,12 @@
             // bunifuSeparator4
             // 
             this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator4.LineThickness = 1;
             this.bunifuSeparator4.Location = new System.Drawing.Point(211, 0);
             this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 717);
+            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 689);
             this.bunifuSeparator4.TabIndex = 8;
             this.bunifuSeparator4.Transparency = 100;
             this.bunifuSeparator4.Vertical = true;
@@ -584,7 +578,8 @@
             this.Controls.Add(this.pnlSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MasterDashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MasterDashboard";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlSidebar.PerformLayout();
@@ -595,8 +590,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuElipse elipsMasterDashboard;
         private System.Windows.Forms.Panel pnlSidebar;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel pnlPage;

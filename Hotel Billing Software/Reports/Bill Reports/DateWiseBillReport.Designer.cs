@@ -314,7 +314,8 @@
             this.Controls.Add(this.pnlHeading);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DateWiseBillReport";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DateWiseBillReport";
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();

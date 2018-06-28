@@ -154,9 +154,9 @@
             this.Controls.Add(this.pnlHeadingButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LabourExpenseCategoryMaster";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LabourExpenseCategory";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gridLabourExpenseCategoryMaster)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
             this.ResumeLayout(false);

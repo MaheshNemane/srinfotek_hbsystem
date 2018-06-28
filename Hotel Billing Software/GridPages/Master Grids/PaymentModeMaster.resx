@@ -124,16 +124,18 @@
   <data name="btnNewPaymentMode.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKoAAAAjCAYAAAAEyZGSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH7SURBVHhe7ds7S1xBAEBhf7KNhY1FmhQ2giIYsFAkFoKF
-        KFpYB4RgYaGgMay6ouIDNGiMr5Ez7lxc9tGYdWfgfDCwrI/qMDM7d3YgSAUwVBXBUFUEQ1URDFVFMFQV
-        oWuoT48vYXfzJqzNnobFiXqY+VIL44N7Dsd/GfREVyvTJ2F74zrc3z03ymvVMdTazm38R0RKrPW9u3B9
-        +dD4qfRx9ERX+1t/wvr3s9gbwbbTEipV80dLU8fh9uap8a7Ue93aawqVX5wfPexYtfQZWM0Xxo6aVvCm
-        UKnZSJUDtgTsX5MqVCpmypVy8WP5Ivxcv4qvY6h8umcj655UOaFLtqJXZ//eQmW5Z9mXcsOMyswaQ+Uc
-        iyMCKTfn9fs4q8ZQ574exOlVyg3L/+TQr7dQvw3vd30qIPUTT7FiqLyQcmWoKkIVKnsA9gJSjqpQOUP1
-        wolyVYXKEymeTEm54TSKU6kYajpUlXKTHkbFUFn2qdZ9qnKTHkbFULGxehmHlIv07RJUoTKbcq3qpPa3
-        8Y7UP1yQYpVPD6KqUMHGNd1WkfqFSJk0uZOaNIUKZlRiTfcApc/EfpSZ9H2kaAkVbAM4BaBqPnV5T1W9
-        xPKe9qN8eGp376RtqAlVczQwPfI7Hro6HL0YXIpK33bupGuoUi4MVUUwVBXBUFUEQ1UBQngFMHIOubsq
-        uuIAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ4SURBVHhe7ZyxS8NAFIf7J7s4uDi4OLgIiqDQQREdBAdR
+        dOgsFMTBQcFaqVrRoi200lq1evI7uWCwaSWE9EK+BwVB07x++Xr3kntnwRAQyACBQgZyJEUIGERFgkwQ
+        QNRMXCaSRFQcyAQBRM3EZSLJkaIOPr7M5WnHHG08mt3lulmfq5mlqQovGCTigHySVwfFB3Nebpt+7zPy
+        Gxkpau2ia8WUpJK1XumZdvOdrzYEEiMgn+RV9ezFlLYa1jcJOyz+iCqrddDe6r3pdgaJJcUbQWAcgVHu
+        hUTVH24v3EZaPe5E/B4CSRDQbL6zeBeawUOiaiSNGnqTSID3gMB/CagkUP3qIhBVFmu6JyDgC4Hj/Wdz
+        UmrZdKyourtXIUtN6sslIg/npUrRVuPtR1RN95r2CQj4RkAjqkZWK6qeY+kRAQEB3wg81fv2Bt+Kujl/
+        Y4dXAgK+EVBZujJ99SPq2kx15KqAb8mTT74IaDXUiqofCAj4SgBRfb0y5BUiEIiqGkC1AAEBHwkEouoZ
+        Kg0nPl4icnKlqa1RtSKllSkCAr4R0NMoPZWyorqHqr4lST4QcItRVlRN+7KWOhUxfCPgFqOCppTyYdPo
+        RUDAFwJud4nyCUTVaKq2qofaqy95kkeOCahBSrO8254S6kdV4eq6VXLMiI8+YQKSVIOmelJd/NmKohFV
+        sro+wAnnzOlzRkDNURpJf0samvp/81AZoNYqWa27LvpUc2ZLyh9X07urR3XzNGw36sjt0rJafarF2etE
+        tsey1Zqt5sMcUFOU2+0c9R3hH1CkPHpwungEEDUeN45KmQCipgyc08UjgKjxuHFUygQQNWXgnC4egW8w
+        cg65Z3ILUAAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>
