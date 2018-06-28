@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using Bunifu.Framework.UI;
 
 namespace Hotel_Billing_Software
 {
@@ -16,6 +18,17 @@ namespace Hotel_Billing_Software
             sourceForm.Dock = DockStyle.Fill;
             sourceForm.AutoScaleMode = AutoScaleMode.None;
             sourceForm.Show();            
+        }
+
+
+        public static BunifuFlatButton setUpdate(BunifuFlatButton btn)
+        {          
+            btn.Text = "Update";
+            btn.Normalcolor = Color.SteelBlue;
+            btn.OnHovercolor = Color.RoyalBlue;
+            btn.BackColor = Color.SteelBlue;
+            btn.Activecolor = Color.SteelBlue;
+            return btn;
         }
 
 
