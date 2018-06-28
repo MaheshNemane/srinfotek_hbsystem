@@ -33,6 +33,7 @@ namespace Hotel_Billing_Software.Billing
         private void pnlACRoom_Paint(object sender, PaintEventArgs e)
         {
 
+
         }
     }
 }
