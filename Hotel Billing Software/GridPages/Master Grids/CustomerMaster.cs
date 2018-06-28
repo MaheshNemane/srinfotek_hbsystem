@@ -71,6 +71,7 @@ namespace Hotel_Billing_Software.GridPages
         private void btnRemoveCustomer_Click(object sender, EventArgs e)
         {
 
+
         }
 
         public Master.CustomerRegistation getCustomer()
