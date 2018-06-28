@@ -39,6 +39,7 @@ namespace BAL.Transaction
 
         public DataSet getHotelExpense(int HotelExpenseId)
         {
+            this.Date = this.ChequeDate = DateTime.Now;
             this.HotelExpenseId = HotelExpenseId;
             this.cmd = "getHotelExpense";
             return Common.getData(this, "sp_HotelExpense");
@@ -47,12 +48,14 @@ namespace BAL.Transaction
 
         public DataSet getAllHotelExpense()
         {
+            this.Date = this.ChequeDate = DateTime.Now;
             this.cmd = "getAllHotelExpense";
             return Common.getData(this, "sp_HotelExpense");
         }
 
         public DataSet getAllHotelExpenseCmb()
         {
+            this.Date = this.ChequeDate = DateTime.Now;
             this.cmd = "getAllHotelExpenseCmb";
             return Common.getData(this, spname: "sp_HotelExpense");
         }
