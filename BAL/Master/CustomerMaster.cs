@@ -28,11 +28,12 @@ namespace BAL.Master
         {
             return Common.putData(customerMaster, "sp_Customer");
         }
-        public DataSet getCustomer(Int32 CustomerId)
+        public CustomerMaster getCustomer(Int32 CustomerId)
         {
             this.CustomerId = CustomerId;
             this.cmd = "getCustomer";
-            return Common.getData(this, "sp_Customer");
+            fillCustomerInfo(Common.getData(this, "sp_Customer"));
+            return this;
         }
         public DataSet getAllCustomer()
         {
@@ -44,5 +45,20 @@ namespace BAL.Master
             this.cmd = "getAllCustomerCmb";
             return Common.getData(this, "sp_Customer");
         }
+
+
+        private CustomerMaster fillCustomerInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.CustomerId=Convert.ToInt32(ds.Tables[0].Rows[0]["CustomerId"]);
+                this.CustomerName = ds.Tables[0].Rows[0]["CustomerName"].ToString();
+                this.MobileNo=ds.Tables[0].Rows[0]["MobileNo"].ToString();
+                this.Address = ds.Tables[0].Rows[0]["Address"].ToString();
+                this.CreditLimit = Convert.ToDouble(ds.Tables[0].Rows[0]["CreditLimit"]);                
+            }
+            return this;
+        }
+
     }
 }
