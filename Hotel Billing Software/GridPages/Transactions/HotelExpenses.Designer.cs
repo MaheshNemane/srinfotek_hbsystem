@@ -29,49 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelExpenses));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelExpenses));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.elipsHotelExpenses = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.gridExpenseMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewExpense = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.gridExpenseMaster)).BeginInit();
+            this.gridExpenseMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridExpenseMaster)).BeginInit();
             this.SuspendLayout();
             // 
             // elipsHotelExpenses
             // 
             this.elipsHotelExpenses.ElipseRadius = 5;
             this.elipsHotelExpenses.TargetControl = this;
-            // 
-            // gridExpenseMaster
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gridExpenseMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridExpenseMaster.BackgroundColor = System.Drawing.Color.White;
-            this.gridExpenseMaster.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridExpenseMaster.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridExpenseMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridExpenseMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridExpenseMaster.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridExpenseMaster.DoubleBuffered = true;
-            this.gridExpenseMaster.EnableHeadersVisualStyles = false;
-            this.gridExpenseMaster.HeaderBgColor = System.Drawing.Color.Crimson;
-            this.gridExpenseMaster.HeaderForeColor = System.Drawing.Color.White;
-            this.gridExpenseMaster.Location = new System.Drawing.Point(0, 55);
-            this.gridExpenseMaster.Name = "gridExpenseMaster";
-            this.gridExpenseMaster.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridExpenseMaster.Size = new System.Drawing.Size(831, 510);
-            this.gridExpenseMaster.TabIndex = 3;
             // 
             // pnlHeadingButtons
             // 
@@ -122,6 +96,57 @@
             this.btnNewExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewExpense.Click += new System.EventHandler(this.btnNewExpense_Click);
             // 
+            // gridExpenseMaster
+            // 
+            this.gridExpenseMaster.AllowUserToAddRows = false;
+            this.gridExpenseMaster.AllowUserToDeleteRows = false;
+            this.gridExpenseMaster.AllowUserToOrderColumns = true;
+            this.gridExpenseMaster.AllowUserToResizeColumns = false;
+            this.gridExpenseMaster.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridExpenseMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridExpenseMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridExpenseMaster.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.gridExpenseMaster.BackgroundColor = System.Drawing.Color.White;
+            this.gridExpenseMaster.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridExpenseMaster.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridExpenseMaster.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridExpenseMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridExpenseMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridExpenseMaster.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridExpenseMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridExpenseMaster.DoubleBuffered = true;
+            this.gridExpenseMaster.EnableHeadersVisualStyles = false;
+            this.gridExpenseMaster.HeaderBgColor = System.Drawing.Color.MediumPurple;
+            this.gridExpenseMaster.HeaderForeColor = System.Drawing.Color.White;
+            this.gridExpenseMaster.Location = new System.Drawing.Point(0, 55);
+            this.gridExpenseMaster.Name = "gridExpenseMaster";
+            this.gridExpenseMaster.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridExpenseMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridExpenseMaster.Size = new System.Drawing.Size(831, 510);
+            this.gridExpenseMaster.TabIndex = 6;
+            // 
             // HotelExpenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,8 +161,8 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "HotelExpenses";
-            ((System.ComponentModel.ISupportInitialize)(this.gridExpenseMaster)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridExpenseMaster)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,9 +170,9 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse elipsHotelExpenses;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid gridExpenseMaster;
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewExpense;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid gridExpenseMaster;
     }
 }
