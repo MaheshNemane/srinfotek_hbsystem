@@ -157,18 +157,6 @@
     <Compile Include="GridPages\Master Grids\ProductMaster.Designer.cs">
       <DependentUpon>ProductMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="GridPages\Report Grids\Bill Reports Grid\CustomerWiseBillReportGrid.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GridPages\Report Grids\Bill Reports Grid\CustomerWiseBillReportGrid.Designer.cs">
-      <DependentUpon>CustomerWiseBillReportGrid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GridPages\Report Grids\Bill Reports Grid\DateWiseBillReportGrid.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GridPages\Report Grids\Bill Reports Grid\DateWiseBillReportGrid.Designer.cs">
-      <DependentUpon>DateWiseBillReportGrid.cs</DependentUpon>
-    </Compile>
     <Compile Include="GridPages\Transactions\HotelExpenses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -572,8 +560,6 @@
       <Name>BAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GridPages\Settings Grids\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
