@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel Billing Software", "Hotel Billing Software\Hotel Billing Software.csproj", "{D80A114B-668F-4E44-AD69-9B1F356D4DF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{1A431DF5-A491-4087-88B7-4A5B736429AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E924F146-EAD4-4CCD-A6F8-911C7D2F12EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D80A114B-668F-4E44-AD69-9B1F356D4DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80A114B-668F-4E44-AD69-9B1F356D4DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80A114B-668F-4E44-AD69-9B1F356D4DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80A114B-668F-4E44-AD69-9B1F356D4DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A431DF5-A491-4087-88B7-4A5B736429AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A431DF5-A491-4087-88B7-4A5B736429AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A431DF5-A491-4087-88B7-4A5B736429AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A431DF5-A491-4087-88B7-4A5B736429AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E924F146-EAD4-4CCD-A6F8-911C7D2F12EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E924F146-EAD4-4CCD-A6F8-911C7D2F12EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E924F146-EAD4-4CCD-A6F8-911C7D2F12EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E924F146-EAD4-4CCD-A6F8-911C7D2F12EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9867F796-159D-4330-B28B-9E4BC435C124}
+	EndGlobalSection
+EndGlobal

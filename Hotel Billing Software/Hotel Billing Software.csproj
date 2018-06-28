@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D80A114B-668F-4E44-AD69-9B1F356D4DF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Billing_Software</RootNamespace>
+    <AssemblyName>Hotel Billing Software</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fevicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\Mahesh\Downloads\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\ForgotPassword.designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RoleMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\RoleMaster.Designer.cs">
+      <DependentUpon>RoleMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\Billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing\Billing.Designer.cs">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Account Grid\RoleMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Account Grid\RoleMaster.Designer.cs">
+      <DependentUpon>RoleMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Account Grid\UserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Account Grid\UserMaster.Designer.cs">
+      <DependentUpon>UserMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\CustomerMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\CustomerMaster.Designer.cs">
+      <DependentUpon>CustomerMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\EmployeeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\EmployeeMaster.Designer.cs">
+      <DependentUpon>EmployeeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\HotelExpenseCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\HotelExpenseCategoryMaster.Designer.cs">
+      <DependentUpon>HotelExpenseCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\LabourExpenseCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\LabourExpenseCategoryMaster.Designer.cs">
+      <DependentUpon>LabourExpenseCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\LabourSubExpenseCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\LabourSubExpenseCategoryMaster.Designer.cs">
+      <DependentUpon>LabourSubExpenseCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\MenuCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\MenuCategoryMaster.Designer.cs">
+      <DependentUpon>MenuCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\PaymentModeMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\PaymentModeMaster.Designer.cs">
+      <DependentUpon>PaymentModeMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\ProductMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\ProductMaster.Designer.cs">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Transactions\HotelExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Transactions\HotelExpenses.Designer.cs">
+      <DependentUpon>HotelExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Transactions\PurchaseBillingMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Transactions\PurchaseBillingMaster.Designer.cs">
+      <DependentUpon>PurchaseBillingMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SubMenuCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SubMenuCategoryMaster.Designer.cs">
+      <DependentUpon>SubMenuCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SupplierMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SupplierMaster.Designer.cs">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.Designer.cs">
+      <DependentUpon>HotelSubExpenseCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CustomerRegistation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\CustomerRegistation.Designer.cs">
+      <DependentUpon>CustomerRegistation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\HotelExpenseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\HotelExpenseCategory.Designer.cs">
+      <DependentUpon>HotelExpenseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\HotelSubExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\HotelSubExpenses.Designer.cs">
+      <DependentUpon>HotelSubExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MenuCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MenuCategory.Designer.cs">
+      <DependentUpon>MenuCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MenuSubCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MenuSubCategory.Designer.cs">
+      <DependentUpon>MenuSubCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ProductRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ProductRegistration.Designer.cs">
+      <DependentUpon>ProductRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\LabourSubExpenseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\LabourSubExpenseCategory.Designer.cs">
+      <DependentUpon>LabourSubExpenseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\EmployeeRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\EmployeeRegistration.Designer.cs">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\LabourExpenseCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\LabourExpenseCategory.Designer.cs">
+      <DependentUpon>LabourExpenseCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SupplierRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\SupplierRegistration.Designer.cs">
+      <DependentUpon>SupplierRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Bill Reports\CustomerWiseBillReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Bill Reports\CustomerWiseBillReport.Designer.cs">
+      <DependentUpon>CustomerWiseBillReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Bill Reports\DateWiseBillReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Bill Reports\DateWiseBillReport.Designer.cs">
+      <DependentUpon>DateWiseBillReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Taxes and Discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\Taxes and Discount.Designer.cs">
+      <DependentUpon>Taxes and Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash Screen.Designer.cs">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubDashboards\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubDashboards\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubDashboards\MasterDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubDashboards\MasterDashboard.Designer.cs">
+      <DependentUpon>MasterDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubDashboards\TransactionDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubDashboards\TransactionDashboard.Designer.cs">
+      <DependentUpon>TransactionDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubDashboards\UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubDashboards\UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\HotelExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\HotelExpenses.Designer.cs">
+      <DependentUpon>HotelExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\LabourExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\LabourExpenses.designer.cs">
+      <DependentUpon>LabourExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PaymentMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PaymentMode.Designer.cs">
+      <DependentUpon>PaymentMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PurchaseBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\PurchaseBilling.Designer.cs">
+      <DependentUpon>PurchaseBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\wineory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\wineory.Designer.cs">
+      <DependentUpon>wineory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\DangerTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\DangerTile.Designer.cs">
+      <DependentUpon>DangerTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\PrimaryTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\PrimaryTile.Designer.cs">
+      <DependentUpon>PrimaryTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\SuccessTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\SuccessTile.Designer.cs">
+      <DependentUpon>SuccessTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\WarningTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\WarningTile.Designer.cs">
+      <DependentUpon>WarningTile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\RoleMaster.resx">
+      <DependentUpon>RoleMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing\Billing.resx">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Account Grid\RoleMaster.resx">
+      <DependentUpon>RoleMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Account Grid\UserMaster.resx">
+      <DependentUpon>UserMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\CustomerMaster.resx">
+      <DependentUpon>CustomerMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\EmployeeMaster.resx">
+      <DependentUpon>EmployeeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\HotelExpenseCategoryMaster.resx">
+      <DependentUpon>HotelExpenseCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\LabourExpenseCategoryMaster.resx">
+      <DependentUpon>LabourExpenseCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\LabourSubExpenseCategoryMaster.resx">
+      <DependentUpon>LabourSubExpenseCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\MenuCategoryMaster.resx">
+      <DependentUpon>MenuCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\PaymentModeMaster.resx">
+      <DependentUpon>PaymentModeMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\ProductMaster.resx">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Transactions\HotelExpenses.resx">
+      <DependentUpon>HotelExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Transactions\PurchaseBillingMaster.resx">
+      <DependentUpon>PurchaseBillingMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\SubMenuCategoryMaster.resx">
+      <DependentUpon>SubMenuCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\SupplierMaster.resx">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.resx">
+      <DependentUpon>HotelSubExpenseCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CustomerRegistation.resx">
+      <DependentUpon>CustomerRegistation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\HotelExpenseCategory.resx">
+      <DependentUpon>HotelExpenseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\HotelSubExpenses.resx">
+      <DependentUpon>HotelSubExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MenuCategory.resx">
+      <DependentUpon>MenuCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MenuSubCategory.resx">
+      <DependentUpon>MenuSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ProductRegistration.resx">
+      <DependentUpon>ProductRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\LabourSubExpenseCategory.resx">
+      <DependentUpon>LabourSubExpenseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\EmployeeRegistration.resx">
+      <DependentUpon>EmployeeRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\LabourExpenseCategory.resx">
+      <DependentUpon>LabourExpenseCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\SupplierRegistration.resx">
+      <DependentUpon>SupplierRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\Bill Reports\CustomerWiseBillReport.resx">
+      <DependentUpon>CustomerWiseBillReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Bill Reports\DateWiseBillReport.resx">
+      <DependentUpon>DateWiseBillReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Taxes and Discount.resx">
+      <DependentUpon>Taxes and Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash Screen.resx">
+      <DependentUpon>Splash Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubDashboards\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubDashboards\MasterDashboard.resx">
+      <DependentUpon>MasterDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubDashboards\TransactionDashboard.resx">
+      <DependentUpon>TransactionDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubDashboards\UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\HotelExpenses.resx">
+      <DependentUpon>HotelExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\LabourExpenses.resx">
+      <DependentUpon>LabourExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PaymentMode.resx">
+      <DependentUpon>PaymentMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\PurchaseBilling.resx">
+      <DependentUpon>PurchaseBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\wineory.resx">
+      <DependentUpon>wineory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\DangerTile.resx">
+      <DependentUpon>DangerTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\PrimaryTile.resx">
+      <DependentUpon>PrimaryTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\SuccessTile.resx">
+      <DependentUpon>SuccessTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\WarningTile.resx">
+      <DependentUpon>WarningTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fevicon.ico" />
+    <None Include="Resources\Transaction.png" />
+    <None Include="Resources\arrows-merge-pointing-to-right.png" />
+    <None Include="Resources\icons8-merge-100.png" />
+    <None Include="Resources\icons8-merge-96.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\if_Cart_877015.png" />
+    <None Include="Resources\icon-sf-dollar.png" />
+    <None Include="Resources\Handshake-Icon-Picture.png" />
+    <None Include="Resources\gear.png" />
+    <None Include="Resources\fund-accounting.png" />
+    <None Include="Resources\formulari-icon.png" />
+    <None Include="Resources\default-user.png" />
+    <None Include="Resources\dashboard-icon-23681.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\shuffle.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\verified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{1a431df5-a491-4087-88b7-4a5b736429ad}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GridPages\Transaction\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
