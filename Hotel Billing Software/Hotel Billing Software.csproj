@@ -560,6 +560,9 @@
       <Name>BAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GridPages\Report Grids\" />
+    <Folder Include="GridPages\Settings Grids\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
