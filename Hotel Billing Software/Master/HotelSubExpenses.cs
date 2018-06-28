@@ -42,7 +42,8 @@ namespace Hotel_Billing_Software.Master
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
-            {
+            {  
+
                 hotelSubExpense.SubCategoryName = txtSubExpenseCategroy.Text;
                 hotelSubExpense.CategoryId = Convert.ToInt32(cmbExpenseCategory.SelectedValue);
                 BunifuFlatButton btn = (BunifuFlatButton)sender;

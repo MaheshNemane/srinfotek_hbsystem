@@ -38,6 +38,7 @@ namespace Hotel_Billing_Software.Master
             customer.CreditLimit = Convert.ToDouble(txtCreditLimit.Text);
 
 
+
             BunifuFlatButton btnsave = (BunifuFlatButton)sender;
             customer.cmd = btnsave.Text;
             string msgText = customer.insertCustomer(customer);
