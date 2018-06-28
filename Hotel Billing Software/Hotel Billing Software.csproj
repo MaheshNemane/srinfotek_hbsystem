@@ -530,6 +530,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bunifu_UI_v1.5.3.dll" />
     <Content Include="fevicon.ico" />
     <None Include="Resources\Transaction.png" />
     <None Include="Resources\arrows-merge-pointing-to-right.png" />
