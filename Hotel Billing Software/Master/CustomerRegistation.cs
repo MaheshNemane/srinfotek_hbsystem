@@ -32,19 +32,16 @@ namespace Hotel_Billing_Software.Master
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            customer.CustomerId=Convert.ToInt32(txtCustomerId.Text);
             customer.CustomerName = txtname.Text;
             customer.MobileNo = txtMobile.Text;
             customer.Address = txtaddress.Text;
             customer.CreditLimit = Convert.ToDouble(txtCreditLimit.Text);
-
-
-
             BunifuFlatButton btnsave = (BunifuFlatButton)sender;
             customer.cmd = btnsave.Text;
             string msgText = customer.insertCustomer(customer);
             MessageBox.Show(msgText, "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             clearForm();
-            this.Close();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

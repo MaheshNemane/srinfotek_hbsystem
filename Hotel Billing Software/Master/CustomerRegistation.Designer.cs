@@ -38,13 +38,13 @@
             this.txtname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRemove = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnl1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.buttonClose = new System.Windows.Forms.Button();
             this.txtcustomer = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtCustomerId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.pnl1.SuspendLayout();
@@ -59,6 +59,7 @@
             // 
             this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
             this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.Controls.Add(this.txtCustomerId);
             this.bunifuGradientPanel3.Controls.Add(this.txtCreditLimit);
             this.bunifuGradientPanel3.Controls.Add(this.txtMobile);
             this.bunifuGradientPanel3.Controls.Add(this.txtaddress);
@@ -87,7 +88,7 @@
             this.txtCreditLimit.LineIdleColor = System.Drawing.Color.Gray;
             this.txtCreditLimit.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtCreditLimit.LineThickness = 1;
-            this.txtCreditLimit.Location = new System.Drawing.Point(264, 107);
+            this.txtCreditLimit.Location = new System.Drawing.Point(265, 118);
             this.txtCreditLimit.Margin = new System.Windows.Forms.Padding(4);
             this.txtCreditLimit.Name = "txtCreditLimit";
             this.txtCreditLimit.Size = new System.Drawing.Size(176, 30);
@@ -107,7 +108,7 @@
             this.txtMobile.LineIdleColor = System.Drawing.Color.Gray;
             this.txtMobile.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtMobile.LineThickness = 1;
-            this.txtMobile.Location = new System.Drawing.Point(264, 46);
+            this.txtMobile.Location = new System.Drawing.Point(265, 57);
             this.txtMobile.Margin = new System.Windows.Forms.Padding(4);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(176, 29);
@@ -127,7 +128,7 @@
             this.txtaddress.LineIdleColor = System.Drawing.Color.Gray;
             this.txtaddress.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtaddress.LineThickness = 1;
-            this.txtaddress.Location = new System.Drawing.Point(53, 111);
+            this.txtaddress.Location = new System.Drawing.Point(54, 122);
             this.txtaddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Size = new System.Drawing.Size(176, 26);
@@ -147,7 +148,7 @@
             this.txtname.LineIdleColor = System.Drawing.Color.Gray;
             this.txtname.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtname.LineThickness = 1;
-            this.txtname.Location = new System.Drawing.Point(53, 46);
+            this.txtname.Location = new System.Drawing.Point(54, 57);
             this.txtname.Margin = new System.Windows.Forms.Padding(4);
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(176, 29);
@@ -159,7 +160,6 @@
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel2.Controls.Add(this.btnCancel);
-            this.bunifuGradientPanel2.Controls.Add(this.btnRemove);
             this.bunifuGradientPanel2.Controls.Add(this.btnSave);
             this.bunifuGradientPanel2.Controls.Add(this.bunifuSeparator2);
             this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -194,7 +194,7 @@
             this.btnCancel.IconVisible = true;
             this.btnCancel.IconZoom = 50D;
             this.btnCancel.IsTab = false;
-            this.btnCancel.Location = new System.Drawing.Point(395, 12);
+            this.btnCancel.Location = new System.Drawing.Point(305, 12);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Normalcolor = System.Drawing.Color.DarkOrange;
             this.btnCancel.OnHovercolor = System.Drawing.Color.Orange;
@@ -207,41 +207,6 @@
             this.btnCancel.Textcolor = System.Drawing.Color.White;
             this.btnCancel.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemove.BorderRadius = 5;
-            this.btnRemove.ButtonText = "Remove";
-            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemove.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRemove.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRemove.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRemove.Iconimage")));
-            this.btnRemove.Iconimage_right = null;
-            this.btnRemove.Iconimage_right_Selected = null;
-            this.btnRemove.Iconimage_Selected = null;
-            this.btnRemove.IconMarginLeft = 0;
-            this.btnRemove.IconMarginRight = 0;
-            this.btnRemove.IconRightVisible = true;
-            this.btnRemove.IconRightZoom = 0D;
-            this.btnRemove.IconVisible = true;
-            this.btnRemove.IconZoom = 50D;
-            this.btnRemove.IsTab = false;
-            this.btnRemove.Location = new System.Drawing.Point(281, 12);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));
-            this.btnRemove.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnRemove.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRemove.selected = false;
-            this.btnRemove.Size = new System.Drawing.Size(106, 32);
-            this.btnRemove.TabIndex = 23;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRemove.Textcolor = System.Drawing.Color.White;
-            this.btnRemove.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSave
             // 
@@ -264,7 +229,7 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 40D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(189, 12);
+            this.btnSave.Location = new System.Drawing.Point(404, 12);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.Green;
             this.btnSave.OnHovercolor = System.Drawing.Color.LimeGreen;
@@ -350,6 +315,28 @@
             this.txtcustomer.TabIndex = 0;
             this.txtcustomer.Text = "Customer Registration";
             // 
+            // txtCustomerId
+            // 
+            this.txtCustomerId.BackColor = System.Drawing.Color.White;
+            this.txtCustomerId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCustomerId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtCustomerId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCustomerId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtCustomerId.HintText = "CustomerId";
+            this.txtCustomerId.isPassword = false;
+            this.txtCustomerId.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtCustomerId.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtCustomerId.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtCustomerId.LineThickness = 1;
+            this.txtCustomerId.Location = new System.Drawing.Point(54, 16);
+            this.txtCustomerId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCustomerId.Name = "txtCustomerId";
+            this.txtCustomerId.Size = new System.Drawing.Size(176, 33);
+            this.txtCustomerId.TabIndex = 5;
+            this.txtCustomerId.Text = "0";
+            this.txtCustomerId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCustomerId.Visible = false;
+            // 
             // CustomerRegistation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,10 +363,6 @@
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCreditLimit;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtMobile;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtaddress;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtname;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuGradientPanel pnl1;
         private System.Windows.Forms.Button buttonClose;
@@ -387,7 +370,11 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRemove;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSave;
+        public Bunifu.Framework.UI.BunifuFlatButton btnSave;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtCreditLimit;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtMobile;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtaddress;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtname;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtCustomerId;
     }
 }
