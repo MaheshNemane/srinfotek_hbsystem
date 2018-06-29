@@ -50,8 +50,8 @@ namespace Hotel_Billing_Software.Transaction
             try
             {
                 cmbSubExpensesCategory.DataSource = hotelSubExpenseCatergory.getAllHotelSubExpenseCategoryCmb().Tables[0];
-            cmbSubExpensesCategory.ValueMember = "SubCategoryId";
-            cmbSubExpensesCategory.DisplayMember = "SubCategoryName";
+                cmbSubExpensesCategory.ValueMember = "SubCategoryId";
+                cmbSubExpensesCategory.DisplayMember = "SubCategoryName";
             }
             catch (Exception ex)
             {

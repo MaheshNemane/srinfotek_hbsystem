@@ -62,6 +62,8 @@
     <Compile Include="Transaction\Expenses.cs" />
     <Compile Include="Transaction\HotelExpenseMaster.cs" />
     <Compile Include="Master\PaymentModeMaster.cs" />
+    <Compile Include="Transaction\LabourExpenseMaster.cs" />
+    <Compile Include="Transaction\PurchaseBillingMaster.cs" />
     <Compile Include="Transaction\Wineory.cs" />
   </ItemGroup>
   <ItemGroup>

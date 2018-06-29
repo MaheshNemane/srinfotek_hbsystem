@@ -22,18 +22,18 @@ namespace Hotel_Billing_Software.GridPages.Transactions
         {
             try
             {
-                gridExpenseMaster.DataSource = expenseMaster.getAllHotelExpense().Tables[0];
-                gridExpenseMaster.Columns[0].HeaderText = "Hotel Expense Id";
-                gridExpenseMaster.Columns[1].HeaderText = "Date";
-                gridExpenseMaster.Columns[2].HeaderText = "Category Name";
-                gridExpenseMaster.Columns[3].HeaderText = "Sub Category Name";
-                gridExpenseMaster.Columns[4].HeaderText = "Amount";
-                gridExpenseMaster.Columns[5].HeaderText = "Note";
-                gridExpenseMaster.Columns[6].HeaderText = "Pay Mode";
-                gridExpenseMaster.Columns[7].HeaderText = "Bank Name";
-                gridExpenseMaster.Columns[8].HeaderText = "Cheque No";
-                gridExpenseMaster.Columns[9].HeaderText = "Cheque Date";
-                gridExpenseMaster.Columns[10].HeaderText = "Status";
+                gridHotelExpenseMaster.DataSource = expenseMaster.getAllHotelExpense().Tables[0];
+                gridHotelExpenseMaster.Columns[0].HeaderText = "Hotel Expense Id";
+                gridHotelExpenseMaster.Columns[1].HeaderText = "Date";
+                gridHotelExpenseMaster.Columns[2].HeaderText = "Category Name";
+                gridHotelExpenseMaster.Columns[3].HeaderText = "Sub Category Name";
+                gridHotelExpenseMaster.Columns[4].HeaderText = "Amount";
+                gridHotelExpenseMaster.Columns[5].HeaderText = "Note";
+                gridHotelExpenseMaster.Columns[6].HeaderText = "Pay Mode";
+                gridHotelExpenseMaster.Columns[7].HeaderText = "Bank Name";
+                gridHotelExpenseMaster.Columns[8].HeaderText = "Cheque No";
+                gridHotelExpenseMaster.Columns[9].HeaderText = "Cheque Date";
+                gridHotelExpenseMaster.Columns[10].HeaderText = "Status";
             }
             catch (Exception ex)
             {
@@ -41,19 +41,21 @@ namespace Hotel_Billing_Software.GridPages.Transactions
             }
         }
 
-        private void btnNewExpense_Click(object sender, EventArgs e)
+        private void btnNewHotelExpenses_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Transaction.HotelExpenses objForm =new Transaction.HotelExpenses();
-                objForm.ShowDialog();
-                onPageLoad();
-                objForm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                Common.showDenger(ex.Message);
-            }
+           
+                try
+                {
+                    Transaction.HotelExpenses objForm = new Transaction.HotelExpenses();
+                    objForm.ShowDialog();
+                    onPageLoad();
+                    objForm.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    Common.showDenger(ex.Message);
+                }
+            
         }
     }
 }
