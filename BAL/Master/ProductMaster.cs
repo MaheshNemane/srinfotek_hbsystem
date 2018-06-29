@@ -14,8 +14,11 @@ namespace BAL.Master
         public string ItemName { get; set; }
         public int CategoryId { get; set; }
         public int SubCategoryId { get; set; }
-        public double Price { get; set; }
         public double WaiterMargin { get; set; }
+        public Int32 GSTId { get; set; }
+        public double PurchasePrice { get; set; }
+        public double Margin { get; set; }
+        public double MRP { get; set; }
         public string Status { get; set; }
         public string cmd { get; set; }
 
@@ -70,8 +73,11 @@ namespace BAL.Master
                         this.ProductId = Convert.ToInt32(ds.Tables[0].Rows[0]["ProductId"]);
                         this.ItemCode = ds.Tables[0].Rows[0]["ItemCode"].ToString();
                         this.ItemName = ds.Tables[0].Rows[0]["ItemName"].ToString();
-                        this.Price = Convert.ToDouble(ds.Tables[0].Rows[0]["Price"].ToString());
                         this.WaiterMargin = Convert.ToDouble(ds.Tables[0].Rows[0]["WaiterMargin"].ToString());
+                        this.GSTId = Convert.ToInt32(ds.Tables[0].Rows[0]["GSTId"]);
+                        this.PurchasePrice = Convert.ToDouble(ds.Tables[0].Rows[0]["PurchasePrice"].ToString());
+                        this.Margin = Convert.ToDouble(ds.Tables[0].Rows[0]["Margin"].ToString());
+                        this.MRP = Convert.ToDouble(ds.Tables[0].Rows[0]["MRP"].ToString());
                         this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
                         this.cmd = "";
                     }
