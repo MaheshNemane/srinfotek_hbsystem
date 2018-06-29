@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BAL.Transaction
 {
-    class SalesBillHead
+    public class SalesBillHead
     {
         public int BillId { get; set; }
         public DateTime Date { get; set; }
