@@ -16,7 +16,7 @@ namespace BAL.Transaction
         public Int32 SubCategoryId { get; set; }
         public Double Amount { get; set; }
         public string Note { get; set; }
-        public Int32 PayModeId { get; set; }
+        public Int32 PaymentId { get; set; }
         public string BankName { get; set; }
         public string ChequeNo { get; set; }
         public DateTime ChequeDate { get; set; }
@@ -54,11 +54,5 @@ namespace BAL.Transaction
             return Common.getData(this, "sp_LabourExpense");
         }
 
-        public DataSet getAllLabourExpenseCmb()
-        {
-            this.Date = this.ChequeDate = DateTime.Now;
-            this.cmd = "getAllLabourExpenseCmb";
-            return Common.getData(this, spname: "sp_LabourExpense");
-        }
     }
 }
