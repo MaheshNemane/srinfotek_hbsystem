@@ -30,10 +30,10 @@ namespace Hotel_Billing_Software.GridPages.Transactions
                 gridHotelExpenseMaster.Columns[4].HeaderText = "Amount";
                 gridHotelExpenseMaster.Columns[5].HeaderText = "Note";
                 gridHotelExpenseMaster.Columns[6].HeaderText = "Pay Mode";
-                gridHotelExpenseMaster.Columns[7].HeaderText = "Bank Name";
-                gridHotelExpenseMaster.Columns[8].HeaderText = "Cheque No";
-                gridHotelExpenseMaster.Columns[9].HeaderText = "Cheque Date";
-                gridHotelExpenseMaster.Columns[10].HeaderText = "Status";
+                //gridHotelExpenseMaster.Columns[7].HeaderText = "Bank Name";
+                //gridHotelExpenseMaster.Columns[8].HeaderText = "Cheque No";
+                //gridHotelExpenseMaster.Columns[9].HeaderText = "Cheque Date";
+                //gridHotelExpenseMaster.Columns[10].HeaderText = "Status";
             }
             catch (Exception ex)
             {
