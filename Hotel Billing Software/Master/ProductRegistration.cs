@@ -16,7 +16,7 @@ namespace Hotel_Billing_Software.Master
         ProductMaster productMaster = new ProductMaster();
         MenuCategoryMaster menuCategory = new MenuCategoryMaster();
         MenuSubCategoryMaster categoryMaster = new MenuSubCategoryMaster();
-        GSTMaster gSTMaster = new GSTMaster();
+        BAL.Master.GSTMaster GSTMaster = new BAL.Master.GSTMaster();
 
         public ProductRegistration()
         {
@@ -36,7 +36,7 @@ namespace Hotel_Billing_Software.Master
         }
         private void fillGSTCmb()
         {
-            cmbSubCategory.DataSource = gSTMaster.getGSTCmb().Tables[0];
+            cmbSubCategory.DataSource = GSTMaster.getAllGSTCmb().Tables[0];
             cmbSubCategory.ValueMember = "GSTId";
             cmbSubCategory.DisplayMember = "GST";
         }
@@ -50,7 +50,7 @@ namespace Hotel_Billing_Software.Master
                 productMaster.CategoryId = Convert.ToInt32(cmbCategory.SelectedValue);
                 productMaster.SubCategoryId = Convert.ToInt32(cmbSubCategory.SelectedValue);
                 productMaster.WaiterMargin = Convert.ToDouble(txtWaiterMargin.Text);
-                productMaster.GST = Convert.ToInt32(cmbGSTId.SelectedValue);
+                productMaster.GSTId = Convert.ToInt32(cmbGSTId.SelectedValue);
                 productMaster.PurchasePrice = Convert.ToDouble(txtPurchasePrice.Text);
                 productMaster.Margin = Convert.ToDouble(txtMargin.Text);
                 productMaster.MRP = Convert.ToDouble(txtMRP.Text);

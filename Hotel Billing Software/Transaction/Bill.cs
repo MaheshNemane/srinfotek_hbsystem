@@ -88,7 +88,7 @@ namespace Hotel_Billing_Software.Transaction
             {
                 Common.showDenger(ex.Message);
             }
-        }        
+        }
 
         //private void cmbSubCategory_SelectedIndexChanged(object sender, EventArgs e)
         //{
@@ -126,7 +126,7 @@ namespace Hotel_Billing_Software.Transaction
             try
             {
                 ProductMaster product = productMaster.getProduct(txtItemCode.Text);
-                txtPrice.Text = product.Price.ToString();
+                txtPrice.Text = product.MRP.ToString();
                 cmbCategory.SelectedValue = product.CategoryId;
                 fillSubCategory(product.CategoryId);
                 cmbSubCategory.SelectedValue = product.SubCategoryId;
@@ -145,7 +145,7 @@ namespace Hotel_Billing_Software.Transaction
             try
             {
                 if (cmbCategory.Items.Count > 0)
-                {                    
+                {
                     fillSubCategory(Convert.ToInt32(((DataRowView)cmbCategory.SelectedValue)["CategoryId"]));
                 }
             }
@@ -173,6 +173,61 @@ namespace Hotel_Billing_Software.Transaction
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int categoryid;
+                if (cmbCategory.SelectedValue.GetType().Name == "DataRowView")
+                    categoryid = Convert.ToInt32(((DataRowView)cmbCategory.SelectedValue).Row.ItemArray[0]);
+                else
+                    categoryid = Convert.ToInt32(cmbCategory.SelectedValue);
+                fillSubCategory(categoryid);                
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
+        }
+
+        private void cmbSubCategory_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                int categoryid,subCategoryId;
+                if (cmbCategory.SelectedValue.GetType().Name == "DataRowView")
+                    categoryid = Convert.ToInt32(((DataRowView)cmbCategory.SelectedValue).Row.ItemArray[0]);
+                else
+                    categoryid = Convert.ToInt32(cmbCategory.SelectedValue);
+
+                if (cmbSubCategory.SelectedValue.GetType().Name == "DataRowView")
+                    subCategoryId = Convert.ToInt32(((DataRowView)cmbSubCategory.SelectedValue).Row.ItemArray[0]);
+                else
+                    subCategoryId = Convert.ToInt32(cmbSubCategory.SelectedValue);
+                fillMenuItem(categoryid, subCategoryId);                
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
+        }
+
+        private void cmbItemName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cmbItemName.Items.Count > 0)
+                {
+                    ProductMaster product = productMaster.getProduct(Convert.ToInt32(cmbItemName.SelectedValue));
+                    txtPrice.Text = product.MRP.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
         }
     }
 }
