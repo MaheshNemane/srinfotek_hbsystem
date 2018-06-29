@@ -37,6 +37,8 @@
             this.lblMasterName = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlPage = new System.Windows.Forms.Panel();
+            this.btnUOMMaster = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnGSTMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPaymentMode = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLabourExpensesubCategory = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLabourExpenseCategory = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -48,8 +50,6 @@
             this.btnSupplierMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmployeeMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCustomerMaster = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnGSTMaster = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnUOMMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlSidebar.SuspendLayout();
             this.pnlPageHeading.SuspendLayout();
             this.SuspendLayout();
@@ -152,6 +152,81 @@
             this.pnlPage.Name = "pnlPage";
             this.pnlPage.Size = new System.Drawing.Size(863, 642);
             this.pnlPage.TabIndex = 3;
+            // 
+            // btnUOMMaster
+            // 
+            this.btnUOMMaster.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnUOMMaster.BackColor = System.Drawing.Color.White;
+            this.btnUOMMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUOMMaster.BorderRadius = 5;
+            this.btnUOMMaster.ButtonText = "Unit Master";
+            this.btnUOMMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUOMMaster.DisabledColor = System.Drawing.Color.Gray;
+            this.btnUOMMaster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUOMMaster.ForeColor = System.Drawing.Color.White;
+            this.btnUOMMaster.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnUOMMaster.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUOMMaster.Iconimage")));
+            this.btnUOMMaster.Iconimage_right = null;
+            this.btnUOMMaster.Iconimage_right_Selected = null;
+            this.btnUOMMaster.Iconimage_Selected = null;
+            this.btnUOMMaster.IconMarginLeft = 5;
+            this.btnUOMMaster.IconMarginRight = 0;
+            this.btnUOMMaster.IconRightVisible = true;
+            this.btnUOMMaster.IconRightZoom = 0D;
+            this.btnUOMMaster.IconVisible = true;
+            this.btnUOMMaster.IconZoom = 50D;
+            this.btnUOMMaster.IsTab = false;
+            this.btnUOMMaster.Location = new System.Drawing.Point(5, 590);
+            this.btnUOMMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUOMMaster.Name = "btnUOMMaster";
+            this.btnUOMMaster.Normalcolor = System.Drawing.Color.White;
+            this.btnUOMMaster.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnUOMMaster.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnUOMMaster.selected = false;
+            this.btnUOMMaster.Size = new System.Drawing.Size(200, 35);
+            this.btnUOMMaster.TabIndex = 14;
+            this.btnUOMMaster.Text = "Unit Master";
+            this.btnUOMMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUOMMaster.Textcolor = System.Drawing.Color.Black;
+            this.btnUOMMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnGSTMaster
+            // 
+            this.btnGSTMaster.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnGSTMaster.BackColor = System.Drawing.Color.White;
+            this.btnGSTMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGSTMaster.BorderRadius = 5;
+            this.btnGSTMaster.ButtonText = "GST Master";
+            this.btnGSTMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGSTMaster.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGSTMaster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGSTMaster.ForeColor = System.Drawing.Color.White;
+            this.btnGSTMaster.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGSTMaster.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGSTMaster.Iconimage")));
+            this.btnGSTMaster.Iconimage_right = null;
+            this.btnGSTMaster.Iconimage_right_Selected = null;
+            this.btnGSTMaster.Iconimage_Selected = null;
+            this.btnGSTMaster.IconMarginLeft = 5;
+            this.btnGSTMaster.IconMarginRight = 0;
+            this.btnGSTMaster.IconRightVisible = true;
+            this.btnGSTMaster.IconRightZoom = 0D;
+            this.btnGSTMaster.IconVisible = true;
+            this.btnGSTMaster.IconZoom = 50D;
+            this.btnGSTMaster.IsTab = false;
+            this.btnGSTMaster.Location = new System.Drawing.Point(5, 547);
+            this.btnGSTMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGSTMaster.Name = "btnGSTMaster";
+            this.btnGSTMaster.Normalcolor = System.Drawing.Color.White;
+            this.btnGSTMaster.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnGSTMaster.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnGSTMaster.selected = false;
+            this.btnGSTMaster.Size = new System.Drawing.Size(200, 35);
+            this.btnGSTMaster.TabIndex = 14;
+            this.btnGSTMaster.Text = "GST Master";
+            this.btnGSTMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGSTMaster.Textcolor = System.Drawing.Color.Black;
+            this.btnGSTMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGSTMaster.Click += new System.EventHandler(this.btnGSTMaster_Click);
             // 
             // btnPaymentMode
             // 
@@ -570,82 +645,6 @@
             this.btnCustomerMaster.Textcolor = System.Drawing.Color.Black;
             this.btnCustomerMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerMaster.Click += new System.EventHandler(this.btnCustomerMaster_Click);
-            // 
-            // btnGSTMaster
-            // 
-            this.btnGSTMaster.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnGSTMaster.BackColor = System.Drawing.Color.White;
-            this.btnGSTMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGSTMaster.BorderRadius = 5;
-            this.btnGSTMaster.ButtonText = "GST Master";
-            this.btnGSTMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGSTMaster.DisabledColor = System.Drawing.Color.Gray;
-            this.btnGSTMaster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGSTMaster.ForeColor = System.Drawing.Color.White;
-            this.btnGSTMaster.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnGSTMaster.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnGSTMaster.Iconimage")));
-            this.btnGSTMaster.Iconimage_right = null;
-            this.btnGSTMaster.Iconimage_right_Selected = null;
-            this.btnGSTMaster.Iconimage_Selected = null;
-            this.btnGSTMaster.IconMarginLeft = 5;
-            this.btnGSTMaster.IconMarginRight = 0;
-            this.btnGSTMaster.IconRightVisible = true;
-            this.btnGSTMaster.IconRightZoom = 0D;
-            this.btnGSTMaster.IconVisible = true;
-            this.btnGSTMaster.IconZoom = 50D;
-            this.btnGSTMaster.IsTab = false;
-            this.btnGSTMaster.Location = new System.Drawing.Point(5, 547);
-            this.btnGSTMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnGSTMaster.Name = "btnGSTMaster";
-            this.btnGSTMaster.Normalcolor = System.Drawing.Color.White;
-            this.btnGSTMaster.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnGSTMaster.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnGSTMaster.selected = false;
-            this.btnGSTMaster.Size = new System.Drawing.Size(200, 35);
-            this.btnGSTMaster.TabIndex = 14;
-            this.btnGSTMaster.Text = "GST Master";
-            this.btnGSTMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGSTMaster.Textcolor = System.Drawing.Color.Black;
-            this.btnGSTMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGSTMaster.Click += new System.EventHandler(this.btnPaymentMode_Click);
-            // 
-            // btnUOMMaster
-            // 
-            this.btnUOMMaster.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnUOMMaster.BackColor = System.Drawing.Color.White;
-            this.btnUOMMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUOMMaster.BorderRadius = 5;
-            this.btnUOMMaster.ButtonText = "Unit Master";
-            this.btnUOMMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUOMMaster.DisabledColor = System.Drawing.Color.Gray;
-            this.btnUOMMaster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUOMMaster.ForeColor = System.Drawing.Color.White;
-            this.btnUOMMaster.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnUOMMaster.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUOMMaster.Iconimage")));
-            this.btnUOMMaster.Iconimage_right = null;
-            this.btnUOMMaster.Iconimage_right_Selected = null;
-            this.btnUOMMaster.Iconimage_Selected = null;
-            this.btnUOMMaster.IconMarginLeft = 5;
-            this.btnUOMMaster.IconMarginRight = 0;
-            this.btnUOMMaster.IconRightVisible = true;
-            this.btnUOMMaster.IconRightZoom = 0D;
-            this.btnUOMMaster.IconVisible = true;
-            this.btnUOMMaster.IconZoom = 50D;
-            this.btnUOMMaster.IsTab = false;
-            this.btnUOMMaster.Location = new System.Drawing.Point(5, 590);
-            this.btnUOMMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnUOMMaster.Name = "btnUOMMaster";
-            this.btnUOMMaster.Normalcolor = System.Drawing.Color.White;
-            this.btnUOMMaster.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnUOMMaster.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnUOMMaster.selected = false;
-            this.btnUOMMaster.Size = new System.Drawing.Size(200, 35);
-            this.btnUOMMaster.TabIndex = 14;
-            this.btnUOMMaster.Text = "Unit Master";
-            this.btnUOMMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUOMMaster.Textcolor = System.Drawing.Color.Black;
-            this.btnUOMMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUOMMaster.Click += new System.EventHandler(this.btnPaymentMode_Click);
             // 
             // MasterDashboard
             // 

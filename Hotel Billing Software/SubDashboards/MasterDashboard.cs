@@ -135,5 +135,14 @@ namespace Hotel_Billing_Software.SubDashboards
             this.pnlPage.Controls.Add(objForm);
             this.lblMasterName.Text = objForm.Text;
         }
+
+        private void btnGSTMaster_Click(object sender, EventArgs e)
+        {
+            refreshPage();
+            GridPages.Master_Grids.GSTMaster objForm = new GridPages.Master_Grids.GSTMaster();
+            Common.showPage(objForm);
+            this.pnlPage.Controls.Add(objForm);
+            this.lblMasterName.Text = objForm.Text;
+        }
     }
 }
