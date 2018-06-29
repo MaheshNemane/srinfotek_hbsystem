@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GSTMaster));
             this.elipsGSTMaster = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.txtCustomerId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtGSTId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtGSTPercentage = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnCancel = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -40,8 +40,9 @@
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnl1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.buttonClose = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblFormHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblSign = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel3.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             this.pnl1.SuspendLayout();
@@ -49,14 +50,15 @@
             // 
             // elipsGSTMaster
             // 
-            this.elipsGSTMaster.ElipseRadius = 5;
+            this.elipsGSTMaster.ElipseRadius = 25;
             this.elipsGSTMaster.TargetControl = this;
             // 
             // bunifuGradientPanel3
             // 
             this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
             this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel3.Controls.Add(this.txtCustomerId);
+            this.bunifuGradientPanel3.Controls.Add(this.lblSign);
+            this.bunifuGradientPanel3.Controls.Add(this.txtGSTId);
             this.bunifuGradientPanel3.Controls.Add(this.txtGSTPercentage);
             this.bunifuGradientPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel3.GradientBottomLeft = System.Drawing.Color.White;
@@ -69,27 +71,27 @@
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(500, 207);
             this.bunifuGradientPanel3.TabIndex = 8;
             // 
-            // txtCustomerId
+            // txtGSTId
             // 
-            this.txtCustomerId.BackColor = System.Drawing.Color.White;
-            this.txtCustomerId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCustomerId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCustomerId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCustomerId.HintForeColor = System.Drawing.Color.Empty;
-            this.txtCustomerId.HintText = "CustomerId";
-            this.txtCustomerId.isPassword = false;
-            this.txtCustomerId.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtCustomerId.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtCustomerId.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtCustomerId.LineThickness = 1;
-            this.txtCustomerId.Location = new System.Drawing.Point(76, 18);
-            this.txtCustomerId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCustomerId.Name = "txtCustomerId";
-            this.txtCustomerId.Size = new System.Drawing.Size(322, 33);
-            this.txtCustomerId.TabIndex = 5;
-            this.txtCustomerId.Text = "0";
-            this.txtCustomerId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCustomerId.Visible = false;
+            this.txtGSTId.BackColor = System.Drawing.Color.White;
+            this.txtGSTId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGSTId.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtGSTId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtGSTId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtGSTId.HintText = "CustomerId";
+            this.txtGSTId.isPassword = false;
+            this.txtGSTId.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtGSTId.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtGSTId.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtGSTId.LineThickness = 1;
+            this.txtGSTId.Location = new System.Drawing.Point(76, 18);
+            this.txtGSTId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGSTId.Name = "txtGSTId";
+            this.txtGSTId.Size = new System.Drawing.Size(322, 33);
+            this.txtGSTId.TabIndex = 5;
+            this.txtGSTId.Text = "0";
+            this.txtGSTId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtGSTId.Visible = false;
             // 
             // txtGSTPercentage
             // 
@@ -110,6 +112,8 @@
             this.txtGSTPercentage.Size = new System.Drawing.Size(322, 29);
             this.txtGSTPercentage.TabIndex = 1;
             this.txtGSTPercentage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtGSTPercentage.OnValueChanged += new System.EventHandler(this.txtGSTPercentage_OnValueChanged);
+            this.txtGSTPercentage.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtGSTPercentage_MouseClick);
             // 
             // bunifuGradientPanel2
             // 
@@ -162,6 +166,7 @@
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Textcolor = System.Drawing.Color.White;
             this.btnCancel.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -196,6 +201,7 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // bunifuSeparator2
             // 
@@ -216,7 +222,7 @@
             this.pnl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl1.BackgroundImage")));
             this.pnl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnl1.Controls.Add(this.bunifuSeparator1);
-            this.pnl1.Controls.Add(this.buttonClose);
+            this.pnl1.Controls.Add(this.btnClose);
             this.pnl1.Controls.Add(this.lblFormHeading);
             this.pnl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl1.GradientBottomLeft = System.Drawing.Color.White;
@@ -242,21 +248,22 @@
             this.bunifuSeparator1.Transparency = 100;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // buttonClose
+            // btnClose
             // 
-            this.buttonClose.BackColor = System.Drawing.Color.IndianRed;
-            this.buttonClose.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
-            this.buttonClose.FlatAppearance.BorderSize = 0;
-            this.buttonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
-            this.buttonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(468, 9);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(20, 21);
-            this.buttonClose.TabIndex = 8;
-            this.buttonClose.Text = "X";
-            this.buttonClose.UseVisualStyleBackColor = false;
+            this.btnClose.BackColor = System.Drawing.Color.IndianRed;
+            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Maroon;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(468, 9);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 21);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblFormHeading
             // 
@@ -267,6 +274,17 @@
             this.lblFormHeading.Size = new System.Drawing.Size(110, 17);
             this.lblFormHeading.TabIndex = 0;
             this.lblFormHeading.Text = "GST Registration";
+            // 
+            // lblSign
+            // 
+            this.lblSign.AutoSize = true;
+            this.lblSign.BackColor = System.Drawing.Color.Transparent;
+            this.lblSign.Location = new System.Drawing.Point(406, 97);
+            this.lblSign.Name = "lblSign";
+            this.lblSign.Size = new System.Drawing.Size(32, 13);
+            this.lblSign.TabIndex = 6;
+            this.lblSign.Text = "in (%)";
+            this.lblSign.Visible = false;
             // 
             // GSTMaster
             // 
@@ -279,8 +297,10 @@
             this.Controls.Add(this.pnl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GSTMaster";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GSTMaster";
             this.bunifuGradientPanel3.ResumeLayout(false);
+            this.bunifuGradientPanel3.PerformLayout();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.pnl1.ResumeLayout(false);
             this.pnl1.PerformLayout();
@@ -292,7 +312,7 @@
 
         private Bunifu.Framework.UI.BunifuElipse elipsGSTMaster;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox txtCustomerId;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtGSTId;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txtGSTPercentage;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuFlatButton btnCancel;
@@ -300,7 +320,8 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuGradientPanel pnl1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Button btnClose;
         private Bunifu.Framework.UI.BunifuCustomLabel lblFormHeading;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblSign;
     }
 }

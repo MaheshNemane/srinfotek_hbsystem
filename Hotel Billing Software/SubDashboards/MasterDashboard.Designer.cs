@@ -30,13 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasterDashboard));
             this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pnlPageHeading = new System.Windows.Forms.Panel();
-            this.lblMasterName = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.pnlPage = new System.Windows.Forms.Panel();
             this.btnUOMMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGSTMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPaymentMode = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -50,6 +43,13 @@
             this.btnSupplierMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmployeeMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCustomerMaster = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pnlPageHeading = new System.Windows.Forms.Panel();
+            this.lblMasterName = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.pnlPage = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.pnlPageHeading.SuspendLayout();
             this.SuspendLayout();
@@ -77,81 +77,6 @@
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(221, 689);
             this.pnlSidebar.TabIndex = 1;
-            // 
-            // bunifuSeparator4
-            // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator4.LineThickness = 1;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(211, 0);
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 689);
-            this.bunifuSeparator4.TabIndex = 8;
-            this.bunifuSeparator4.Transparency = 100;
-            this.bunifuSeparator4.Vertical = true;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 36);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(157, 11);
-            this.bunifuSeparator2.TabIndex = 6;
-            this.bunifuSeparator2.Transparency = 100;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(37, 8);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(113, 21);
-            this.bunifuCustomLabel1.TabIndex = 5;
-            this.bunifuCustomLabel1.Text = "Masters Entry";
-            // 
-            // pnlPageHeading
-            // 
-            this.pnlPageHeading.Controls.Add(this.lblMasterName);
-            this.pnlPageHeading.Controls.Add(this.bunifuSeparator3);
-            this.pnlPageHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPageHeading.Location = new System.Drawing.Point(221, 0);
-            this.pnlPageHeading.Name = "pnlPageHeading";
-            this.pnlPageHeading.Size = new System.Drawing.Size(863, 47);
-            this.pnlPageHeading.TabIndex = 2;
-            // 
-            // lblMasterName
-            // 
-            this.lblMasterName.AutoSize = true;
-            this.lblMasterName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMasterName.Location = new System.Drawing.Point(19, 8);
-            this.lblMasterName.Name = "lblMasterName";
-            this.lblMasterName.Size = new System.Drawing.Size(70, 21);
-            this.lblMasterName.TabIndex = 8;
-            this.lblMasterName.Text = "Masters";
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(1, 33);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(863, 11);
-            this.bunifuSeparator3.TabIndex = 7;
-            this.bunifuSeparator3.Transparency = 100;
-            this.bunifuSeparator3.Vertical = false;
-            // 
-            // pnlPage
-            // 
-            this.pnlPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPage.Location = new System.Drawing.Point(221, 47);
-            this.pnlPage.Name = "pnlPage";
-            this.pnlPage.Size = new System.Drawing.Size(863, 642);
-            this.pnlPage.TabIndex = 3;
             // 
             // btnUOMMaster
             // 
@@ -645,6 +570,81 @@
             this.btnCustomerMaster.Textcolor = System.Drawing.Color.Black;
             this.btnCustomerMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomerMaster.Click += new System.EventHandler(this.btnCustomerMaster_Click);
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator4.LineThickness = 1;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(211, 0);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Size = new System.Drawing.Size(10, 689);
+            this.bunifuSeparator4.TabIndex = 8;
+            this.bunifuSeparator4.Transparency = 100;
+            this.bunifuSeparator4.Vertical = true;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator2.LineThickness = 1;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 36);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(157, 11);
+            this.bunifuSeparator2.TabIndex = 6;
+            this.bunifuSeparator2.Transparency = 100;
+            this.bunifuSeparator2.Vertical = false;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(37, 8);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(113, 21);
+            this.bunifuCustomLabel1.TabIndex = 5;
+            this.bunifuCustomLabel1.Text = "Masters Entry";
+            // 
+            // pnlPageHeading
+            // 
+            this.pnlPageHeading.Controls.Add(this.lblMasterName);
+            this.pnlPageHeading.Controls.Add(this.bunifuSeparator3);
+            this.pnlPageHeading.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPageHeading.Location = new System.Drawing.Point(221, 0);
+            this.pnlPageHeading.Name = "pnlPageHeading";
+            this.pnlPageHeading.Size = new System.Drawing.Size(863, 47);
+            this.pnlPageHeading.TabIndex = 2;
+            // 
+            // lblMasterName
+            // 
+            this.lblMasterName.AutoSize = true;
+            this.lblMasterName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMasterName.Location = new System.Drawing.Point(19, 8);
+            this.lblMasterName.Name = "lblMasterName";
+            this.lblMasterName.Size = new System.Drawing.Size(70, 21);
+            this.lblMasterName.TabIndex = 8;
+            this.lblMasterName.Text = "Masters";
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(1, 33);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(863, 11);
+            this.bunifuSeparator3.TabIndex = 7;
+            this.bunifuSeparator3.Transparency = 100;
+            this.bunifuSeparator3.Vertical = false;
+            // 
+            // pnlPage
+            // 
+            this.pnlPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPage.Location = new System.Drawing.Point(221, 47);
+            this.pnlPage.Name = "pnlPage";
+            this.pnlPage.Size = new System.Drawing.Size(863, 642);
+            this.pnlPage.TabIndex = 3;
             // 
             // MasterDashboard
             // 
