@@ -124,19 +124,18 @@
   <data name="btnNewLabourExpense.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAAjCAYAAAA5W/D0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        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
+        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
+        CvwBXnB9m7F1kSUAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="elipsHotelExpenses.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

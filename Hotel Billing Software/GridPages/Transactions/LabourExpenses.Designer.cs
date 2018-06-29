@@ -139,7 +139,7 @@
             this.Name = "LabourExpenses";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "LabourExpenses";
+            this.Text = "Labour Expenses";
             ((System.ComponentModel.ISupportInitialize)(this.gridLabourExpense)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
             this.ResumeLayout(false);
