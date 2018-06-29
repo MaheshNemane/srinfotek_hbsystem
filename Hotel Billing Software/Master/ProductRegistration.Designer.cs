@@ -37,6 +37,9 @@
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbGSTId = new System.Windows.Forms.ComboBox();
+            this.txtMRP = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtMargin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtWaiterMargin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPurchasePrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cmbSubCategory = new System.Windows.Forms.ComboBox();
@@ -47,9 +50,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtMargin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtMRP = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.cmbGSTId = new System.Windows.Forms.ComboBox();
+            this.txtProductId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -192,6 +193,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.txtProductId);
             this.panel2.Controls.Add(this.cmbGSTId);
             this.panel2.Controls.Add(this.txtMRP);
             this.panel2.Controls.Add(this.txtMargin);
@@ -206,6 +208,56 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(503, 319);
             this.panel2.TabIndex = 4;
+            // 
+            // cmbGSTId
+            // 
+            this.cmbGSTId.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.cmbGSTId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbGSTId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGSTId.FormattingEnabled = true;
+            this.cmbGSTId.Location = new System.Drawing.Point(274, 127);
+            this.cmbGSTId.Name = "cmbGSTId";
+            this.cmbGSTId.Size = new System.Drawing.Size(211, 23);
+            this.cmbGSTId.TabIndex = 7;
+            this.cmbGSTId.Text = "Select GST";
+            // 
+            // txtMRP
+            // 
+            this.txtMRP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMRP.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMRP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMRP.HintForeColor = System.Drawing.Color.Empty;
+            this.txtMRP.HintText = "MRP";
+            this.txtMRP.isPassword = false;
+            this.txtMRP.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtMRP.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtMRP.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtMRP.LineThickness = 2;
+            this.txtMRP.Location = new System.Drawing.Point(278, 229);
+            this.txtMRP.Margin = new System.Windows.Forms.Padding(5);
+            this.txtMRP.Name = "txtMRP";
+            this.txtMRP.Size = new System.Drawing.Size(209, 25);
+            this.txtMRP.TabIndex = 9;
+            this.txtMRP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtMargin
+            // 
+            this.txtMargin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMargin.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMargin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtMargin.HintForeColor = System.Drawing.Color.Empty;
+            this.txtMargin.HintText = "Margin";
+            this.txtMargin.isPassword = false;
+            this.txtMargin.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtMargin.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtMargin.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtMargin.LineThickness = 2;
+            this.txtMargin.Location = new System.Drawing.Point(278, 174);
+            this.txtMargin.Margin = new System.Windows.Forms.Padding(5);
+            this.txtMargin.Name = "txtMargin";
+            this.txtMargin.Size = new System.Drawing.Size(209, 25);
+            this.txtMargin.TabIndex = 8;
+            this.txtMargin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtWaiterMargin
             // 
@@ -238,7 +290,7 @@
             this.txtPurchasePrice.LineIdleColor = System.Drawing.Color.Gray;
             this.txtPurchasePrice.LineMouseHoverColor = System.Drawing.Color.Tomato;
             this.txtPurchasePrice.LineThickness = 2;
-            this.txtPurchasePrice.Location = new System.Drawing.Point(276, 125);
+            this.txtPurchasePrice.Location = new System.Drawing.Point(34, 174);
             this.txtPurchasePrice.Margin = new System.Windows.Forms.Padding(5);
             this.txtPurchasePrice.Name = "txtPurchasePrice";
             this.txtPurchasePrice.Size = new System.Drawing.Size(209, 25);
@@ -360,55 +412,27 @@
             this.lblHeading.TabIndex = 3;
             this.lblHeading.Text = "Product Registration";
             // 
-            // txtMargin
+            // txtProductId
             // 
-            this.txtMargin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMargin.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMargin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMargin.HintForeColor = System.Drawing.Color.Empty;
-            this.txtMargin.HintText = "Margin";
-            this.txtMargin.isPassword = false;
-            this.txtMargin.LineFocusedColor = System.Drawing.Color.Tomato;
-            this.txtMargin.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtMargin.LineMouseHoverColor = System.Drawing.Color.Tomato;
-            this.txtMargin.LineThickness = 2;
-            this.txtMargin.Location = new System.Drawing.Point(278, 174);
-            this.txtMargin.Margin = new System.Windows.Forms.Padding(5);
-            this.txtMargin.Name = "txtMargin";
-            this.txtMargin.Size = new System.Drawing.Size(209, 25);
-            this.txtMargin.TabIndex = 8;
-            this.txtMargin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtMRP
-            // 
-            this.txtMRP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMRP.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMRP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMRP.HintForeColor = System.Drawing.Color.Empty;
-            this.txtMRP.HintText = "MRP";
-            this.txtMRP.isPassword = false;
-            this.txtMRP.LineFocusedColor = System.Drawing.Color.Tomato;
-            this.txtMRP.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtMRP.LineMouseHoverColor = System.Drawing.Color.Tomato;
-            this.txtMRP.LineThickness = 2;
-            this.txtMRP.Location = new System.Drawing.Point(278, 229);
-            this.txtMRP.Margin = new System.Windows.Forms.Padding(5);
-            this.txtMRP.Name = "txtMRP";
-            this.txtMRP.Size = new System.Drawing.Size(209, 25);
-            this.txtMRP.TabIndex = 9;
-            this.txtMRP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // cmbGSTId
-            // 
-            this.cmbGSTId.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.cmbGSTId.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbGSTId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGSTId.FormattingEnabled = true;
-            this.cmbGSTId.Location = new System.Drawing.Point(32, 176);
-            this.cmbGSTId.Name = "cmbGSTId";
-            this.cmbGSTId.Size = new System.Drawing.Size(211, 23);
-            this.cmbGSTId.TabIndex = 7;
-            this.cmbGSTId.Text = "Select GST";
+            this.txtProductId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductId.Enabled = false;
+            this.txtProductId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductId.ForeColor = System.Drawing.Color.Black;
+            this.txtProductId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtProductId.HintText = "Product Id";
+            this.txtProductId.isPassword = false;
+            this.txtProductId.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtProductId.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtProductId.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtProductId.LineThickness = 2;
+            this.txtProductId.Location = new System.Drawing.Point(32, 4);
+            this.txtProductId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProductId.Name = "txtProductId";
+            this.txtProductId.Size = new System.Drawing.Size(209, 21);
+            this.txtProductId.TabIndex = 10;
+            this.txtProductId.Text = "Item Code";
+            this.txtProductId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtProductId.Visible = false;
             // 
             // ProductRegistration
             // 
@@ -454,5 +478,6 @@
         private System.Windows.Forms.ComboBox cmbGSTId;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtMRP;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtMargin;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtProductId;
     }
 }
