@@ -410,8 +410,7 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Textcolor = System.Drawing.Color.White;
             this.btnSave.TextFont = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
+           
             // sepratorFooter
             // 
             this.sepratorFooter.BackColor = System.Drawing.Color.Transparent;
@@ -437,7 +436,6 @@
             this.Name = "Expenses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expenses";
-            this.Load += new System.EventHandler(this.Expenses_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
