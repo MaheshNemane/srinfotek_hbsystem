@@ -29,9 +29,12 @@ namespace Hotel_Billing_Software.GridPages
                 gridProductMaster.Columns[2].HeaderText = "Item Name";
                 gridProductMaster.Columns[3].HeaderText = "Category Name";
                 gridProductMaster.Columns[4].HeaderText = "Sub Category Name";
-                gridProductMaster.Columns[5].HeaderText = "Price";
-                gridProductMaster.Columns[6].HeaderText = "Waiter Margin";
-                gridProductMaster.Columns[7].HeaderText = "Status";
+                gridProductMaster.Columns[5].HeaderText = "Waiter Margin";
+                gridProductMaster.Columns[6].HeaderText = "GST";
+                gridProductMaster.Columns[7].HeaderText = "Purchase Price";
+                gridProductMaster.Columns[8].HeaderText = "Margin";
+                gridProductMaster.Columns[9].HeaderText = "MRP";
+                gridProductMaster.Columns[10].HeaderText = "Status";
 
             }
             catch (Exception ex)
