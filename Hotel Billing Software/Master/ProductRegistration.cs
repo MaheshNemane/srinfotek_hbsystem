@@ -16,6 +16,7 @@ namespace Hotel_Billing_Software.Master
         ProductMaster productMaster = new ProductMaster();
         MenuCategoryMaster menuCategory = new MenuCategoryMaster();
         MenuSubCategoryMaster categoryMaster = new MenuSubCategoryMaster();
+        GSTMaster gSTMaster = new GSTMaster();
 
         public ProductRegistration()
         {
@@ -31,21 +32,36 @@ namespace Hotel_Billing_Software.Master
             cmbSubCategory.DataSource = categoryMaster.getMenuSubCategory().Tables[0];
             cmbSubCategory.ValueMember = "SubCategoryId";
             cmbSubCategory.DisplayMember = "SubCategoryName";
+
+        }
+        private void fillGSTCmb()
+        {
+            cmbSubCategory.DataSource = gSTMaster.getGSTCmb().Tables[0];
+            cmbSubCategory.ValueMember = "GSTId";
+            cmbSubCategory.DisplayMember = "GST";
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            productMaster.ItemCode = txtItemCode.Text;
-            productMaster.ItemName = txtItemName.Text;
-            productMaster.CategoryId = Convert.ToInt32(cmbCategory.SelectedValue);
-            productMaster.SubCategoryId = Convert.ToInt32(cmbSubCategory.SelectedValue);
-            productMaster.Price = Convert.ToDouble(txtPrice.Text);
-            productMaster.WaiterMargin = Convert.ToDouble(txtWaiterMargin.Text);
+            try
+            {
+                productMaster.ItemCode = txtItemCode.Text;
+                productMaster.ItemName = txtItemName.Text;
+                productMaster.CategoryId = Convert.ToInt32(cmbCategory.SelectedValue);
+                productMaster.SubCategoryId = Convert.ToInt32(cmbSubCategory.SelectedValue);
+                productMaster.WaiterMargin = Convert.ToDouble(txtWaiterMargin.Text);
+                productMaster.GST = Convert.ToInt32(cmbGSTId.SelectedValue);
+                productMaster.PurchasePrice = Convert.ToDouble(txtPurchasePrice.Text);
+                productMaster.Margin = Convert.ToDouble(txtMargin.Text);
+                productMaster.MRP = Convert.ToDouble(txtMRP.Text);
 
-            BunifuFlatButton btn = (BunifuFlatButton)sender;
-            productMaster.cmd = btn.Text;
-            string msgText = productMaster.insertProduct(productMaster);
-            MessageBox.Show(msgText, "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                BunifuFlatButton btn = (BunifuFlatButton)sender;
+                productMaster.cmd = btn.Text;
+                string msgText = productMaster.insertProduct(productMaster);
+                MessageBox.Show(msgText, "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            { Common.showDenger(ex.Message); }
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
