@@ -1,4 +1,4 @@
-﻿namespace Hotel_Billing_Software
+﻿namespace Hotel_Billing_Software.Transaction
 {
     partial class Expenses
     {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using BAL.Transaction;
 using Bunifu.Framework.UI;
 using BAL.Master;
-namespace Hotel_Billing_Software
+namespace Hotel_Billing_Software.Transaction
 {
     public partial class Expenses : Form
     {

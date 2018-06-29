@@ -45,6 +45,7 @@
     <Compile Include="Combo.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Encryption.cs" />
+    <Compile Include="Master\GSTMaster.cs" />
     <Compile Include="Master\HotelExpenseCategoryMaster.cs" />
     <Compile Include="Master\HotelSubExpenseCatergoryMaster.cs" />
     <Compile Include="Master\LabourExpenseCategoryMaster.cs" />
