@@ -67,6 +67,8 @@
     <Compile Include="Transaction\PurchaseBillDetails.cs" />
     <Compile Include="Transaction\PurchaseBillHead.cs" />
     <Compile Include="Transaction\PurchaseBillingMaster.cs" />
+    <Compile Include="Transaction\SaleBillHead.cs" />
+    <Compile Include="Transaction\SalesBillDetails.cs" />
     <Compile Include="Transaction\Wineory.cs" />
   </ItemGroup>
   <ItemGroup>
