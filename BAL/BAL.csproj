@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Account\Role.cs" />
     <Compile Include="Account\User.cs" />
+    <Compile Include="Combo.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Encryption.cs" />
     <Compile Include="Master\HotelExpenseCategoryMaster.cs" />

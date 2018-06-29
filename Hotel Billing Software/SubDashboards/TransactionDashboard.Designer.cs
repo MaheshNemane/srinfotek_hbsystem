@@ -64,11 +64,12 @@
             // bunifuSeparator3
             // 
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(1, 33);
+            this.bunifuSeparator3.Location = new System.Drawing.Point(0, 36);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(863, 11);
+            this.bunifuSeparator3.Size = new System.Drawing.Size(847, 11);
             this.bunifuSeparator3.TabIndex = 7;
             this.bunifuSeparator3.Transparency = 100;
             this.bunifuSeparator3.Vertical = false;

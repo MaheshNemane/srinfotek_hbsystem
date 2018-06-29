@@ -160,7 +160,7 @@
             this.Name = "HotelExpenses";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "HotelExpenses";
+            this.Text = "Hotel Expenses";
             this.pnlHeadingButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridHotelExpenseMaster)).EndInit();
             this.ResumeLayout(false);

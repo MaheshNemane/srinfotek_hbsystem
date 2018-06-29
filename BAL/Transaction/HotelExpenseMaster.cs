@@ -15,7 +15,7 @@ namespace BAL.Transaction
         public Int32 SubCategoryId { get; set; }
         public double Amount { get; set; }
         public string Note { get; set; }
-        public Int32 PayModeId { get; set; }
+        public Int32 PaymentId { get; set; }
         public string BankName { get; set; }
         public string ChequeNo { get; set; }
         public DateTime ChequeDate { get; set; }

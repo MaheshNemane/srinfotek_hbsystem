@@ -53,5 +53,12 @@ namespace BAL.Master
             this.cmd = "getAllHotelSubExpenseCategoryCmb";
             return Common.getData(this, "sp_HotelSubExpense");
         }
+
+        public DataSet getAllHotelSubExpenseCategoryCmb(Int32 CategoryId)
+        {
+            this.CategoryId = CategoryId;
+            this.cmd = "getAllHotelSubExpenseCategoryCmbByCategory";
+            return Common.getData(this, "sp_HotelSubExpense");
+        }
     }
 }

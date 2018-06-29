@@ -48,8 +48,7 @@ namespace Hotel_Billing_Software.GridPages.Transactions
                 {
                     Transaction.HotelExpenses objForm = new Transaction.HotelExpenses();
                     objForm.ShowDialog();
-                    onPageLoad();
-                    objForm.ShowDialog();
+                    onPageLoad();                   
                 }
                 catch (Exception ex)
                 {

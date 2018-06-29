@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BAL.Transaction;
 using Bunifu.Framework.UI;
 using BAL.Master;
+
 namespace Hotel_Billing_Software.Transaction
 {
     public partial class HotelExpenses : Form
@@ -17,25 +18,18 @@ namespace Hotel_Billing_Software.Transaction
         HotelExpenseMaster hotelExpenseMaster = new HotelExpenseMaster();
         HotelExpenseCategoryMaster hotelExpenseCategoryMaster = new HotelExpenseCategoryMaster();
         HotelSubExpenseCatergoryMaster hotelSubExpenseCatergory = new HotelSubExpenseCatergoryMaster();
-        PaymentModeMaster paymentModeTransaction = new PaymentModeMaster(); 
+        PaymentModeMaster paymentModeTransaction = new PaymentModeMaster();
 
         public HotelExpenses()
         {
             InitializeComponent();
-            onPageLoad();
         }
-        private void onPageLoad()
-        {
-            fillExpenseCategory();
-            fillSubExpenseCategory();
-            fillPaymentMode();
-        }
-
         private void fillPaymentMode()
         {
             try
             {
-                cmbPayMode.DataSource = paymentModeTransaction.getAllPaymentCategoryCmb().Tables[0];
+                DataSet ds = paymentModeTransaction.getAllPaymentCategoryCmb();
+                cmbPayMode.DataSource = ds.Tables[0];
                 cmbPayMode.ValueMember = "PaymentId";
                 cmbPayMode.DisplayMember = "PaymentCategoryName";
             }
@@ -45,11 +39,12 @@ namespace Hotel_Billing_Software.Transaction
             }
         }
 
-        private void fillSubExpenseCategory()
+        private void fillSubExpenseCategory(Int32 categoryid)
         {
             try
             {
-                cmbSubExpensesCategory.DataSource = hotelSubExpenseCatergory.getAllHotelSubExpenseCategoryCmb().Tables[0];
+                DataSet ds = hotelSubExpenseCatergory.getAllHotelSubExpenseCategoryCmb(categoryid);
+                cmbSubExpensesCategory.DataSource = ds.Tables[0];
                 cmbSubExpensesCategory.ValueMember = "SubCategoryId";
                 cmbSubExpensesCategory.DisplayMember = "SubCategoryName";
             }
@@ -63,7 +58,8 @@ namespace Hotel_Billing_Software.Transaction
         {
             try
             {
-                cmbExpenseCategory.DataSource = hotelExpenseCategoryMaster.getAllHotelExpenseCategoryCmb().Tables[0];
+                DataSet ds = hotelExpenseCategoryMaster.getAllHotelExpenseCategoryCmb();
+                cmbExpenseCategory.DataSource = ds.Tables[0];
                 cmbExpenseCategory.ValueMember = "CategoryId";
                 cmbExpenseCategory.DisplayMember = "CategoryName";
             }
@@ -86,16 +82,15 @@ namespace Hotel_Billing_Software.Transaction
         {
             try
             {
-                hotelExpenseMaster.Date = Convert.ToDateTime(dtpDate.Text);
-                hotelExpenseMaster.CategoryId = Convert.ToInt32(cmbExpenseCategory.Text);
-                hotelExpenseMaster.SubCategoryId = Convert.ToInt32(cmbSubExpensesCategory.Text);
+                hotelExpenseMaster.Date = Convert.ToDateTime(dtpDate.Value);
+                hotelExpenseMaster.CategoryId = Convert.ToInt32(cmbExpenseCategory.SelectedValue);
+                hotelExpenseMaster.SubCategoryId = Convert.ToInt32(cmbSubExpensesCategory.SelectedValue);
                 hotelExpenseMaster.Amount = Convert.ToDouble(txtAmount.Text);
                 hotelExpenseMaster.Note = txtNote.Text;
-                hotelExpenseMaster.PayModeId = Convert.ToInt32(cmbPayMode.Text);
+                hotelExpenseMaster.PaymentId = Convert.ToInt32(cmbPayMode.SelectedValue);
                 hotelExpenseMaster.BankName = TxtBankName.Text;
                 hotelExpenseMaster.ChequeNo = txtChaqueNo.Text;
-                hotelExpenseMaster.ChequeDate = Convert.ToDateTime(dtpChequeDate.Text);
-
+                hotelExpenseMaster.ChequeDate = Convert.ToDateTime(dtpChequeDate.Value);
                 BunifuFlatButton btnsave = (BunifuFlatButton)sender;
                 hotelExpenseMaster.cmd = btnsave.Text;
                 string msgText = hotelExpenseMaster.insertHotelExpense(hotelExpenseMaster);
@@ -105,6 +100,22 @@ namespace Hotel_Billing_Software.Transaction
             {
                 Common.showDenger(ex.Message);
             }
+        }
+
+        private void HotelExpenses_Load(object sender, EventArgs e)
+        {
+            fillExpenseCategory();
+            fillPaymentMode();
+        }
+
+        private void cmbExpenseCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int categoryid;
+            if (cmbExpenseCategory.SelectedValue.GetType().Name == "DataRowView")
+                categoryid = Convert.ToInt32(((DataRowView)cmbExpenseCategory.SelectedValue).Row.ItemArray[0]);
+            else
+                categoryid = Convert.ToInt32(cmbExpenseCategory.SelectedValue);
+            fillSubExpenseCategory(categoryid);
         }
     }
 }

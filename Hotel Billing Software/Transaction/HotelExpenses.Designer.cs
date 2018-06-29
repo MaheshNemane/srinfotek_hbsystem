@@ -133,8 +133,8 @@
             this.dtpDate.BorderRadius = 0;
             this.dtpDate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDate.ForeColor = System.Drawing.Color.Black;
-            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.FormatCustom = null;
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDate.FormatCustom = "dd/MM/yyyy";
             this.dtpDate.Location = new System.Drawing.Point(36, 20);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(192, 23);
@@ -243,7 +243,6 @@
             this.cmbSubExpensesCategory.MaxDropDownItems = 5;
             this.cmbSubExpensesCategory.Name = "cmbSubExpensesCategory";
             this.cmbSubExpensesCategory.Size = new System.Drawing.Size(192, 23);
-            this.cmbSubExpensesCategory.Sorted = true;
             this.cmbSubExpensesCategory.TabIndex = 2;
             this.cmbSubExpensesCategory.Text = "Select Sub Expense Type";
             // 
@@ -278,9 +277,9 @@
             this.cmbExpenseCategory.MaxDropDownItems = 5;
             this.cmbExpenseCategory.Name = "cmbExpenseCategory";
             this.cmbExpenseCategory.Size = new System.Drawing.Size(192, 23);
-            this.cmbExpenseCategory.Sorted = true;
             this.cmbExpenseCategory.TabIndex = 1;
             this.cmbExpenseCategory.Text = "Select Expense Type";
+            this.cmbExpenseCategory.SelectedIndexChanged += new System.EventHandler(this.cmbExpenseCategory_SelectedIndexChanged);
             // 
             // pnlFooter
             // 
@@ -424,6 +423,7 @@
             this.Name = "HotelExpenses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hotel Expenses";
+            this.Load += new System.EventHandler(this.HotelExpenses_Load);
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
             this.pnlBody.ResumeLayout(false);
