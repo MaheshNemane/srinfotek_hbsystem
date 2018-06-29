@@ -43,6 +43,12 @@ namespace BAL.Master
             this.cmd = "getAllLabourSubExpenseCategoryCmb";
             return Common.getData(this, "sp_LabourSubExpenseCategory");
         }
+        public DataSet getAllLabourSubExpenseCategoryCmb(Int32 CategoryId)
+        {
+            this.CategoryId = CategoryId;
+            this.cmd = "getAllLabourSubExpenseCategoryCmb";
+            return Common.getData(this, "sp_LabourSubExpenseCategory");
+        }
 
     }
 }
