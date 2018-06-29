@@ -276,12 +276,6 @@
     <Compile Include="Reports\Bill Reports\DateWiseBillReport.Designer.cs">
       <DependentUpon>DateWiseBillReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="Settings\Taxes and Discount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Settings\Taxes and Discount.Designer.cs">
-      <DependentUpon>Taxes and Discount.cs</DependentUpon>
-    </Compile>
     <Compile Include="Splash Screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -487,9 +481,6 @@
     <EmbeddedResource Include="Reports\Bill Reports\DateWiseBillReport.resx">
       <DependentUpon>DateWiseBillReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings\Taxes and Discount.resx">
-      <DependentUpon>Taxes and Discount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Splash Screen.resx">
       <DependentUpon>Splash Screen.cs</DependentUpon>
     </EmbeddedResource>
@@ -579,6 +570,8 @@
       <Name>BAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Settings\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
