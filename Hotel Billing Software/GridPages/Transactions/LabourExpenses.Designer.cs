@@ -127,6 +127,7 @@
             this.btnNewLabourExpense.Size = new System.Drawing.Size(182, 35);
             this.btnNewLabourExpense.TabIndex = 0;
             this.btnNewLabourExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewLabourExpense.Click += new System.EventHandler(this.btnNewLabourExpense_Click);
             // 
             // LabourExpenses
             // 

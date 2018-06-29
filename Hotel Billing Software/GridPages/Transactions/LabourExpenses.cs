@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hotel_Billing_Software.Transaction;
 
 namespace Hotel_Billing_Software.GridPages.Transactions
 {
@@ -31,10 +32,10 @@ namespace Hotel_Billing_Software.GridPages.Transactions
                 gridLabourExpense.Columns[5].HeaderText = "Amount";
                 gridLabourExpense.Columns[6].HeaderText = "Note";
                 gridLabourExpense.Columns[7].HeaderText = "Pay Mode";
-                gridLabourExpense.Columns[8].HeaderText = "Bank Name";
-                gridLabourExpense.Columns[9].HeaderText = "Cheque No";
-                gridLabourExpense.Columns[10].HeaderText = "Cheque Date";
-                gridLabourExpense.Columns[11].HeaderText = "Status";
+                //gridLabourExpense.Columns[8].HeaderText = "Bank Name";
+                //gridLabourExpense.Columns[9].HeaderText = "Cheque No";
+                //gridLabourExpense.Columns[10].HeaderText = "Cheque Date";
+                //gridLabourExpense.Columns[11].HeaderText = "Status";
             }
             catch (Exception ex)
             {
@@ -42,14 +43,14 @@ namespace Hotel_Billing_Software.GridPages.Transactions
             }
         }
 
-        private void btnNewExpense_Click(object sender, EventArgs e)
+        private void btnNewLabourExpense_Click(object sender, EventArgs e)
         {
             try
             {
-                Transaction.HotelExpenses objForm = new Transaction.HotelExpenses();
+                Transaction.Expenses objForm = new Transaction.Expenses();
                 objForm.ShowDialog();
                 onPageLoad();
-                objForm.ShowDialog();
+               
             }
             catch (Exception ex)
             {
