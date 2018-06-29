@@ -276,6 +276,12 @@
     <Compile Include="Reports\Bill Reports\DateWiseBillReport.Designer.cs">
       <DependentUpon>DateWiseBillReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings\GSTMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\GSTMaster.Designer.cs">
+      <DependentUpon>GSTMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Splash Screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +299,12 @@
     </Compile>
     <Compile Include="SubDashboards\MasterDashboard.Designer.cs">
       <DependentUpon>MasterDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubDashboards\SettingsDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubDashboards\SettingsDashboard.Designer.cs">
+      <DependentUpon>SettingsDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="SubDashboards\TransactionDashboard.cs">
       <SubType>Form</SubType>
@@ -490,6 +502,9 @@
     <EmbeddedResource Include="SubDashboards\MasterDashboard.resx">
       <DependentUpon>MasterDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubDashboards\SettingsDashboard.resx">
+      <DependentUpon>SettingsDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubDashboards\TransactionDashboard.resx">
       <DependentUpon>TransactionDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -570,8 +585,6 @@
       <Name>BAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Settings\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

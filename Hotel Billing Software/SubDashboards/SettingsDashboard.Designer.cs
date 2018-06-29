@@ -1,6 +1,6 @@
 ﻿namespace Hotel_Billing_Software.SubDashboards
 {
-    partial class MasterDashboard
+    partial class SettingsDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasterDashboard));
-            this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsDashboard));
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.lblMasterName = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pnlPageHeading = new System.Windows.Forms.Panel();
+            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pnlPageHeading = new System.Windows.Forms.Panel();
-            this.lblMasterName = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.pnlPage = new System.Windows.Forms.Panel();
+            this.lblTitle = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pnlSidebar = new System.Windows.Forms.Panel();
             this.btnPaymentMode = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLabourExpensesubCategory = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLabourExpenseCategory = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -47,36 +48,48 @@
             this.btnProductMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnSupplierMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmployeeMaster = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCustomerMaster = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGSTMaster = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnUOMMaster = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pnlSidebar.SuspendLayout();
+            this.pnlPage = new System.Windows.Forms.Panel();
             this.pnlPageHeading.SuspendLayout();
+            this.pnlSidebar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlSidebar
+            // bunifuElipse1
             // 
-            this.pnlSidebar.Controls.Add(this.btnUOMMaster);
-            this.pnlSidebar.Controls.Add(this.btnGSTMaster);
-            this.pnlSidebar.Controls.Add(this.btnPaymentMode);
-            this.pnlSidebar.Controls.Add(this.btnLabourExpensesubCategory);
-            this.pnlSidebar.Controls.Add(this.btnLabourExpenseCategory);
-            this.pnlSidebar.Controls.Add(this.btnHotelExpenseSubCategory);
-            this.pnlSidebar.Controls.Add(this.btnHotelExpenseCategoryMaster);
-            this.pnlSidebar.Controls.Add(this.btnMenuSubCategoryMaster);
-            this.pnlSidebar.Controls.Add(this.btnMenuCategoryMaster);
-            this.pnlSidebar.Controls.Add(this.btnProductMaster);
-            this.pnlSidebar.Controls.Add(this.btnSupplierMaster);
-            this.pnlSidebar.Controls.Add(this.btnEmployeeMaster);
-            this.pnlSidebar.Controls.Add(this.btnCustomerMaster);
-            this.pnlSidebar.Controls.Add(this.bunifuSeparator4);
-            this.pnlSidebar.Controls.Add(this.bunifuSeparator2);
-            this.pnlSidebar.Controls.Add(this.bunifuCustomLabel1);
-            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(221, 689);
-            this.pnlSidebar.TabIndex = 1;
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // lblMasterName
+            // 
+            this.lblMasterName.AutoSize = true;
+            this.lblMasterName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMasterName.Location = new System.Drawing.Point(19, 8);
+            this.lblMasterName.Name = "lblMasterName";
+            this.lblMasterName.Size = new System.Drawing.Size(70, 21);
+            this.lblMasterName.TabIndex = 8;
+            this.lblMasterName.Text = "Masters";
+            // 
+            // pnlPageHeading
+            // 
+            this.pnlPageHeading.Controls.Add(this.lblMasterName);
+            this.pnlPageHeading.Controls.Add(this.bunifuSeparator3);
+            this.pnlPageHeading.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPageHeading.Location = new System.Drawing.Point(221, 0);
+            this.pnlPageHeading.Name = "pnlPageHeading";
+            this.pnlPageHeading.Size = new System.Drawing.Size(863, 47);
+            this.pnlPageHeading.TabIndex = 5;
+            // 
+            // bunifuSeparator3
+            // 
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(1, 33);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(863, 11);
+            this.bunifuSeparator3.TabIndex = 7;
+            this.bunifuSeparator3.Transparency = 100;
+            this.bunifuSeparator3.Vertical = false;
             // 
             // bunifuSeparator4
             // 
@@ -96,62 +109,44 @@
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 36);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(25, 33);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(157, 11);
             this.bunifuSeparator2.TabIndex = 6;
             this.bunifuSeparator2.Transparency = 100;
             this.bunifuSeparator2.Vertical = false;
             // 
-            // bunifuCustomLabel1
+            // lblTitle
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(37, 8);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(113, 21);
-            this.bunifuCustomLabel1.TabIndex = 5;
-            this.bunifuCustomLabel1.Text = "Masters Entry";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(57, 8);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(72, 21);
+            this.lblTitle.TabIndex = 5;
+            this.lblTitle.Text = "Settings";
             // 
-            // pnlPageHeading
+            // pnlSidebar
             // 
-            this.pnlPageHeading.Controls.Add(this.lblMasterName);
-            this.pnlPageHeading.Controls.Add(this.bunifuSeparator3);
-            this.pnlPageHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPageHeading.Location = new System.Drawing.Point(221, 0);
-            this.pnlPageHeading.Name = "pnlPageHeading";
-            this.pnlPageHeading.Size = new System.Drawing.Size(863, 47);
-            this.pnlPageHeading.TabIndex = 2;
-            // 
-            // lblMasterName
-            // 
-            this.lblMasterName.AutoSize = true;
-            this.lblMasterName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMasterName.Location = new System.Drawing.Point(19, 8);
-            this.lblMasterName.Name = "lblMasterName";
-            this.lblMasterName.Size = new System.Drawing.Size(70, 21);
-            this.lblMasterName.TabIndex = 8;
-            this.lblMasterName.Text = "Masters";
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(1, 33);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(863, 11);
-            this.bunifuSeparator3.TabIndex = 7;
-            this.bunifuSeparator3.Transparency = 100;
-            this.bunifuSeparator3.Vertical = false;
-            // 
-            // pnlPage
-            // 
-            this.pnlPage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPage.Location = new System.Drawing.Point(221, 47);
-            this.pnlPage.Name = "pnlPage";
-            this.pnlPage.Size = new System.Drawing.Size(863, 642);
-            this.pnlPage.TabIndex = 3;
+            this.pnlSidebar.Controls.Add(this.btnPaymentMode);
+            this.pnlSidebar.Controls.Add(this.btnLabourExpensesubCategory);
+            this.pnlSidebar.Controls.Add(this.btnLabourExpenseCategory);
+            this.pnlSidebar.Controls.Add(this.btnHotelExpenseSubCategory);
+            this.pnlSidebar.Controls.Add(this.btnHotelExpenseCategoryMaster);
+            this.pnlSidebar.Controls.Add(this.btnMenuSubCategoryMaster);
+            this.pnlSidebar.Controls.Add(this.btnMenuCategoryMaster);
+            this.pnlSidebar.Controls.Add(this.btnProductMaster);
+            this.pnlSidebar.Controls.Add(this.btnSupplierMaster);
+            this.pnlSidebar.Controls.Add(this.btnEmployeeMaster);
+            this.pnlSidebar.Controls.Add(this.btnGSTMaster);
+            this.pnlSidebar.Controls.Add(this.bunifuSeparator4);
+            this.pnlSidebar.Controls.Add(this.bunifuSeparator2);
+            this.pnlSidebar.Controls.Add(this.lblTitle);
+            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlSidebar.Name = "pnlSidebar";
+            this.pnlSidebar.Size = new System.Drawing.Size(221, 689);
+            this.pnlSidebar.TabIndex = 4;
             // 
             // btnPaymentMode
             // 
@@ -189,7 +184,6 @@
             this.btnPaymentMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnPaymentMode.Textcolor = System.Drawing.Color.Black;
             this.btnPaymentMode.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaymentMode.Click += new System.EventHandler(this.btnPaymentMode_Click);
             // 
             // btnLabourExpensesubCategory
             // 
@@ -227,7 +221,6 @@
             this.btnLabourExpensesubCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLabourExpensesubCategory.Textcolor = System.Drawing.Color.Black;
             this.btnLabourExpensesubCategory.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLabourExpensesubCategory.Click += new System.EventHandler(this.btnLabourExpensesubCategory_Click);
             // 
             // btnLabourExpenseCategory
             // 
@@ -265,7 +258,6 @@
             this.btnLabourExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLabourExpenseCategory.Textcolor = System.Drawing.Color.Black;
             this.btnLabourExpenseCategory.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLabourExpenseCategory.Click += new System.EventHandler(this.btnLabourExpenseCategory_Click);
             // 
             // btnHotelExpenseSubCategory
             // 
@@ -303,7 +295,6 @@
             this.btnHotelExpenseSubCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHotelExpenseSubCategory.Textcolor = System.Drawing.Color.Black;
             this.btnHotelExpenseSubCategory.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHotelExpenseSubCategory.Click += new System.EventHandler(this.btnHotelExpenseSubCategory_Click);
             // 
             // btnHotelExpenseCategoryMaster
             // 
@@ -341,7 +332,6 @@
             this.btnHotelExpenseCategoryMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHotelExpenseCategoryMaster.Textcolor = System.Drawing.Color.Black;
             this.btnHotelExpenseCategoryMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHotelExpenseCategoryMaster.Click += new System.EventHandler(this.btnHotelExpenseCategoryMaster_Click);
             // 
             // btnMenuSubCategoryMaster
             // 
@@ -379,7 +369,6 @@
             this.btnMenuSubCategoryMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMenuSubCategoryMaster.Textcolor = System.Drawing.Color.Black;
             this.btnMenuSubCategoryMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuSubCategoryMaster.Click += new System.EventHandler(this.btnMenuSubCategoryMaster_Click);
             // 
             // btnMenuCategoryMaster
             // 
@@ -417,7 +406,6 @@
             this.btnMenuCategoryMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnMenuCategoryMaster.Textcolor = System.Drawing.Color.Black;
             this.btnMenuCategoryMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuCategoryMaster.Click += new System.EventHandler(this.btnMenuCategoryMaster_Click);
             // 
             // btnProductMaster
             // 
@@ -455,7 +443,6 @@
             this.btnProductMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnProductMaster.Textcolor = System.Drawing.Color.Black;
             this.btnProductMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductMaster.Click += new System.EventHandler(this.btnProductMaster_Click);
             // 
             // btnSupplierMaster
             // 
@@ -493,7 +480,6 @@
             this.btnSupplierMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSupplierMaster.Textcolor = System.Drawing.Color.Black;
             this.btnSupplierMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupplierMaster.Click += new System.EventHandler(this.btnSupplierMaster_Click);
             // 
             // btnEmployeeMaster
             // 
@@ -531,45 +517,6 @@
             this.btnEmployeeMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEmployeeMaster.Textcolor = System.Drawing.Color.Black;
             this.btnEmployeeMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeeMaster.Click += new System.EventHandler(this.btnEmployeeMaster_Click);
-            // 
-            // btnCustomerMaster
-            // 
-            this.btnCustomerMaster.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnCustomerMaster.BackColor = System.Drawing.Color.White;
-            this.btnCustomerMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCustomerMaster.BorderRadius = 5;
-            this.btnCustomerMaster.ButtonText = "Customer Master";
-            this.btnCustomerMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCustomerMaster.DisabledColor = System.Drawing.Color.Gray;
-            this.btnCustomerMaster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomerMaster.ForeColor = System.Drawing.Color.White;
-            this.btnCustomerMaster.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnCustomerMaster.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCustomerMaster.Iconimage")));
-            this.btnCustomerMaster.Iconimage_right = null;
-            this.btnCustomerMaster.Iconimage_right_Selected = null;
-            this.btnCustomerMaster.Iconimage_Selected = null;
-            this.btnCustomerMaster.IconMarginLeft = 5;
-            this.btnCustomerMaster.IconMarginRight = 0;
-            this.btnCustomerMaster.IconRightVisible = true;
-            this.btnCustomerMaster.IconRightZoom = 0D;
-            this.btnCustomerMaster.IconVisible = true;
-            this.btnCustomerMaster.IconZoom = 50D;
-            this.btnCustomerMaster.IsTab = false;
-            this.btnCustomerMaster.Location = new System.Drawing.Point(9, 54);
-            this.btnCustomerMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCustomerMaster.Name = "btnCustomerMaster";
-            this.btnCustomerMaster.Normalcolor = System.Drawing.Color.White;
-            this.btnCustomerMaster.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnCustomerMaster.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnCustomerMaster.selected = false;
-            this.btnCustomerMaster.Size = new System.Drawing.Size(200, 35);
-            this.btnCustomerMaster.TabIndex = 9;
-            this.btnCustomerMaster.Text = "Customer Master";
-            this.btnCustomerMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCustomerMaster.Textcolor = System.Drawing.Color.Black;
-            this.btnCustomerMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomerMaster.Click += new System.EventHandler(this.btnCustomerMaster_Click);
             // 
             // btnGSTMaster
             // 
@@ -594,7 +541,7 @@
             this.btnGSTMaster.IconVisible = true;
             this.btnGSTMaster.IconZoom = 50D;
             this.btnGSTMaster.IsTab = false;
-            this.btnGSTMaster.Location = new System.Drawing.Point(5, 547);
+            this.btnGSTMaster.Location = new System.Drawing.Point(9, 54);
             this.btnGSTMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGSTMaster.Name = "btnGSTMaster";
             this.btnGSTMaster.Normalcolor = System.Drawing.Color.White;
@@ -602,52 +549,21 @@
             this.btnGSTMaster.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGSTMaster.selected = false;
             this.btnGSTMaster.Size = new System.Drawing.Size(200, 35);
-            this.btnGSTMaster.TabIndex = 14;
+            this.btnGSTMaster.TabIndex = 9;
             this.btnGSTMaster.Text = "GST Master";
             this.btnGSTMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnGSTMaster.Textcolor = System.Drawing.Color.Black;
             this.btnGSTMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGSTMaster.Click += new System.EventHandler(this.btnPaymentMode_Click);
             // 
-            // btnUOMMaster
+            // pnlPage
             // 
-            this.btnUOMMaster.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnUOMMaster.BackColor = System.Drawing.Color.White;
-            this.btnUOMMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUOMMaster.BorderRadius = 5;
-            this.btnUOMMaster.ButtonText = "Unit Master";
-            this.btnUOMMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUOMMaster.DisabledColor = System.Drawing.Color.Gray;
-            this.btnUOMMaster.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUOMMaster.ForeColor = System.Drawing.Color.White;
-            this.btnUOMMaster.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnUOMMaster.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUOMMaster.Iconimage")));
-            this.btnUOMMaster.Iconimage_right = null;
-            this.btnUOMMaster.Iconimage_right_Selected = null;
-            this.btnUOMMaster.Iconimage_Selected = null;
-            this.btnUOMMaster.IconMarginLeft = 5;
-            this.btnUOMMaster.IconMarginRight = 0;
-            this.btnUOMMaster.IconRightVisible = true;
-            this.btnUOMMaster.IconRightZoom = 0D;
-            this.btnUOMMaster.IconVisible = true;
-            this.btnUOMMaster.IconZoom = 50D;
-            this.btnUOMMaster.IsTab = false;
-            this.btnUOMMaster.Location = new System.Drawing.Point(5, 590);
-            this.btnUOMMaster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnUOMMaster.Name = "btnUOMMaster";
-            this.btnUOMMaster.Normalcolor = System.Drawing.Color.White;
-            this.btnUOMMaster.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
-            this.btnUOMMaster.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnUOMMaster.selected = false;
-            this.btnUOMMaster.Size = new System.Drawing.Size(200, 35);
-            this.btnUOMMaster.TabIndex = 14;
-            this.btnUOMMaster.Text = "Unit Master";
-            this.btnUOMMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUOMMaster.Textcolor = System.Drawing.Color.Black;
-            this.btnUOMMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUOMMaster.Click += new System.EventHandler(this.btnPaymentMode_Click);
+            this.pnlPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlPage.Location = new System.Drawing.Point(221, 47);
+            this.pnlPage.Name = "pnlPage";
+            this.pnlPage.Size = new System.Drawing.Size(863, 642);
+            this.pnlPage.TabIndex = 7;
             // 
-            // MasterDashboard
+            // SettingsDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -657,39 +573,39 @@
             this.Controls.Add(this.pnlPageHeading);
             this.Controls.Add(this.pnlSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MasterDashboard";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "SettingsDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MasterDashboard";
-            this.pnlSidebar.ResumeLayout(false);
-            this.pnlSidebar.PerformLayout();
+            this.Text = "SettingsDashboard";
             this.pnlPageHeading.ResumeLayout(false);
             this.pnlPageHeading.PerformLayout();
+            this.pnlSidebar.ResumeLayout(false);
+            this.pnlSidebar.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel pnlSidebar;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.Panel pnlPage;
+
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel pnlPageHeading;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuCustomLabel lblMasterName;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCustomerMaster;
-        private Bunifu.Framework.UI.BunifuFlatButton btnProductMaster;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSupplierMaster;
-        private Bunifu.Framework.UI.BunifuFlatButton btnEmployeeMaster;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMenuSubCategoryMaster;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMenuCategoryMaster;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
+        private System.Windows.Forms.Panel pnlSidebar;
+        private Bunifu.Framework.UI.BunifuFlatButton btnPaymentMode;
         private Bunifu.Framework.UI.BunifuFlatButton btnLabourExpensesubCategory;
         private Bunifu.Framework.UI.BunifuFlatButton btnLabourExpenseCategory;
         private Bunifu.Framework.UI.BunifuFlatButton btnHotelExpenseSubCategory;
         private Bunifu.Framework.UI.BunifuFlatButton btnHotelExpenseCategoryMaster;
-        private Bunifu.Framework.UI.BunifuFlatButton btnPaymentMode;
-        private Bunifu.Framework.UI.BunifuFlatButton btnUOMMaster;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuSubCategoryMaster;
+        private Bunifu.Framework.UI.BunifuFlatButton btnMenuCategoryMaster;
+        private Bunifu.Framework.UI.BunifuFlatButton btnProductMaster;
+        private Bunifu.Framework.UI.BunifuFlatButton btnSupplierMaster;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEmployeeMaster;
         private Bunifu.Framework.UI.BunifuFlatButton btnGSTMaster;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblTitle;
+        private System.Windows.Forms.Panel pnlPage;
     }
 }
