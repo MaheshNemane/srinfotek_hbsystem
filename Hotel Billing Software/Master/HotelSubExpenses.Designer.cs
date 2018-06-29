@@ -289,7 +289,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HotelSubExpenses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SubExpenses";
+            this.Text = "Hotel Expenses";
             this.txtsubReg.ResumeLayout(false);
             this.txtsubReg.PerformLayout();
             this.panel2.ResumeLayout(false);

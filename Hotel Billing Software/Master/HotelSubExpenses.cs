@@ -51,7 +51,10 @@ namespace Hotel_Billing_Software.Master
                 string msgText = hotelSubExpense.insertHotelSubExpenseCategory(hotelSubExpense);
                 MessageBox.Show(msgText, "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception ex) { }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
