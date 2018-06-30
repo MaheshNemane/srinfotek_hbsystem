@@ -48,5 +48,10 @@ namespace Hotel_Billing_Software.GridPages.Master_Grids
                 Common.showDenger(ex.Message);
             }
         }
+
+        private void btnEditLabourExpenses_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
