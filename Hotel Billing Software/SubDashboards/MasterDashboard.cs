@@ -67,7 +67,7 @@ namespace Hotel_Billing_Software.SubDashboards
         private void btnProductMaster_Click(object sender, EventArgs e)
         {
             refreshPage();
-            GridPages.ProductMaster objForm = new GridPages.ProductMaster();
+            GridPages.Master_Grids.ProductMaster objForm = new GridPages.Master_Grids.ProductMaster();
             Common.showPage(objForm);
             this.pnlPage.Controls.Add(objForm);
             this.lblMasterName.Text = objForm.Text;
