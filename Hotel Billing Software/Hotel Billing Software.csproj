@@ -244,6 +244,12 @@
     <Compile Include="Master\MenuSubCategory.Designer.cs">
       <DependentUpon>MenuSubCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Master\ProductMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ProductMaster.Designer.cs">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Master\ProductRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -485,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\MenuSubCategory.resx">
       <DependentUpon>MenuSubCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ProductMaster.resx">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\ProductRegistration.resx">
       <DependentUpon>ProductRegistration.cs</DependentUpon>
