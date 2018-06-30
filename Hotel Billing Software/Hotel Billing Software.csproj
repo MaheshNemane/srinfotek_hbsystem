@@ -166,9 +166,6 @@
     <Compile Include="GridPages\Master Grids\PaymentModeMaster.Designer.cs">
       <DependentUpon>PaymentModeMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="GridPages\Master Grids\ProductMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GridPages\Master Grids\UOMMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -449,9 +446,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GridPages\Master Grids\PaymentModeMaster.resx">
       <DependentUpon>PaymentModeMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GridPages\Master Grids\ProductMaster.resx">
-      <DependentUpon>ProductMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GridPages\Master Grids\UOMMaster.resx">
       <DependentUpon>UOMMaster.cs</DependentUpon>
