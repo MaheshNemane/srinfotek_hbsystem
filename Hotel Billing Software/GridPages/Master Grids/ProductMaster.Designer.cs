@@ -128,7 +128,7 @@
             this.btnRemoveProduct.IdleFillColor = System.Drawing.Color.White;
             this.btnRemoveProduct.IdleForecolor = System.Drawing.Color.DarkRed;
             this.btnRemoveProduct.IdleLineColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveProduct.Location = new System.Drawing.Point(686, 12);
+            this.btnRemoveProduct.Location = new System.Drawing.Point(687, 5);
             this.btnRemoveProduct.Margin = new System.Windows.Forms.Padding(5);
             this.btnRemoveProduct.Name = "btnRemoveProduct";
             this.btnRemoveProduct.Size = new System.Drawing.Size(155, 35);
@@ -154,7 +154,7 @@
             this.btnEditProduct.IdleFillColor = System.Drawing.Color.White;
             this.btnEditProduct.IdleForecolor = System.Drawing.Color.RoyalBlue;
             this.btnEditProduct.IdleLineColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditProduct.Location = new System.Drawing.Point(526, 12);
+            this.btnEditProduct.Location = new System.Drawing.Point(522, 5);
             this.btnEditProduct.Margin = new System.Windows.Forms.Padding(5);
             this.btnEditProduct.Name = "btnEditProduct";
             this.btnEditProduct.Size = new System.Drawing.Size(155, 35);
@@ -180,7 +180,7 @@
             this.btnNewProduct.IdleFillColor = System.Drawing.Color.White;
             this.btnNewProduct.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewProduct.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewProduct.Location = new System.Drawing.Point(366, 12);
+            this.btnNewProduct.Location = new System.Drawing.Point(357, 5);
             this.btnNewProduct.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewProduct.Name = "btnNewProduct";
             this.btnNewProduct.Size = new System.Drawing.Size(155, 35);
