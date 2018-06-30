@@ -38,6 +38,8 @@
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewPaymentMode = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditPaymentMode = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemovePaymentMode = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridPaymentModeMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +101,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemovePaymentMode);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditPaymentMode);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnNewPaymentMode);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -138,13 +142,63 @@
             this.btnNewPaymentMode.IdleFillColor = System.Drawing.Color.White;
             this.btnNewPaymentMode.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewPaymentMode.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewPaymentMode.Location = new System.Drawing.Point(610, 15);
+            this.btnNewPaymentMode.Location = new System.Drawing.Point(200, 2);
             this.btnNewPaymentMode.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewPaymentMode.Name = "btnNewPaymentMode";
-            this.btnNewPaymentMode.Size = new System.Drawing.Size(170, 35);
+            this.btnNewPaymentMode.Size = new System.Drawing.Size(181, 35);
             this.btnNewPaymentMode.TabIndex = 0;
             this.btnNewPaymentMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewPaymentMode.Click += new System.EventHandler(this.btnNewPaymentMode_Click);
+            // 
+            // btnEditPaymentMode
+            // 
+            this.btnEditPaymentMode.ActiveBorderThickness = 1;
+            this.btnEditPaymentMode.ActiveCornerRadius = 20;
+            this.btnEditPaymentMode.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditPaymentMode.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditPaymentMode.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditPaymentMode.BackColor = System.Drawing.Color.White;
+            this.btnEditPaymentMode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditPaymentMode.BackgroundImage")));
+            this.btnEditPaymentMode.ButtonText = "Edit Payment Mode";
+            this.btnEditPaymentMode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditPaymentMode.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditPaymentMode.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditPaymentMode.IdleBorderThickness = 1;
+            this.btnEditPaymentMode.IdleCornerRadius = 20;
+            this.btnEditPaymentMode.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditPaymentMode.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditPaymentMode.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditPaymentMode.Location = new System.Drawing.Point(391, 2);
+            this.btnEditPaymentMode.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditPaymentMode.Name = "btnEditPaymentMode";
+            this.btnEditPaymentMode.Size = new System.Drawing.Size(201, 35);
+            this.btnEditPaymentMode.TabIndex = 4;
+            this.btnEditPaymentMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRemovePaymentMode
+            // 
+            this.btnRemovePaymentMode.ActiveBorderThickness = 1;
+            this.btnRemovePaymentMode.ActiveCornerRadius = 20;
+            this.btnRemovePaymentMode.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemovePaymentMode.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemovePaymentMode.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemovePaymentMode.BackColor = System.Drawing.Color.White;
+            this.btnRemovePaymentMode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemovePaymentMode.BackgroundImage")));
+            this.btnRemovePaymentMode.ButtonText = "Remove Payment Mode";
+            this.btnRemovePaymentMode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemovePaymentMode.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemovePaymentMode.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemovePaymentMode.IdleBorderThickness = 1;
+            this.btnRemovePaymentMode.IdleCornerRadius = 20;
+            this.btnRemovePaymentMode.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemovePaymentMode.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemovePaymentMode.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemovePaymentMode.Location = new System.Drawing.Point(602, 2);
+            this.btnRemovePaymentMode.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemovePaymentMode.Name = "btnRemovePaymentMode";
+            this.btnRemovePaymentMode.Size = new System.Drawing.Size(224, 35);
+            this.btnRemovePaymentMode.TabIndex = 5;
+            this.btnRemovePaymentMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PaymentModeMaster
             // 
@@ -172,5 +226,7 @@
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewPaymentMode;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditPaymentMode;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemovePaymentMode;
     }
 }
