@@ -99,6 +99,7 @@
             this.gridGSTMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridGSTMaster.Size = new System.Drawing.Size(847, 549);
             this.gridGSTMaster.TabIndex = 7;
+         
             // 
             // pnlHeadingButtons
             // 
@@ -199,6 +200,7 @@
             this.Controls.Add(this.pnlHeadingButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GSTMaster";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "GSTMaster";
             ((System.ComponentModel.ISupportInitialize)(this.gridGSTMaster)).EndInit();
