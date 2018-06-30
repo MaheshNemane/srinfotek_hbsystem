@@ -142,6 +142,12 @@
     <Compile Include="GridPages\Master Grids\HotelExpenseCategoryMaster.Designer.cs">
       <DependentUpon>HotelExpenseCategoryMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.Designer.cs">
+      <DependentUpon>HotelSubExpenseCategoryMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="GridPages\Master Grids\LabourExpenseCategoryMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,24 @@
     <Compile Include="GridPages\Master Grids\PaymentModeMaster.Designer.cs">
       <DependentUpon>PaymentModeMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="GridPages\Master Grids\ProductMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\ProductMaster.Designer.cs">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SubMenuCategoryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SubMenuCategoryMaster.Designer.cs">
+      <DependentUpon>SubMenuCategoryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SupplierMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\SupplierMaster.Designer.cs">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="GridPages\Master Grids\UOMMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,24 +213,6 @@
     </Compile>
     <Compile Include="GridPages\Transactions\PurchaseBillingMaster.Designer.cs">
       <DependentUpon>PurchaseBillingMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GridPages\Master Grids\SubMenuCategoryMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GridPages\Master Grids\SubMenuCategoryMaster.Designer.cs">
-      <DependentUpon>SubMenuCategoryMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GridPages\Master Grids\SupplierMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GridPages\Master Grids\SupplierMaster.Designer.cs">
-      <DependentUpon>SupplierMaster.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.Designer.cs">
-      <DependentUpon>HotelSubExpenseCategoryMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Master\CustomerRegistation.cs">
       <SubType>Form</SubType>
@@ -243,12 +249,6 @@
     </Compile>
     <Compile Include="Master\MenuSubCategory.Designer.cs">
       <DependentUpon>MenuSubCategory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Master\ProductMaster.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Master\ProductMaster.Designer.cs">
-      <DependentUpon>ProductMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Master\ProductRegistration.cs">
       <SubType>Form</SubType>
@@ -441,6 +441,9 @@
     <EmbeddedResource Include="GridPages\Master Grids\HotelExpenseCategoryMaster.resx">
       <DependentUpon>HotelExpenseCategoryMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.resx">
+      <DependentUpon>HotelSubExpenseCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GridPages\Master Grids\LabourExpenseCategoryMaster.resx">
       <DependentUpon>LabourExpenseCategoryMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -453,6 +456,15 @@
     <EmbeddedResource Include="GridPages\Master Grids\PaymentModeMaster.resx">
       <DependentUpon>PaymentModeMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\ProductMaster.resx">
+      <DependentUpon>ProductMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\SubMenuCategoryMaster.resx">
+      <DependentUpon>SubMenuCategoryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\SupplierMaster.resx">
+      <DependentUpon>SupplierMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GridPages\Master Grids\UOMMaster.resx">
       <DependentUpon>UOMMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -464,15 +476,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GridPages\Transactions\PurchaseBillingMaster.resx">
       <DependentUpon>PurchaseBillingMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GridPages\Master Grids\SubMenuCategoryMaster.resx">
-      <DependentUpon>SubMenuCategoryMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GridPages\Master Grids\SupplierMaster.resx">
-      <DependentUpon>SupplierMaster.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GridPages\Master Grids\HotelSubExpenseCategoryMaster.resx">
-      <DependentUpon>HotelSubExpenseCategoryMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\CustomerRegistation.resx">
       <DependentUpon>CustomerRegistation.cs</DependentUpon>
@@ -491,9 +494,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\MenuSubCategory.resx">
       <DependentUpon>MenuSubCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Master\ProductMaster.resx">
-      <DependentUpon>ProductMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\ProductRegistration.resx">
       <DependentUpon>ProductRegistration.cs</DependentUpon>
