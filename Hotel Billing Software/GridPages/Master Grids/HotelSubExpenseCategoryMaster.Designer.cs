@@ -38,6 +38,8 @@
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewHotelSubExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditHotelNewExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemoveNewHotelSubExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridHotelSubExpenseCategoryMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +100,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveNewHotelSubExpenseCategory);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditHotelNewExpenseCategory);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnNewHotelSubExpenseCategory);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -128,7 +132,7 @@
             this.btnNewHotelSubExpenseCategory.ActiveLineColor = System.Drawing.Color.MediumPurple;
             this.btnNewHotelSubExpenseCategory.BackColor = System.Drawing.Color.White;
             this.btnNewHotelSubExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewHotelSubExpenseCategory.BackgroundImage")));
-            this.btnNewHotelSubExpenseCategory.ButtonText = "New Hotel Sub-Expense Category";
+            this.btnNewHotelSubExpenseCategory.ButtonText = "New Hotel Sub-Expense";
             this.btnNewHotelSubExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewHotelSubExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewHotelSubExpenseCategory.ForeColor = System.Drawing.Color.MediumPurple;
@@ -137,13 +141,63 @@
             this.btnNewHotelSubExpenseCategory.IdleFillColor = System.Drawing.Color.White;
             this.btnNewHotelSubExpenseCategory.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewHotelSubExpenseCategory.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelSubExpenseCategory.Location = new System.Drawing.Point(548, 15);
+            this.btnNewHotelSubExpenseCategory.Location = new System.Drawing.Point(144, 5);
             this.btnNewHotelSubExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewHotelSubExpenseCategory.Name = "btnNewHotelSubExpenseCategory";
-            this.btnNewHotelSubExpenseCategory.Size = new System.Drawing.Size(285, 35);
+            this.btnNewHotelSubExpenseCategory.Size = new System.Drawing.Size(223, 35);
             this.btnNewHotelSubExpenseCategory.TabIndex = 0;
             this.btnNewHotelSubExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewHotelSubExpenseCategory.Click += new System.EventHandler(this.btnNewHotelSubExpenseCategory_Click);
+            // 
+            // btnEditHotelNewExpenseCategory
+            // 
+            this.btnEditHotelNewExpenseCategory.ActiveBorderThickness = 1;
+            this.btnEditHotelNewExpenseCategory.ActiveCornerRadius = 20;
+            this.btnEditHotelNewExpenseCategory.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelNewExpenseCategory.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditHotelNewExpenseCategory.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelNewExpenseCategory.BackColor = System.Drawing.Color.White;
+            this.btnEditHotelNewExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditHotelNewExpenseCategory.BackgroundImage")));
+            this.btnEditHotelNewExpenseCategory.ButtonText = "Edit Hotel Sub-Expense";
+            this.btnEditHotelNewExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditHotelNewExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditHotelNewExpenseCategory.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelNewExpenseCategory.IdleBorderThickness = 1;
+            this.btnEditHotelNewExpenseCategory.IdleCornerRadius = 20;
+            this.btnEditHotelNewExpenseCategory.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditHotelNewExpenseCategory.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelNewExpenseCategory.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelNewExpenseCategory.Location = new System.Drawing.Point(377, 5);
+            this.btnEditHotelNewExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditHotelNewExpenseCategory.Name = "btnEditHotelNewExpenseCategory";
+            this.btnEditHotelNewExpenseCategory.Size = new System.Drawing.Size(223, 35);
+            this.btnEditHotelNewExpenseCategory.TabIndex = 4;
+            this.btnEditHotelNewExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRemoveNewHotelSubExpenseCategory
+            // 
+            this.btnRemoveNewHotelSubExpenseCategory.ActiveBorderThickness = 1;
+            this.btnRemoveNewHotelSubExpenseCategory.ActiveCornerRadius = 20;
+            this.btnRemoveNewHotelSubExpenseCategory.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveNewHotelSubExpenseCategory.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveNewHotelSubExpenseCategory.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveNewHotelSubExpenseCategory.BackColor = System.Drawing.Color.White;
+            this.btnRemoveNewHotelSubExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveNewHotelSubExpenseCategory.BackgroundImage")));
+            this.btnRemoveNewHotelSubExpenseCategory.ButtonText = "Remove Hotel expense";
+            this.btnRemoveNewHotelSubExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveNewHotelSubExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveNewHotelSubExpenseCategory.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveNewHotelSubExpenseCategory.IdleBorderThickness = 1;
+            this.btnRemoveNewHotelSubExpenseCategory.IdleCornerRadius = 20;
+            this.btnRemoveNewHotelSubExpenseCategory.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveNewHotelSubExpenseCategory.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveNewHotelSubExpenseCategory.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveNewHotelSubExpenseCategory.Location = new System.Drawing.Point(610, 5);
+            this.btnRemoveNewHotelSubExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveNewHotelSubExpenseCategory.Name = "btnRemoveNewHotelSubExpenseCategory";
+            this.btnRemoveNewHotelSubExpenseCategory.Size = new System.Drawing.Size(223, 35);
+            this.btnRemoveNewHotelSubExpenseCategory.TabIndex = 5;
+            this.btnRemoveNewHotelSubExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HotelSubExpenseCategoryMaster
             // 
@@ -172,5 +226,7 @@
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewHotelSubExpenseCategory;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditHotelNewExpenseCategory;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveNewHotelSubExpenseCategory;
     }
 }
