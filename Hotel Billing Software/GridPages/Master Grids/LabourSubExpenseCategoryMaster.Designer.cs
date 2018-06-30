@@ -37,7 +37,9 @@
             this.gridLabourSubExpenseCategoryMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnNewLabourSubExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnNewLabourSubExpense = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditLabourSubExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemoveLabourSubExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridLabourSubExpenseCategoryMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -99,8 +101,10 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveLabourSubExpenses);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditLabourSubExpenses);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
-            this.pnlHeadingButtons.Controls.Add(this.btnNewLabourSubExpenseCategory);
+            this.pnlHeadingButtons.Controls.Add(this.btnNewLabourSubExpense);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeadingButtons.Location = new System.Drawing.Point(0, 0);
             this.pnlHeadingButtons.Name = "pnlHeadingButtons";
@@ -120,31 +124,81 @@
             this.bunifuSeparator1.Transparency = 100;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // btnNewLabourSubExpenseCategory
+            // btnNewLabourSubExpense
             // 
-            this.btnNewLabourSubExpenseCategory.ActiveBorderThickness = 1;
-            this.btnNewLabourSubExpenseCategory.ActiveCornerRadius = 20;
-            this.btnNewLabourSubExpenseCategory.ActiveFillColor = System.Drawing.Color.White;
-            this.btnNewLabourSubExpenseCategory.ActiveForecolor = System.Drawing.Color.MediumPurple;
-            this.btnNewLabourSubExpenseCategory.ActiveLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewLabourSubExpenseCategory.BackColor = System.Drawing.Color.White;
-            this.btnNewLabourSubExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewLabourSubExpenseCategory.BackgroundImage")));
-            this.btnNewLabourSubExpenseCategory.ButtonText = "New Labour Sub Expense Category";
-            this.btnNewLabourSubExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNewLabourSubExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewLabourSubExpenseCategory.ForeColor = System.Drawing.Color.MediumPurple;
-            this.btnNewLabourSubExpenseCategory.IdleBorderThickness = 1;
-            this.btnNewLabourSubExpenseCategory.IdleCornerRadius = 20;
-            this.btnNewLabourSubExpenseCategory.IdleFillColor = System.Drawing.Color.White;
-            this.btnNewLabourSubExpenseCategory.IdleForecolor = System.Drawing.Color.MediumPurple;
-            this.btnNewLabourSubExpenseCategory.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewLabourSubExpenseCategory.Location = new System.Drawing.Point(548, 15);
-            this.btnNewLabourSubExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
-            this.btnNewLabourSubExpenseCategory.Name = "btnNewLabourSubExpenseCategory";
-            this.btnNewLabourSubExpenseCategory.Size = new System.Drawing.Size(285, 35);
-            this.btnNewLabourSubExpenseCategory.TabIndex = 0;
-            this.btnNewLabourSubExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNewLabourSubExpenseCategory.Click += new System.EventHandler(this.btnNewLabourSubExpenseCategory_Click);
+            this.btnNewLabourSubExpense.ActiveBorderThickness = 1;
+            this.btnNewLabourSubExpense.ActiveCornerRadius = 20;
+            this.btnNewLabourSubExpense.ActiveFillColor = System.Drawing.Color.White;
+            this.btnNewLabourSubExpense.ActiveForecolor = System.Drawing.Color.MediumPurple;
+            this.btnNewLabourSubExpense.ActiveLineColor = System.Drawing.Color.MediumPurple;
+            this.btnNewLabourSubExpense.BackColor = System.Drawing.Color.White;
+            this.btnNewLabourSubExpense.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewLabourSubExpense.BackgroundImage")));
+            this.btnNewLabourSubExpense.ButtonText = "New Labour Sub Expense ";
+            this.btnNewLabourSubExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewLabourSubExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewLabourSubExpense.ForeColor = System.Drawing.Color.MediumPurple;
+            this.btnNewLabourSubExpense.IdleBorderThickness = 1;
+            this.btnNewLabourSubExpense.IdleCornerRadius = 20;
+            this.btnNewLabourSubExpense.IdleFillColor = System.Drawing.Color.White;
+            this.btnNewLabourSubExpense.IdleForecolor = System.Drawing.Color.MediumPurple;
+            this.btnNewLabourSubExpense.IdleLineColor = System.Drawing.Color.MediumPurple;
+            this.btnNewLabourSubExpense.Location = new System.Drawing.Point(111, 5);
+            this.btnNewLabourSubExpense.Margin = new System.Windows.Forms.Padding(5);
+            this.btnNewLabourSubExpense.Name = "btnNewLabourSubExpense";
+            this.btnNewLabourSubExpense.Size = new System.Drawing.Size(229, 35);
+            this.btnNewLabourSubExpense.TabIndex = 0;
+            this.btnNewLabourSubExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewLabourSubExpense.Click += new System.EventHandler(this.btnNewLabourSubExpenseCategory_Click);
+            // 
+            // btnEditLabourSubExpenses
+            // 
+            this.btnEditLabourSubExpenses.ActiveBorderThickness = 1;
+            this.btnEditLabourSubExpenses.ActiveCornerRadius = 20;
+            this.btnEditLabourSubExpenses.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourSubExpenses.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditLabourSubExpenses.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourSubExpenses.BackColor = System.Drawing.Color.White;
+            this.btnEditLabourSubExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditLabourSubExpenses.BackgroundImage")));
+            this.btnEditLabourSubExpenses.ButtonText = "Edit Labour Sub Expenses";
+            this.btnEditLabourSubExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditLabourSubExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditLabourSubExpenses.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourSubExpenses.IdleBorderThickness = 1;
+            this.btnEditLabourSubExpenses.IdleCornerRadius = 20;
+            this.btnEditLabourSubExpenses.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditLabourSubExpenses.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourSubExpenses.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourSubExpenses.Location = new System.Drawing.Point(350, 5);
+            this.btnEditLabourSubExpenses.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditLabourSubExpenses.Name = "btnEditLabourSubExpenses";
+            this.btnEditLabourSubExpenses.Size = new System.Drawing.Size(229, 35);
+            this.btnEditLabourSubExpenses.TabIndex = 4;
+            this.btnEditLabourSubExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRemoveLabourSubExpenses
+            // 
+            this.btnRemoveLabourSubExpenses.ActiveBorderThickness = 1;
+            this.btnRemoveLabourSubExpenses.ActiveCornerRadius = 20;
+            this.btnRemoveLabourSubExpenses.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourSubExpenses.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveLabourSubExpenses.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourSubExpenses.BackColor = System.Drawing.Color.White;
+            this.btnRemoveLabourSubExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveLabourSubExpenses.BackgroundImage")));
+            this.btnRemoveLabourSubExpenses.ButtonText = "Remove Labour Sub Expenses";
+            this.btnRemoveLabourSubExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveLabourSubExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveLabourSubExpenses.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourSubExpenses.IdleBorderThickness = 1;
+            this.btnRemoveLabourSubExpenses.IdleCornerRadius = 20;
+            this.btnRemoveLabourSubExpenses.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveLabourSubExpenses.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourSubExpenses.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourSubExpenses.Location = new System.Drawing.Point(589, 5);
+            this.btnRemoveLabourSubExpenses.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveLabourSubExpenses.Name = "btnRemoveLabourSubExpenses";
+            this.btnRemoveLabourSubExpenses.Size = new System.Drawing.Size(253, 35);
+            this.btnRemoveLabourSubExpenses.TabIndex = 5;
+            this.btnRemoveLabourSubExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabourSubExpenseCategoryMaster
             // 
@@ -170,7 +224,9 @@
         private Bunifu.Framework.UI.BunifuElipse elipsLabourCategoryMaster;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridLabourSubExpenseCategoryMaster;
         private System.Windows.Forms.Panel pnlHeadingButtons;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnNewLabourSubExpenseCategory;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnNewLabourSubExpense;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditLabourSubExpenses;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveLabourSubExpenses;
     }
 }
