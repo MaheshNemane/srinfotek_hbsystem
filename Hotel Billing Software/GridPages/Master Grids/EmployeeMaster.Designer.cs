@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeMaster));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeMaster));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewEmployee = new Bunifu.Framework.UI.BunifuThinButton2();
             this.gridEmployeeMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnRemoveCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlHeadingButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridEmployeeMaster)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +51,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveCustomer);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditCustomer);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnNewEmployee);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,7 +92,7 @@
             this.btnNewEmployee.IdleFillColor = System.Drawing.Color.White;
             this.btnNewEmployee.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewEmployee.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewEmployee.Location = new System.Drawing.Point(610, 15);
+            this.btnNewEmployee.Location = new System.Drawing.Point(347, 12);
             this.btnNewEmployee.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewEmployee.Name = "btnNewEmployee";
             this.btnNewEmployee.Size = new System.Drawing.Size(155, 35);
@@ -147,6 +151,56 @@
             this.gridEmployeeMaster.Size = new System.Drawing.Size(847, 549);
             this.gridEmployeeMaster.TabIndex = 4;
             // 
+            // btnRemoveCustomer
+            // 
+            this.btnRemoveCustomer.ActiveBorderThickness = 1;
+            this.btnRemoveCustomer.ActiveCornerRadius = 20;
+            this.btnRemoveCustomer.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveCustomer.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveCustomer.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveCustomer.BackColor = System.Drawing.Color.White;
+            this.btnRemoveCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveCustomer.BackgroundImage")));
+            this.btnRemoveCustomer.ButtonText = "Remove Customer";
+            this.btnRemoveCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveCustomer.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveCustomer.IdleBorderThickness = 1;
+            this.btnRemoveCustomer.IdleCornerRadius = 20;
+            this.btnRemoveCustomer.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveCustomer.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveCustomer.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveCustomer.Location = new System.Drawing.Point(677, 12);
+            this.btnRemoveCustomer.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveCustomer.Name = "btnRemoveCustomer";
+            this.btnRemoveCustomer.Size = new System.Drawing.Size(155, 35);
+            this.btnRemoveCustomer.TabIndex = 3;
+            this.btnRemoveCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEditCustomer
+            // 
+            this.btnEditCustomer.ActiveBorderThickness = 1;
+            this.btnEditCustomer.ActiveCornerRadius = 20;
+            this.btnEditCustomer.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditCustomer.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditCustomer.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditCustomer.BackColor = System.Drawing.Color.White;
+            this.btnEditCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditCustomer.BackgroundImage")));
+            this.btnEditCustomer.ButtonText = "Edit Customer";
+            this.btnEditCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditCustomer.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditCustomer.IdleBorderThickness = 1;
+            this.btnEditCustomer.IdleCornerRadius = 20;
+            this.btnEditCustomer.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditCustomer.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditCustomer.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditCustomer.Location = new System.Drawing.Point(512, 12);
+            this.btnEditCustomer.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditCustomer.Name = "btnEditCustomer";
+            this.btnEditCustomer.Size = new System.Drawing.Size(155, 35);
+            this.btnEditCustomer.TabIndex = 4;
+            this.btnEditCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // EmployeeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,5 +228,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewEmployee;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridEmployeeMaster;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveCustomer;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditCustomer;
     }
 }
