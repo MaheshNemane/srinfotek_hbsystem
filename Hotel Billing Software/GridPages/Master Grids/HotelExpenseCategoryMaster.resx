@@ -121,49 +121,49 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnRemoveHotelExpenseCategory.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRemoveHotelExpense.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAR0AAAAjCAYAAACpbd4SAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIiSURBVHhe7d2rS2xBAIDxjUaj0Wg0Go1Go9E/w2Y0GASD
-        QRC54bI3CAqGjYIg2gyGBYOCIGIQb7iwgmEu37hz9LC7Bx9nJn0/GFh8xY95nWMnSFJBRkdSUUZHUlFG
-        R1JRRkdSUUZHUlGN0XkdDEK/2w3HKyvhz+Ji2J2dDZudjsPhcNQGbaARR8vL4Wp/P7w8Pw8rMmpidG56
-        vfiHCA7huTs5CX9vb4fflaR3tIFGXB8eht7qamwH8RlnJDoUil86WFoK/x4ehl+VpM9r6kgtOvzgr/n5
-        iYWSpK9gxfR7YaG2SqpFhzIZHEltYtnFfk9SRYciMRWSpLadrq2Fi42N+DlGh1MqNn7cw5GUA41h6+ap
-        33+LDksqllaSlAszHWY8MTqcrXPUJUm5PF5extlOjM7e3Fyc9khSLiyxtqam3qKzPT3deINQktrA7eUY
-        HT5IUm5GR1JRVXRYZ7HekqScquhwR8eHOSXlVkWHm8jcSJakXDgh56Q8Ridd2pGkXNIl5BgdllYUyH0d
-        SbmkS8gxOjhbX49DktqW3kCKKjrMcnj8/P78fPgVSfo5HiRnJZUuIFfRARs96UlQSfopgsNkhnfqJLXo
-        gJkO4UnvvpCk72D/hhnOx+BgJDpgqcVpFoVix9n37Ej6DJZQaf+GjeNxz3SOjU5CoTji2pmZiZd6HA6H
-        o2nw8Hj6DzKTNEZHktpmdCQVZXQkFWV0JBVldCQVFMJ/CrqqGs4bS4IAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAO4AAAAjCAYAAACTmDZIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVHhe7dytS4NBAIDxRaNx0Wg0Go2LRuP+jDWjwSAY
+        DIKIQWYQFAyLA0G0GQwDg4IgYhANgoLh5LntXhz7SDrv4PnBgcyP9nB373tnLUgqjuFKBTJcqUCGKxXI
+        cKUCGa5UoKnhfn18hF67Hc7W1sLRykrYXVgIm7Waw+H4g0FfdHa6uhpu9vfD5+vroMRRE8O963TiHyJa
+        4n3odsPb/f3gu5J+G33R2e3JSeg0m7E/Ah5nJFwq55eOG43w/vQ0+FTSrE1rcShcfvBgaWli5ZJmj9Xv
+        4fLy0Ip3KFzqNlopPyyh2f8mVbhUzZQsKU/nrVa42tiIX8dweXrMRtg9rZQvOmUr+9Lr9cNlecwyWVLe
+        mHGZeWO4vDfiEbSkvD1fX8dZN4a7t7gYp19JeWO5vDU31w93e35+6ikNSfnglFUMly8klcFwpQJV4bJm
+        Zu0sKX9VuLzD9QKBVIYqXE5McXJKUt54+8NboBhueqkrKW/psFQMl2UyFbvPlfKWDkvFcHGxvh6HpDyl
+        /0aDKlxmW64NPV5eDj6RlAsuALEqTgelqnDBxjfdPpCUB6JlUuVObjIULphxiTfd+5P0f9jPMtP+jBYj
+        4YJlM0+ZqZynWN7TlWaH5XDaz/Iwatw9grHhJlTOo+edej2+9HU4HH8/uPST/rvqJFPDlZQnw5UKZLhS
+        gQxXKpDhSsUJ4RuFd/QzIXwJHQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnEditHotelExpenseCategory.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEditHotelExpense.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPoAAAAjCAYAAAC93RfaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIcSURBVHhe7dy7SxxBAIDx/GtWqaysUqVKIYJgGptYhGCh
-        jYWNIEIIpE8RSBqrQCCkSBoLEYTzNKdG4YKJyfnIyDfeLDnu0WZ35vvBgJyP7tuZ2d3xQZCUPUOXCmDo
-        UgEMXSqAoUsFMHSpABND7139Dduff4YXW2dhYe0kPHp2FKZmWw6HowaDHulyaeN7ePfxIlxc3vbLHTY2
-        9E87l/EPETmxf9n9HTpn1/3vSvrf6JEuP3z9FVZencdeCX6UodC5KvBLi+un4fzHTf9TSXU3qd2B0PnB
-        J8udsVcFSfXHanxu9XhgBT4QOlcDI5eajyU9+/ekCp2rAFO+pDxsvumG1++78esYOnfX2ci7J5fyQdds
-        xVudq/vQWa6zbJeUF2Z0ZvYYOs/huEUvKS977V6c1WPoj59/i9O7pLywfH84f3Af+vTT9sS3aiQ1F2/R
-        xdD5QlKeDF0qQBU6a3jW8pLyU4XOM3QPrEh5qkLnjTjejJOUF56m8VQthp4eqkvKS3oZLobOsp3q3adL
-        eUkvw8XQ8fJtNw5JeUj/HQpV6MzmHGvb2f/T/0RSU3FAjVV6ehGuCh1s3NNpF0nNRORM2pxJTwZCBzM6
-        sadzrJKag/04M/m/kWModLCM5y48VwXu2nlOXaovludpP87Nt1HnVkaGnnBV4Nb8zOJhfOjucDjqNziU
-        lv5b8zgTQ5eUB0OXCmDoUgEMXSqAoUvZC+EOzEBJ3KiqUJAAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAO4AAAAjCAYAAACTmDZIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIWSURBVHhe7dy9S5wxAIDx/mtOnTo5OTl1KAWhXW7RoYhD
+        XTq4CKVQBHcHQRcnQRCHdnEQoWDVXqt3cHJqq7WNPPHy4nEfk54JPD8IyPmxPSR538RnQVJxDFcqkOFK
+        BTJcqUCGKxXIcKUCDQ336vp/2Ng5D7OfGuHNh19hYvo4jL06cDgcjzDoi85mFk/D2lY7tC//dUrsNTDc
+        7d3L+IeIlni/7P0O9cbfznclPTT6orPNrxfh/VIz9kfA/fSES+X8Um3hJDTPbjqfShq1YS12hcsPvpyr
+        D6xc0uix+n09/7NrxdsVLnUbrZQfltDsf5MqXKpmSpaUp48rrbC83opfx3B5esxG2D2tlC86ZSt7UL++
+        C5flMctkSXljxmXmjeHy3ohH0JLytn94FWfdGO7kux9x+pWUN5bLz6e+34X74u3h0FMakvLBKasYLl9I
+        KoPhSgWqwmXNzNpZUv6qcHmH6wUCqQxVuJyY4uSUpLzx9oe3QDHc9FJXUt7SYakYLstkKnafK+UtHZaK
+        4eLzaisOSXlK/40GVbjMtlwb2v32p/OJpFxwAYhVcTooVYULNr7p9oGkPBAtkyp3cpOucMGMS7zp3p+k
+        p8N+lpn2frToCRcsm3nKTOU8xfKerjQ6LIfTfpaHUf3uEfQNN6FyHj2P147iS1+Hw/H4g0s/6b+rDjI0
+        XEl5MlypQIYrFchwpQIZrlScEG4B7IPiszfmTggAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnNewHotelExpensesCategory.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnNewHotelExpenses.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQgAAAAjCAYAAABo6pS+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVHhe7dzLK0RRAIBxf7KNhY2FjYWNIkVZkFgoCxEL
-        a6VkYUF5NRghj0Lew9F3zLnNNHNm797vV6em8djdr3POPff2BUnKMBCSsgyEpCwDISnLQEjKMhCSsnoG
-        ovH1Ew53n8LG3HVYnqiH2eFaGO8/cjgc/3hwHXM9r81chf3tx/D++t284jtlA1E7eIn/iDgQifrRa3i8
-        /2z+VNJ/xXXM9Xyy9xw2F27idU4ouukIBDXhj1amLsPLU6P5raSy6nXNtwWCX1wcPc/WRFJ5sWpYGrto
-        Wym0BYKKGAepulh6sD+RFIGgHkwxJFXb1upd2Nl8iJ9jILhbwUaFew6S6AFbDQ83H3+BYFnB8kKSwAyC
-        mUQMBPdDueUhSbitv8dZRAzE/MhZnE5IElhmTA4c/wVievCk52kqSdXDqcsYCD5IUisDISmrCARrDdYc
-        kpQUgeAMhA9iSWpVBIITlJyklCRwV5O7mzEQ6VCEJCEdnoyBYHlBLdyHkIR0eDIGAtvr93FIqrb0FjkU
-        gWD2wGOeV7W35jeSqoYHNllNpIOTRSDAxkR6iktStRAHJgm8EyJpCwSYQRCJ9Dy4pPJjv4GZQ2sc0BEI
-        sNzgrgY1YTfT90RI5cMyIu03sCnZ7XmsroFIqAm3OmaGTuOhCYfDUZ7BQ5rprfU5PQMhqdoMhKQsAyEp
-        y0BIyjIQkjJC+AWt1HN7JTzT6QAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAO4AAAAjCAYAAACTmDZIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAINSURBVHhe7dy9S5tBAIDx/skuHVw6dOnQRbAIFhwsooPg
+        IBUdnAtCcXBowRhJayRKNRBLUm1jT54z99KQj6nGO3h+cCDxY3u4u/e980WQVBzDlQpkuFKBDFcqkOFK
+        BTJcqUBTw+3/+RuOD2/C3oeLsPWuGVZfN8LiXM3hcDzBoC8621lphS8HnXDbux+UOGpiuI2v3fiHiJZ4
+        m7Ve6Fz/HnxX0v9GX3RWP/oZ9tcvY38EPM5IuFTOL20vn4fuTX/wqaRZm9biULj84Mbb7xMrlzR7rH43
+        F86GVrxD4VK30Ur5YQnN/jepwqVqpmRJefr08Sp83m/Hr2O4PD1mI+yeVsoXnbKVbV/ePYbL8phlsqS8
+        MeMy88ZweW/EI2hJefvRvI2zbgx37c23OP1KyhvL5aWXJ4/hvp+vTz2lISkfnLKK4fKFpDIYrlSgKlzW
+        zKydJeWvCpd3uF4gkMpQhcuJKU5OScobb394CxTDTS91JeUtHZaK4bJMpmL3uVLe0mGpGC4Odq/jkJSn
+        9N9oUIXLbMu1oVbj1+ATSbngAhCr4nRQqgoXbHzT7QNJeSBaJlXu5CZD4YIZl3jTvT9Jz4f9LDPtv9Fi
+        JFywbOYpM5XzFMt7utLssBxO+1keRo27RzA23ITKefS88uo0vvR1OBxPP7j0k/676iRTw5WUJ8OVCmS4
+        UoEMVyqQ4UrFCeEBMPaDLZoCl94AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

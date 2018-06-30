@@ -36,10 +36,10 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gridHotelExpenseCategoryMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
+            this.btnRemoveHotelExpense = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditHotelExpense = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnNewHotelExpensesCategory = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnEditHotelExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnRemoveHotelExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnNewHotelExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridHotelExpenseCategoryMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -100,15 +100,65 @@
             // 
             // pnlHeadingButtons
             // 
-            this.pnlHeadingButtons.Controls.Add(this.btnRemoveHotelExpenseCategory);
-            this.pnlHeadingButtons.Controls.Add(this.btnEditHotelExpenseCategory);
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveHotelExpense);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditHotelExpense);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
-            this.pnlHeadingButtons.Controls.Add(this.btnNewHotelExpensesCategory);
+            this.pnlHeadingButtons.Controls.Add(this.btnNewHotelExpenses);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeadingButtons.Location = new System.Drawing.Point(0, 0);
             this.pnlHeadingButtons.Name = "pnlHeadingButtons";
             this.pnlHeadingButtons.Size = new System.Drawing.Size(847, 55);
             this.pnlHeadingButtons.TabIndex = 4;
+            // 
+            // btnRemoveHotelExpense
+            // 
+            this.btnRemoveHotelExpense.ActiveBorderThickness = 1;
+            this.btnRemoveHotelExpense.ActiveCornerRadius = 20;
+            this.btnRemoveHotelExpense.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpense.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveHotelExpense.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpense.BackColor = System.Drawing.Color.White;
+            this.btnRemoveHotelExpense.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveHotelExpense.BackgroundImage")));
+            this.btnRemoveHotelExpense.ButtonText = "Remove Hotel expense ";
+            this.btnRemoveHotelExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveHotelExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveHotelExpense.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpense.IdleBorderThickness = 1;
+            this.btnRemoveHotelExpense.IdleCornerRadius = 20;
+            this.btnRemoveHotelExpense.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveHotelExpense.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpense.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpense.Location = new System.Drawing.Point(580, 5);
+            this.btnRemoveHotelExpense.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveHotelExpense.Name = "btnRemoveHotelExpense";
+            this.btnRemoveHotelExpense.Size = new System.Drawing.Size(238, 35);
+            this.btnRemoveHotelExpense.TabIndex = 4;
+            this.btnRemoveHotelExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEditHotelExpense
+            // 
+            this.btnEditHotelExpense.ActiveBorderThickness = 1;
+            this.btnEditHotelExpense.ActiveCornerRadius = 20;
+            this.btnEditHotelExpense.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpense.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditHotelExpense.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpense.BackColor = System.Drawing.Color.White;
+            this.btnEditHotelExpense.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditHotelExpense.BackgroundImage")));
+            this.btnEditHotelExpense.ButtonText = "Edit Hotel Expense ";
+            this.btnEditHotelExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditHotelExpense.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditHotelExpense.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpense.IdleBorderThickness = 1;
+            this.btnEditHotelExpense.IdleCornerRadius = 20;
+            this.btnEditHotelExpense.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditHotelExpense.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpense.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpense.Location = new System.Drawing.Point(338, 5);
+            this.btnEditHotelExpense.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditHotelExpense.Name = "btnEditHotelExpense";
+            this.btnEditHotelExpense.Size = new System.Drawing.Size(238, 35);
+            this.btnEditHotelExpense.TabIndex = 3;
+            this.btnEditHotelExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuSeparator1
             // 
@@ -123,81 +173,31 @@
             this.bunifuSeparator1.Transparency = 100;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // btnNewHotelExpensesCategory
+            // btnNewHotelExpenses
             // 
-            this.btnNewHotelExpensesCategory.ActiveBorderThickness = 1;
-            this.btnNewHotelExpensesCategory.ActiveCornerRadius = 20;
-            this.btnNewHotelExpensesCategory.ActiveFillColor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelExpensesCategory.ActiveForecolor = System.Drawing.Color.White;
-            this.btnNewHotelExpensesCategory.ActiveLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelExpensesCategory.BackColor = System.Drawing.Color.White;
-            this.btnNewHotelExpensesCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewHotelExpensesCategory.BackgroundImage")));
-            this.btnNewHotelExpensesCategory.ButtonText = "New Hotel Expenses Category";
-            this.btnNewHotelExpensesCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNewHotelExpensesCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewHotelExpensesCategory.ForeColor = System.Drawing.Color.White;
-            this.btnNewHotelExpensesCategory.IdleBorderThickness = 1;
-            this.btnNewHotelExpensesCategory.IdleCornerRadius = 20;
-            this.btnNewHotelExpensesCategory.IdleFillColor = System.Drawing.Color.White;
-            this.btnNewHotelExpensesCategory.IdleForecolor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelExpensesCategory.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelExpensesCategory.Location = new System.Drawing.Point(23, 5);
-            this.btnNewHotelExpensesCategory.Margin = new System.Windows.Forms.Padding(5);
-            this.btnNewHotelExpensesCategory.Name = "btnNewHotelExpensesCategory";
-            this.btnNewHotelExpensesCategory.Size = new System.Drawing.Size(264, 35);
-            this.btnNewHotelExpensesCategory.TabIndex = 0;
-            this.btnNewHotelExpensesCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNewHotelExpensesCategory.Click += new System.EventHandler(this.btnNewHotelExpensesCategory_Click);
-            // 
-            // btnEditHotelExpenseCategory
-            // 
-            this.btnEditHotelExpenseCategory.ActiveBorderThickness = 1;
-            this.btnEditHotelExpenseCategory.ActiveCornerRadius = 20;
-            this.btnEditHotelExpenseCategory.ActiveFillColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditHotelExpenseCategory.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEditHotelExpenseCategory.ActiveLineColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditHotelExpenseCategory.BackColor = System.Drawing.Color.White;
-            this.btnEditHotelExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditHotelExpenseCategory.BackgroundImage")));
-            this.btnEditHotelExpenseCategory.ButtonText = "Edit Hotel Expense Category";
-            this.btnEditHotelExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditHotelExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditHotelExpenseCategory.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditHotelExpenseCategory.IdleBorderThickness = 1;
-            this.btnEditHotelExpenseCategory.IdleCornerRadius = 20;
-            this.btnEditHotelExpenseCategory.IdleFillColor = System.Drawing.Color.White;
-            this.btnEditHotelExpenseCategory.IdleForecolor = System.Drawing.Color.RoyalBlue;
-            this.btnEditHotelExpenseCategory.IdleLineColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditHotelExpenseCategory.Location = new System.Drawing.Point(297, 5);
-            this.btnEditHotelExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEditHotelExpenseCategory.Name = "btnEditHotelExpenseCategory";
-            this.btnEditHotelExpenseCategory.Size = new System.Drawing.Size(250, 35);
-            this.btnEditHotelExpenseCategory.TabIndex = 3;
-            this.btnEditHotelExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnRemoveHotelExpenseCategory
-            // 
-            this.btnRemoveHotelExpenseCategory.ActiveBorderThickness = 1;
-            this.btnRemoveHotelExpenseCategory.ActiveCornerRadius = 20;
-            this.btnRemoveHotelExpenseCategory.ActiveFillColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveHotelExpenseCategory.ActiveForecolor = System.Drawing.Color.White;
-            this.btnRemoveHotelExpenseCategory.ActiveLineColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveHotelExpenseCategory.BackColor = System.Drawing.Color.White;
-            this.btnRemoveHotelExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveHotelExpenseCategory.BackgroundImage")));
-            this.btnRemoveHotelExpenseCategory.ButtonText = "Remove Hotel expense Category";
-            this.btnRemoveHotelExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemoveHotelExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveHotelExpenseCategory.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveHotelExpenseCategory.IdleBorderThickness = 1;
-            this.btnRemoveHotelExpenseCategory.IdleCornerRadius = 20;
-            this.btnRemoveHotelExpenseCategory.IdleFillColor = System.Drawing.Color.White;
-            this.btnRemoveHotelExpenseCategory.IdleForecolor = System.Drawing.Color.DarkRed;
-            this.btnRemoveHotelExpenseCategory.IdleLineColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveHotelExpenseCategory.Location = new System.Drawing.Point(557, 5);
-            this.btnRemoveHotelExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRemoveHotelExpenseCategory.Name = "btnRemoveHotelExpenseCategory";
-            this.btnRemoveHotelExpenseCategory.Size = new System.Drawing.Size(285, 35);
-            this.btnRemoveHotelExpenseCategory.TabIndex = 4;
-            this.btnRemoveHotelExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewHotelExpenses.ActiveBorderThickness = 1;
+            this.btnNewHotelExpenses.ActiveCornerRadius = 20;
+            this.btnNewHotelExpenses.ActiveFillColor = System.Drawing.Color.MediumPurple;
+            this.btnNewHotelExpenses.ActiveForecolor = System.Drawing.Color.White;
+            this.btnNewHotelExpenses.ActiveLineColor = System.Drawing.Color.MediumPurple;
+            this.btnNewHotelExpenses.BackColor = System.Drawing.Color.White;
+            this.btnNewHotelExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewHotelExpenses.BackgroundImage")));
+            this.btnNewHotelExpenses.ButtonText = "New Hotel Expenses ";
+            this.btnNewHotelExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewHotelExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewHotelExpenses.ForeColor = System.Drawing.Color.White;
+            this.btnNewHotelExpenses.IdleBorderThickness = 1;
+            this.btnNewHotelExpenses.IdleCornerRadius = 20;
+            this.btnNewHotelExpenses.IdleFillColor = System.Drawing.Color.White;
+            this.btnNewHotelExpenses.IdleForecolor = System.Drawing.Color.MediumPurple;
+            this.btnNewHotelExpenses.IdleLineColor = System.Drawing.Color.MediumPurple;
+            this.btnNewHotelExpenses.Location = new System.Drawing.Point(96, 5);
+            this.btnNewHotelExpenses.Margin = new System.Windows.Forms.Padding(5);
+            this.btnNewHotelExpenses.Name = "btnNewHotelExpenses";
+            this.btnNewHotelExpenses.Size = new System.Drawing.Size(238, 35);
+            this.btnNewHotelExpenses.TabIndex = 0;
+            this.btnNewHotelExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewHotelExpenses.Click += new System.EventHandler(this.btnNewHotelExpensesCategory_Click);
             // 
             // HotelExpenseCategoryMaster
             // 
@@ -224,9 +224,9 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridHotelExpenseCategoryMaster;
         private System.Windows.Forms.Panel pnlHeadingButtons;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnNewHotelExpensesCategory;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnNewHotelExpenses;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnEditHotelExpenseCategory;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveHotelExpenseCategory;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditHotelExpense;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveHotelExpense;
     }
 }
