@@ -38,6 +38,8 @@
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewSupplier = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditSupplier = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemoveSupplier = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridSupplierMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +100,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveSupplier);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditSupplier);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnNewSupplier);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -137,13 +141,63 @@
             this.btnNewSupplier.IdleFillColor = System.Drawing.Color.White;
             this.btnNewSupplier.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewSupplier.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewSupplier.Location = new System.Drawing.Point(610, 15);
+            this.btnNewSupplier.Location = new System.Drawing.Point(357, 5);
             this.btnNewSupplier.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewSupplier.Name = "btnNewSupplier";
             this.btnNewSupplier.Size = new System.Drawing.Size(155, 35);
             this.btnNewSupplier.TabIndex = 0;
             this.btnNewSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewSupplier.Click += new System.EventHandler(this.btnNewSupplier_Click);
+            // 
+            // btnEditSupplier
+            // 
+            this.btnEditSupplier.ActiveBorderThickness = 1;
+            this.btnEditSupplier.ActiveCornerRadius = 20;
+            this.btnEditSupplier.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSupplier.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditSupplier.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSupplier.BackColor = System.Drawing.Color.White;
+            this.btnEditSupplier.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditSupplier.BackgroundImage")));
+            this.btnEditSupplier.ButtonText = "Edit Supplier";
+            this.btnEditSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditSupplier.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditSupplier.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSupplier.IdleBorderThickness = 1;
+            this.btnEditSupplier.IdleCornerRadius = 20;
+            this.btnEditSupplier.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditSupplier.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSupplier.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSupplier.Location = new System.Drawing.Point(522, 5);
+            this.btnEditSupplier.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditSupplier.Name = "btnEditSupplier";
+            this.btnEditSupplier.Size = new System.Drawing.Size(155, 35);
+            this.btnEditSupplier.TabIndex = 3;
+            this.btnEditSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRemoveSupplier
+            // 
+            this.btnRemoveSupplier.ActiveBorderThickness = 1;
+            this.btnRemoveSupplier.ActiveCornerRadius = 20;
+            this.btnRemoveSupplier.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSupplier.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveSupplier.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSupplier.BackColor = System.Drawing.Color.White;
+            this.btnRemoveSupplier.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveSupplier.BackgroundImage")));
+            this.btnRemoveSupplier.ButtonText = "Remove Supplier";
+            this.btnRemoveSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveSupplier.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveSupplier.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSupplier.IdleBorderThickness = 1;
+            this.btnRemoveSupplier.IdleCornerRadius = 20;
+            this.btnRemoveSupplier.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveSupplier.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSupplier.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSupplier.Location = new System.Drawing.Point(687, 5);
+            this.btnRemoveSupplier.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveSupplier.Name = "btnRemoveSupplier";
+            this.btnRemoveSupplier.Size = new System.Drawing.Size(155, 35);
+            this.btnRemoveSupplier.TabIndex = 4;
+            this.btnRemoveSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SupplierMaster
             // 
@@ -172,5 +226,7 @@
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewSupplier;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditSupplier;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveSupplier;
     }
 }
