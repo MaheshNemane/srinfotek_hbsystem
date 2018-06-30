@@ -27,14 +27,29 @@ namespace Hotel_Billing_Software.Transaction
 
         private void onPageLoad()
         {
-           
+            fillSupplierCombo();
+            fillCategory();
         }
 
         private void fillSupplierCombo()
         {
-            cmbSupplier.DataSource = supplier.getAllSupplierCmb().Tables[0];
-            cmbSupplier.DisplayMember = "SupplierName";
-            cmbSupplier.ValueMember = "SupplierId";
+            try
+            {
+                DataSet ds = supplier.getAllSupplierCmb();
+                DataRow dr = ds.Tables[0].NewRow();
+                dr["ShopName"] = "-Select Supplier-";
+                dr["SupplierId"] = "0";
+                ds.Tables[0].Rows.InsertAt(dr, 0);
+
+                cmbSupplier.DataSource = ds.Tables[0];
+                cmbSupplier.DisplayMember = "ShopName";
+                cmbSupplier.ValueMember = "SupplierId";
+
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
         }
 
         private void fillCategory()
@@ -42,12 +57,14 @@ namespace Hotel_Billing_Software.Transaction
             try
             {
                 DataSet ds = MenuCategory.getAllMenuCategoryCmb();
-                if (ds.Tables.Count > 0)
-                {
-                    cmbCategory.DataSource = ds.Tables[0];
-                    cmbCategory.DisplayMember = "CategoryName";
-                    cmbCategory.ValueMember = "CategoryId";
-                }
+                DataRow dr = ds.Tables[0].NewRow();
+                dr["CategoryName"] = "-Select Category-";
+                dr["CategoryId"] = "0";
+                ds.Tables[0].Rows.InsertAt(dr, 0);
+
+                cmbCategory.DataSource = ds.Tables[0];
+                cmbCategory.DisplayMember = "CategoryName";
+                cmbCategory.ValueMember = "CategoryId";
             }
             catch (Exception ex)
             {
@@ -59,14 +76,14 @@ namespace Hotel_Billing_Software.Transaction
         {
             try
             {
-                cmbSubCategory.Items.Clear();
                 DataSet ds = MenuSubCategory.getAllMenuSubCategoryCmb(CategoryId);
-                if (ds.Tables.Count > 0)
-                {
-                    cmbSubCategory.DataSource = ds.Tables[0];
-                    cmbSubCategory.DisplayMember = "SubCategoryName";
-                    cmbSubCategory.ValueMember = "SubCategoryId";
-                }
+                DataRow dr = ds.Tables[0].NewRow();
+                dr["SubCategoryName"] = "-Select Sub Category-";
+                dr["SubCategoryId"] = "0";
+                ds.Tables[0].Rows.InsertAt(dr, 0);
+                cmbSubCategory.DataSource = ds.Tables[0];
+                cmbSubCategory.DisplayMember = "SubCategoryName";
+                cmbSubCategory.ValueMember = "SubCategoryId";
             }
             catch (Exception ex)
             {
@@ -78,14 +95,15 @@ namespace Hotel_Billing_Software.Transaction
         {
             try
             {
-                cmbItemName.Items.Clear();
                 DataSet ds = productMaster.getAllProductCmb(CategoryId, SubCategoryId);
-                if (ds.Tables.Count > 0)
-                {
-                    cmbItemName.DataSource = ds.Tables[0];
-                    cmbItemName.DisplayMember = "ItemName";
-                    cmbItemName.ValueMember = "ProductId";
-                }
+                DataRow dr = ds.Tables[0].NewRow();
+                dr["ItemName"] = "-Select Menu-";
+                dr["ProductId"] = "0";
+                ds.Tables[0].Rows.InsertAt(dr, 0);
+
+                cmbItemName.DataSource = ds.Tables[0];
+                cmbItemName.DisplayMember = "ItemName";
+                cmbItemName.ValueMember = "ProductId";
             }
             catch (Exception ex)
             {
@@ -95,6 +113,37 @@ namespace Hotel_Billing_Software.Transaction
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int categoryid;
+            if (cmbCategory.SelectedValue.GetType().Name == "DataRowView")
+                categoryid = Convert.ToInt32(((DataRowView)cmbCategory.SelectedValue).Row.ItemArray[0]);
+            else
+                categoryid = Convert.ToInt32(cmbCategory.SelectedValue);
+            fillSubCategory(categoryid);
+        }
+
+        private void cmbItemName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbSubCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int categoryid;
+            if (cmbCategory.SelectedValue.GetType().Name == "DataRowView")
+                categoryid = Convert.ToInt32(((DataRowView)cmbCategory.SelectedValue).Row.ItemArray[0]);
+            else
+                categoryid = Convert.ToInt32(cmbCategory.SelectedValue);
+
+            int subCategoryId;
+            if (cmbSubCategory.SelectedValue.GetType().Name == "DataRowView")
+                subCategoryId = Convert.ToInt32(((DataRowView)cmbSubCategory.SelectedValue).Row.ItemArray[0]);
+            else
+                subCategoryId = Convert.ToInt32(cmbSubCategory.SelectedValue);
+            fillMenuItem(categoryid, subCategoryId);
         }
     }
 }

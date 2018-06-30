@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PurchaseBilling));
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlHeader = new System.Windows.Forms.Panel();
@@ -59,7 +59,6 @@
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnDeleteItem = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlTopContent = new System.Windows.Forms.Panel();
-            this.dtpPurchaseDate = new System.Windows.Forms.DateTimePicker();
             this.cmbItemName = new System.Windows.Forms.ComboBox();
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.cmbSubCategory = new System.Windows.Forms.ComboBox();
@@ -70,7 +69,7 @@
             this.txtItemCode = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.cmbSupplier = new System.Windows.Forms.ComboBox();
-            this.txtItemId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtInvoiceNo = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -78,6 +77,8 @@
             this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnPrint = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.dtpInvoiceDate = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.txtPurchaseId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pnlHeader.SuspendLayout();
             this.pnlBody.SuspendLayout();
             this.pnlTotalBilling.SuspendLayout();
@@ -311,22 +312,22 @@
             this.bunifuCustomDataGrid1.AllowUserToDeleteRows = false;
             this.bunifuCustomDataGrid1.AllowUserToResizeColumns = false;
             this.bunifuCustomDataGrid1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Snow;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SRNo,
@@ -335,15 +336,15 @@
             this.Price,
             this.Qty,
             this.Total});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.DefaultCellStyle = dataGridViewCellStyle8;
             this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
@@ -353,24 +354,24 @@
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(0, 0);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Snow;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DarkGray;
-            dataGridViewCellStyle14.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.MediumSlateBlue;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Indigo;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DarkGray;
+            dataGridViewCellStyle9.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.MediumSlateBlue;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Indigo;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.bunifuCustomDataGrid1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.bunifuCustomDataGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(902, 200);
@@ -445,7 +446,8 @@
             // 
             // pnlTopContent
             // 
-            this.pnlTopContent.Controls.Add(this.dtpPurchaseDate);
+            this.pnlTopContent.Controls.Add(this.txtPurchaseId);
+            this.pnlTopContent.Controls.Add(this.dtpInvoiceDate);
             this.pnlTopContent.Controls.Add(this.cmbItemName);
             this.pnlTopContent.Controls.Add(this.cmbCategory);
             this.pnlTopContent.Controls.Add(this.cmbSubCategory);
@@ -456,21 +458,12 @@
             this.pnlTopContent.Controls.Add(this.txtItemCode);
             this.pnlTopContent.Controls.Add(this.bunifuSeparator1);
             this.pnlTopContent.Controls.Add(this.cmbSupplier);
-            this.pnlTopContent.Controls.Add(this.txtItemId);
+            this.pnlTopContent.Controls.Add(this.txtInvoiceNo);
             this.pnlTopContent.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopContent.Location = new System.Drawing.Point(0, 0);
             this.pnlTopContent.Name = "pnlTopContent";
             this.pnlTopContent.Size = new System.Drawing.Size(902, 157);
             this.pnlTopContent.TabIndex = 59;
-            // 
-            // dtpPurchaseDate
-            // 
-            this.dtpPurchaseDate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpPurchaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPurchaseDate.Location = new System.Drawing.Point(631, 17);
-            this.dtpPurchaseDate.Name = "dtpPurchaseDate";
-            this.dtpPurchaseDate.Size = new System.Drawing.Size(175, 23);
-            this.dtpPurchaseDate.TabIndex = 74;
             // 
             // cmbItemName
             // 
@@ -481,6 +474,7 @@
             this.cmbItemName.Size = new System.Drawing.Size(175, 23);
             this.cmbItemName.TabIndex = 71;
             this.cmbItemName.Text = "Select Item";
+            this.cmbItemName.SelectedIndexChanged += new System.EventHandler(this.cmbItemName_SelectedIndexChanged);
             // 
             // cmbCategory
             // 
@@ -491,6 +485,7 @@
             this.cmbCategory.Size = new System.Drawing.Size(175, 23);
             this.cmbCategory.TabIndex = 72;
             this.cmbCategory.Text = "Select Category";
+            this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
             // cmbSubCategory
             // 
@@ -501,6 +496,7 @@
             this.cmbSubCategory.Size = new System.Drawing.Size(175, 23);
             this.cmbSubCategory.TabIndex = 73;
             this.cmbSubCategory.Text = "Select Sub Category";
+            this.cmbSubCategory.SelectedIndexChanged += new System.EventHandler(this.cmbSubCategory_SelectedIndexChanged);
             // 
             // btnAdd
             // 
@@ -641,24 +637,24 @@
             this.cmbSupplier.TabIndex = 62;
             this.cmbSupplier.Text = "Supplier Name";
             // 
-            // txtItemId
+            // txtInvoiceNo
             // 
-            this.txtItemId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtItemId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtItemId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtItemId.HintForeColor = System.Drawing.Color.Empty;
-            this.txtItemId.HintText = "Purchase Bill No.";
-            this.txtItemId.isPassword = false;
-            this.txtItemId.LineFocusedColor = System.Drawing.Color.Tomato;
-            this.txtItemId.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtItemId.LineMouseHoverColor = System.Drawing.Color.Tomato;
-            this.txtItemId.LineThickness = 2;
-            this.txtItemId.Location = new System.Drawing.Point(55, 12);
-            this.txtItemId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtItemId.Name = "txtItemId";
-            this.txtItemId.Size = new System.Drawing.Size(169, 30);
-            this.txtItemId.TabIndex = 60;
-            this.txtItemId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtInvoiceNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtInvoiceNo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInvoiceNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtInvoiceNo.HintForeColor = System.Drawing.Color.Empty;
+            this.txtInvoiceNo.HintText = "Purchase Bill No.";
+            this.txtInvoiceNo.isPassword = false;
+            this.txtInvoiceNo.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtInvoiceNo.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtInvoiceNo.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtInvoiceNo.LineThickness = 2;
+            this.txtInvoiceNo.Location = new System.Drawing.Point(55, 12);
+            this.txtInvoiceNo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtInvoiceNo.Name = "txtInvoiceNo";
+            this.txtInvoiceNo.Size = new System.Drawing.Size(169, 30);
+            this.txtInvoiceNo.TabIndex = 60;
+            this.txtInvoiceNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuSeparator2
             // 
@@ -804,6 +800,40 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // dtpInvoiceDate
+            // 
+            this.dtpInvoiceDate.BackColor = System.Drawing.Color.Gainsboro;
+            this.dtpInvoiceDate.BorderRadius = 0;
+            this.dtpInvoiceDate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpInvoiceDate.ForeColor = System.Drawing.Color.Black;
+            this.dtpInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpInvoiceDate.FormatCustom = "dd/MM/yyyy";
+            this.dtpInvoiceDate.Location = new System.Drawing.Point(631, 15);
+            this.dtpInvoiceDate.Name = "dtpInvoiceDate";
+            this.dtpInvoiceDate.Size = new System.Drawing.Size(175, 23);
+            this.dtpInvoiceDate.TabIndex = 74;
+            this.dtpInvoiceDate.Value = new System.DateTime(2018, 6, 20, 15, 57, 29, 137);
+            // 
+            // txtPurchaseId
+            // 
+            this.txtPurchaseId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPurchaseId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPurchaseId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPurchaseId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtPurchaseId.HintText = "Purchase Bill No.";
+            this.txtPurchaseId.isPassword = false;
+            this.txtPurchaseId.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtPurchaseId.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtPurchaseId.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtPurchaseId.LineThickness = 2;
+            this.txtPurchaseId.Location = new System.Drawing.Point(4, 12);
+            this.txtPurchaseId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPurchaseId.Name = "txtPurchaseId";
+            this.txtPurchaseId.Size = new System.Drawing.Size(43, 30);
+            this.txtPurchaseId.TabIndex = 75;
+            this.txtPurchaseId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPurchaseId.Visible = false;
+            // 
             // PurchaseBilling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -846,7 +876,7 @@
         private System.Windows.Forms.Panel pnlTopContent;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.ComboBox cmbSupplier;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtItemId;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtInvoiceNo;
         private System.Windows.Forms.Panel pnlPurchaseDescription;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator5;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
@@ -872,6 +902,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTotal;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPrice;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtItemCode;
-        private System.Windows.Forms.DateTimePicker dtpPurchaseDate;
+        private Bunifu.Framework.UI.BunifuDatepicker dtpInvoiceDate;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPurchaseId;
     }
 }
