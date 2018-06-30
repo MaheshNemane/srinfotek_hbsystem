@@ -128,10 +128,10 @@
             this.btnRemoveHotelExpense.IdleFillColor = System.Drawing.Color.White;
             this.btnRemoveHotelExpense.IdleForecolor = System.Drawing.Color.DarkRed;
             this.btnRemoveHotelExpense.IdleLineColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveHotelExpense.Location = new System.Drawing.Point(580, 5);
+            this.btnRemoveHotelExpense.Location = new System.Drawing.Point(607, 5);
             this.btnRemoveHotelExpense.Margin = new System.Windows.Forms.Padding(5);
             this.btnRemoveHotelExpense.Name = "btnRemoveHotelExpense";
-            this.btnRemoveHotelExpense.Size = new System.Drawing.Size(238, 35);
+            this.btnRemoveHotelExpense.Size = new System.Drawing.Size(226, 35);
             this.btnRemoveHotelExpense.TabIndex = 4;
             this.btnRemoveHotelExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -153,10 +153,10 @@
             this.btnEditHotelExpense.IdleFillColor = System.Drawing.Color.White;
             this.btnEditHotelExpense.IdleForecolor = System.Drawing.Color.RoyalBlue;
             this.btnEditHotelExpense.IdleLineColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditHotelExpense.Location = new System.Drawing.Point(338, 5);
+            this.btnEditHotelExpense.Location = new System.Drawing.Point(385, 5);
             this.btnEditHotelExpense.Margin = new System.Windows.Forms.Padding(5);
             this.btnEditHotelExpense.Name = "btnEditHotelExpense";
-            this.btnEditHotelExpense.Size = new System.Drawing.Size(238, 35);
+            this.btnEditHotelExpense.Size = new System.Drawing.Size(212, 35);
             this.btnEditHotelExpense.TabIndex = 3;
             this.btnEditHotelExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -191,10 +191,10 @@
             this.btnNewHotelExpenses.IdleFillColor = System.Drawing.Color.White;
             this.btnNewHotelExpenses.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewHotelExpenses.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelExpenses.Location = new System.Drawing.Point(96, 5);
+            this.btnNewHotelExpenses.Location = new System.Drawing.Point(157, 5);
             this.btnNewHotelExpenses.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewHotelExpenses.Name = "btnNewHotelExpenses";
-            this.btnNewHotelExpenses.Size = new System.Drawing.Size(238, 35);
+            this.btnNewHotelExpenses.Size = new System.Drawing.Size(218, 35);
             this.btnNewHotelExpenses.TabIndex = 0;
             this.btnNewHotelExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewHotelExpenses.Click += new System.EventHandler(this.btnNewHotelExpensesCategory_Click);
