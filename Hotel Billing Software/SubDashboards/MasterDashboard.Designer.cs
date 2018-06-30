@@ -114,6 +114,7 @@
             this.btnUOMMaster.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUOMMaster.Textcolor = System.Drawing.Color.Black;
             this.btnUOMMaster.TextFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUOMMaster.Click += new System.EventHandler(this.btnUOMMaster_Click);
             // 
             // btnGSTMaster
             // 

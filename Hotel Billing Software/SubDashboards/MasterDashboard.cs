@@ -144,5 +144,15 @@ namespace Hotel_Billing_Software.SubDashboards
             this.pnlPage.Controls.Add(objForm);
             this.lblMasterName.Text = objForm.Text;
         }
+
+        private void btnUOMMaster_Click(object sender, EventArgs e)
+        {
+            refreshPage();
+            GridPages.Master_Grids.UOMMaster objForm = new GridPages.Master_Grids.UOMMaster();
+            Common.showPage(objForm);
+            this.pnlPage.Controls.Add(objForm);
+            this.lblMasterName.Text = objForm.Text;
+
+        }
     }
 }
