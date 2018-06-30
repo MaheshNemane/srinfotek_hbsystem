@@ -107,5 +107,10 @@ namespace Hotel_Billing_Software.GridPages
         {
             gridCustomerMaster.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
+
+        private void gridCustomerMaster_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
