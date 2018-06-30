@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HotelExpenseCategoryMaster));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gridHotelExpenseCategoryMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewHotelExpensesCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditHotelExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemoveHotelExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridHotelExpenseCategoryMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -54,36 +56,36 @@
             this.gridHotelExpenseCategoryMaster.AllowUserToOrderColumns = true;
             this.gridHotelExpenseCategoryMaster.AllowUserToResizeColumns = false;
             this.gridHotelExpenseCategoryMaster.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Plum;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.gridHotelExpenseCategoryMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Plum;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.gridHotelExpenseCategoryMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridHotelExpenseCategoryMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridHotelExpenseCategoryMaster.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.gridHotelExpenseCategoryMaster.BackgroundColor = System.Drawing.Color.White;
             this.gridHotelExpenseCategoryMaster.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridHotelExpenseCategoryMaster.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridHotelExpenseCategoryMaster.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MediumPurple;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridHotelExpenseCategoryMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumPurple;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridHotelExpenseCategoryMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridHotelExpenseCategoryMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridHotelExpenseCategoryMaster.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridHotelExpenseCategoryMaster.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridHotelExpenseCategoryMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridHotelExpenseCategoryMaster.DoubleBuffered = true;
             this.gridHotelExpenseCategoryMaster.EnableHeadersVisualStyles = false;
@@ -98,6 +100,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveHotelExpenseCategory);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditHotelExpenseCategory);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnNewHotelExpensesCategory);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -137,13 +141,63 @@
             this.btnNewHotelExpensesCategory.IdleFillColor = System.Drawing.Color.White;
             this.btnNewHotelExpensesCategory.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewHotelExpensesCategory.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewHotelExpensesCategory.Location = new System.Drawing.Point(577, 15);
+            this.btnNewHotelExpensesCategory.Location = new System.Drawing.Point(23, 5);
             this.btnNewHotelExpensesCategory.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewHotelExpensesCategory.Name = "btnNewHotelExpensesCategory";
-            this.btnNewHotelExpensesCategory.Size = new System.Drawing.Size(256, 35);
+            this.btnNewHotelExpensesCategory.Size = new System.Drawing.Size(264, 35);
             this.btnNewHotelExpensesCategory.TabIndex = 0;
             this.btnNewHotelExpensesCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewHotelExpensesCategory.Click += new System.EventHandler(this.btnNewHotelExpensesCategory_Click);
+            // 
+            // btnEditHotelExpenseCategory
+            // 
+            this.btnEditHotelExpenseCategory.ActiveBorderThickness = 1;
+            this.btnEditHotelExpenseCategory.ActiveCornerRadius = 20;
+            this.btnEditHotelExpenseCategory.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpenseCategory.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditHotelExpenseCategory.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpenseCategory.BackColor = System.Drawing.Color.White;
+            this.btnEditHotelExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditHotelExpenseCategory.BackgroundImage")));
+            this.btnEditHotelExpenseCategory.ButtonText = "Edit Hotel Expense Category";
+            this.btnEditHotelExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditHotelExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditHotelExpenseCategory.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpenseCategory.IdleBorderThickness = 1;
+            this.btnEditHotelExpenseCategory.IdleCornerRadius = 20;
+            this.btnEditHotelExpenseCategory.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditHotelExpenseCategory.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpenseCategory.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditHotelExpenseCategory.Location = new System.Drawing.Point(297, 5);
+            this.btnEditHotelExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditHotelExpenseCategory.Name = "btnEditHotelExpenseCategory";
+            this.btnEditHotelExpenseCategory.Size = new System.Drawing.Size(250, 35);
+            this.btnEditHotelExpenseCategory.TabIndex = 3;
+            this.btnEditHotelExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRemoveHotelExpenseCategory
+            // 
+            this.btnRemoveHotelExpenseCategory.ActiveBorderThickness = 1;
+            this.btnRemoveHotelExpenseCategory.ActiveCornerRadius = 20;
+            this.btnRemoveHotelExpenseCategory.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpenseCategory.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveHotelExpenseCategory.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpenseCategory.BackColor = System.Drawing.Color.White;
+            this.btnRemoveHotelExpenseCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveHotelExpenseCategory.BackgroundImage")));
+            this.btnRemoveHotelExpenseCategory.ButtonText = "Remove Hotel expense Category";
+            this.btnRemoveHotelExpenseCategory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveHotelExpenseCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveHotelExpenseCategory.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpenseCategory.IdleBorderThickness = 1;
+            this.btnRemoveHotelExpenseCategory.IdleCornerRadius = 20;
+            this.btnRemoveHotelExpenseCategory.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveHotelExpenseCategory.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpenseCategory.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveHotelExpenseCategory.Location = new System.Drawing.Point(557, 5);
+            this.btnRemoveHotelExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveHotelExpenseCategory.Name = "btnRemoveHotelExpenseCategory";
+            this.btnRemoveHotelExpenseCategory.Size = new System.Drawing.Size(285, 35);
+            this.btnRemoveHotelExpenseCategory.TabIndex = 4;
+            this.btnRemoveHotelExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HotelExpenseCategoryMaster
             // 
@@ -172,5 +226,7 @@
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewHotelExpensesCategory;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditHotelExpenseCategory;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveHotelExpenseCategory;
     }
 }
