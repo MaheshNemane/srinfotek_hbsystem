@@ -37,6 +37,7 @@
             this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtProductId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.cmbGSTId = new System.Windows.Forms.ComboBox();
             this.txtMRP = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtMargin = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -50,7 +51,6 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txtProductId = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -209,6 +209,28 @@
             this.panel2.Size = new System.Drawing.Size(503, 319);
             this.panel2.TabIndex = 4;
             // 
+            // txtProductId
+            // 
+            this.txtProductId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtProductId.Enabled = false;
+            this.txtProductId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductId.ForeColor = System.Drawing.Color.Black;
+            this.txtProductId.HintForeColor = System.Drawing.Color.Empty;
+            this.txtProductId.HintText = "Product Id";
+            this.txtProductId.isPassword = false;
+            this.txtProductId.LineFocusedColor = System.Drawing.Color.Tomato;
+            this.txtProductId.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtProductId.LineMouseHoverColor = System.Drawing.Color.Tomato;
+            this.txtProductId.LineThickness = 2;
+            this.txtProductId.Location = new System.Drawing.Point(32, 4);
+            this.txtProductId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProductId.Name = "txtProductId";
+            this.txtProductId.Size = new System.Drawing.Size(209, 21);
+            this.txtProductId.TabIndex = 10;
+            this.txtProductId.Text = "Item Code";
+            this.txtProductId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtProductId.Visible = false;
+            // 
             // cmbGSTId
             // 
             this.cmbGSTId.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -321,6 +343,7 @@
             this.cmbCategory.Size = new System.Drawing.Size(209, 23);
             this.cmbCategory.TabIndex = 3;
             this.cmbCategory.Text = "Select Category";
+            this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
             // txtItemName
             // 
@@ -411,28 +434,6 @@
             this.lblHeading.Size = new System.Drawing.Size(141, 19);
             this.lblHeading.TabIndex = 3;
             this.lblHeading.Text = "Product Registration";
-            // 
-            // txtProductId
-            // 
-            this.txtProductId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProductId.Enabled = false;
-            this.txtProductId.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductId.ForeColor = System.Drawing.Color.Black;
-            this.txtProductId.HintForeColor = System.Drawing.Color.Empty;
-            this.txtProductId.HintText = "Product Id";
-            this.txtProductId.isPassword = false;
-            this.txtProductId.LineFocusedColor = System.Drawing.Color.Tomato;
-            this.txtProductId.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtProductId.LineMouseHoverColor = System.Drawing.Color.Tomato;
-            this.txtProductId.LineThickness = 2;
-            this.txtProductId.Location = new System.Drawing.Point(32, 4);
-            this.txtProductId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtProductId.Name = "txtProductId";
-            this.txtProductId.Size = new System.Drawing.Size(209, 21);
-            this.txtProductId.TabIndex = 10;
-            this.txtProductId.Text = "Item Code";
-            this.txtProductId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtProductId.Visible = false;
             // 
             // ProductRegistration
             // 
