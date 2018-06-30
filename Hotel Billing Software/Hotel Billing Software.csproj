@@ -172,6 +172,12 @@
     <Compile Include="GridPages\Master Grids\ProductMaster.Designer.cs">
       <DependentUpon>ProductMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="GridPages\Master Grids\UOMMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridPages\Master Grids\UOMMaster.Designer.cs">
+      <DependentUpon>UOMMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="GridPages\Transactions\HotelExpenses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +279,12 @@
     </Compile>
     <Compile Include="Master\SupplierRegistration.Designer.cs">
       <DependentUpon>SupplierRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\UOMMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\UOMMaster.Designer.cs">
+      <DependentUpon>UOMMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -444,6 +456,9 @@
     <EmbeddedResource Include="GridPages\Master Grids\ProductMaster.resx">
       <DependentUpon>ProductMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GridPages\Master Grids\UOMMaster.resx">
+      <DependentUpon>UOMMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GridPages\Transactions\HotelExpenses.resx">
       <DependentUpon>HotelExpenses.cs</DependentUpon>
     </EmbeddedResource>
@@ -494,6 +509,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\SupplierRegistration.resx">
       <DependentUpon>SupplierRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\UOMMaster.resx">
+      <DependentUpon>UOMMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

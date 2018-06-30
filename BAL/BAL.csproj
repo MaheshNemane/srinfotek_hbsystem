@@ -57,6 +57,7 @@
     <Compile Include="Master\SupplierMaster.cs" />
     <Compile Include="Master\ProductMaster.cs" />
     <Compile Include="Master\MenuSubCategoryMaster.cs" />
+    <Compile Include="Master\UOMMaster.cs" />
     <Compile Include="Master\WineoryCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\TaxesAndDiscount.cs" />
