@@ -38,6 +38,8 @@
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewSubMenuCategory = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditSubMenu = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnRemoveSubMenu = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridSubMenuCategoryMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +98,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveSubMenu);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditSubMenu);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator1);
             this.pnlHeadingButtons.Controls.Add(this.btnNewSubMenuCategory);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -135,13 +139,63 @@
             this.btnNewSubMenuCategory.IdleFillColor = System.Drawing.Color.White;
             this.btnNewSubMenuCategory.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewSubMenuCategory.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewSubMenuCategory.Location = new System.Drawing.Point(687, 15);
+            this.btnNewSubMenuCategory.Location = new System.Drawing.Point(336, 5);
             this.btnNewSubMenuCategory.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewSubMenuCategory.Name = "btnNewSubMenuCategory";
             this.btnNewSubMenuCategory.Size = new System.Drawing.Size(155, 35);
             this.btnNewSubMenuCategory.TabIndex = 0;
             this.btnNewSubMenuCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewSubMenuCategory.Click += new System.EventHandler(this.btnNewSubMenuCategory_Click);
+            // 
+            // btnEditSubMenu
+            // 
+            this.btnEditSubMenu.ActiveBorderThickness = 1;
+            this.btnEditSubMenu.ActiveCornerRadius = 20;
+            this.btnEditSubMenu.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSubMenu.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditSubMenu.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSubMenu.BackColor = System.Drawing.Color.White;
+            this.btnEditSubMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditSubMenu.BackgroundImage")));
+            this.btnEditSubMenu.ButtonText = "Edit Sub Menu";
+            this.btnEditSubMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditSubMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditSubMenu.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSubMenu.IdleBorderThickness = 1;
+            this.btnEditSubMenu.IdleCornerRadius = 20;
+            this.btnEditSubMenu.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditSubMenu.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSubMenu.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditSubMenu.Location = new System.Drawing.Point(501, 5);
+            this.btnEditSubMenu.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditSubMenu.Name = "btnEditSubMenu";
+            this.btnEditSubMenu.Size = new System.Drawing.Size(155, 35);
+            this.btnEditSubMenu.TabIndex = 3;
+            this.btnEditSubMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRemoveSubMenu
+            // 
+            this.btnRemoveSubMenu.ActiveBorderThickness = 1;
+            this.btnRemoveSubMenu.ActiveCornerRadius = 20;
+            this.btnRemoveSubMenu.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSubMenu.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveSubMenu.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSubMenu.BackColor = System.Drawing.Color.White;
+            this.btnRemoveSubMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveSubMenu.BackgroundImage")));
+            this.btnRemoveSubMenu.ButtonText = "Remove Sub Menu";
+            this.btnRemoveSubMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveSubMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveSubMenu.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSubMenu.IdleBorderThickness = 1;
+            this.btnRemoveSubMenu.IdleCornerRadius = 20;
+            this.btnRemoveSubMenu.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveSubMenu.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSubMenu.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveSubMenu.Location = new System.Drawing.Point(666, 5);
+            this.btnRemoveSubMenu.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveSubMenu.Name = "btnRemoveSubMenu";
+            this.btnRemoveSubMenu.Size = new System.Drawing.Size(167, 35);
+            this.btnRemoveSubMenu.TabIndex = 4;
+            this.btnRemoveSubMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SubMenuCategoryMaster
             // 
@@ -170,5 +224,7 @@
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewSubMenuCategory;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditSubMenu;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveSubMenu;
     }
 }
