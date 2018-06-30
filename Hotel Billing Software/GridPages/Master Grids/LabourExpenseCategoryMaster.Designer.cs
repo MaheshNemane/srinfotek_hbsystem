@@ -36,10 +36,10 @@
             this.elipsExpenseCategory = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.gridLabourExpenseCategoryMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
+            this.btnRemoveLabourExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditLabourExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnLabourExpenseCategory = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnEditLabourExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnRemoveLabourExpenses = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridLabourExpenseCategoryMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
@@ -109,6 +109,57 @@
             this.pnlHeadingButtons.Size = new System.Drawing.Size(847, 55);
             this.pnlHeadingButtons.TabIndex = 14;
             // 
+            // btnRemoveLabourExpenses
+            // 
+            this.btnRemoveLabourExpenses.ActiveBorderThickness = 1;
+            this.btnRemoveLabourExpenses.ActiveCornerRadius = 20;
+            this.btnRemoveLabourExpenses.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourExpenses.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveLabourExpenses.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourExpenses.BackColor = System.Drawing.Color.White;
+            this.btnRemoveLabourExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveLabourExpenses.BackgroundImage")));
+            this.btnRemoveLabourExpenses.ButtonText = "Remove Labour Expenses";
+            this.btnRemoveLabourExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveLabourExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveLabourExpenses.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourExpenses.IdleBorderThickness = 1;
+            this.btnRemoveLabourExpenses.IdleCornerRadius = 20;
+            this.btnRemoveLabourExpenses.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveLabourExpenses.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourExpenses.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveLabourExpenses.Location = new System.Drawing.Point(624, 5);
+            this.btnRemoveLabourExpenses.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveLabourExpenses.Name = "btnRemoveLabourExpenses";
+            this.btnRemoveLabourExpenses.Size = new System.Drawing.Size(218, 35);
+            this.btnRemoveLabourExpenses.TabIndex = 4;
+            this.btnRemoveLabourExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEditLabourExpenses
+            // 
+            this.btnEditLabourExpenses.ActiveBorderThickness = 1;
+            this.btnEditLabourExpenses.ActiveCornerRadius = 20;
+            this.btnEditLabourExpenses.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourExpenses.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditLabourExpenses.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourExpenses.BackColor = System.Drawing.Color.White;
+            this.btnEditLabourExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditLabourExpenses.BackgroundImage")));
+            this.btnEditLabourExpenses.ButtonText = "Edit Labour Expenses";
+            this.btnEditLabourExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditLabourExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditLabourExpenses.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourExpenses.IdleBorderThickness = 1;
+            this.btnEditLabourExpenses.IdleCornerRadius = 20;
+            this.btnEditLabourExpenses.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditLabourExpenses.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourExpenses.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditLabourExpenses.Location = new System.Drawing.Point(396, 5);
+            this.btnEditLabourExpenses.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditLabourExpenses.Name = "btnEditLabourExpenses";
+            this.btnEditLabourExpenses.Size = new System.Drawing.Size(218, 35);
+            this.btnEditLabourExpenses.TabIndex = 3;
+            this.btnEditLabourExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditLabourExpenses.Click += new System.EventHandler(this.btnEditLabourExpenses_Click);
+            // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
@@ -140,64 +191,13 @@
             this.btnLabourExpenseCategory.IdleFillColor = System.Drawing.Color.White;
             this.btnLabourExpenseCategory.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnLabourExpenseCategory.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnLabourExpenseCategory.Location = new System.Drawing.Point(185, 5);
+            this.btnLabourExpenseCategory.Location = new System.Drawing.Point(168, 5);
             this.btnLabourExpenseCategory.Margin = new System.Windows.Forms.Padding(5);
             this.btnLabourExpenseCategory.Name = "btnLabourExpenseCategory";
             this.btnLabourExpenseCategory.Size = new System.Drawing.Size(218, 35);
             this.btnLabourExpenseCategory.TabIndex = 0;
             this.btnLabourExpenseCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLabourExpenseCategory.Click += new System.EventHandler(this.btnNewLabourExpenseCategory_Click);
-            // 
-            // btnEditLabourExpenses
-            // 
-            this.btnEditLabourExpenses.ActiveBorderThickness = 1;
-            this.btnEditLabourExpenses.ActiveCornerRadius = 20;
-            this.btnEditLabourExpenses.ActiveFillColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditLabourExpenses.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEditLabourExpenses.ActiveLineColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditLabourExpenses.BackColor = System.Drawing.Color.White;
-            this.btnEditLabourExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditLabourExpenses.BackgroundImage")));
-            this.btnEditLabourExpenses.ButtonText = "Edit Labour Expenses";
-            this.btnEditLabourExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditLabourExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditLabourExpenses.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditLabourExpenses.IdleBorderThickness = 1;
-            this.btnEditLabourExpenses.IdleCornerRadius = 20;
-            this.btnEditLabourExpenses.IdleFillColor = System.Drawing.Color.White;
-            this.btnEditLabourExpenses.IdleForecolor = System.Drawing.Color.RoyalBlue;
-            this.btnEditLabourExpenses.IdleLineColor = System.Drawing.Color.RoyalBlue;
-            this.btnEditLabourExpenses.Location = new System.Drawing.Point(404, 5);
-            this.btnEditLabourExpenses.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEditLabourExpenses.Name = "btnEditLabourExpenses";
-            this.btnEditLabourExpenses.Size = new System.Drawing.Size(218, 35);
-            this.btnEditLabourExpenses.TabIndex = 3;
-            this.btnEditLabourExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnEditLabourExpenses.Click += new System.EventHandler(this.btnEditLabourExpenses_Click);
-            // 
-            // btnRemoveLabourExpenses
-            // 
-            this.btnRemoveLabourExpenses.ActiveBorderThickness = 1;
-            this.btnRemoveLabourExpenses.ActiveCornerRadius = 20;
-            this.btnRemoveLabourExpenses.ActiveFillColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveLabourExpenses.ActiveForecolor = System.Drawing.Color.White;
-            this.btnRemoveLabourExpenses.ActiveLineColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveLabourExpenses.BackColor = System.Drawing.Color.White;
-            this.btnRemoveLabourExpenses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveLabourExpenses.BackgroundImage")));
-            this.btnRemoveLabourExpenses.ButtonText = "Remove Labour Expenses";
-            this.btnRemoveLabourExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemoveLabourExpenses.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveLabourExpenses.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveLabourExpenses.IdleBorderThickness = 1;
-            this.btnRemoveLabourExpenses.IdleCornerRadius = 20;
-            this.btnRemoveLabourExpenses.IdleFillColor = System.Drawing.Color.White;
-            this.btnRemoveLabourExpenses.IdleForecolor = System.Drawing.Color.DarkRed;
-            this.btnRemoveLabourExpenses.IdleLineColor = System.Drawing.Color.DarkRed;
-            this.btnRemoveLabourExpenses.Location = new System.Drawing.Point(624, 5);
-            this.btnRemoveLabourExpenses.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRemoveLabourExpenses.Name = "btnRemoveLabourExpenses";
-            this.btnRemoveLabourExpenses.Size = new System.Drawing.Size(218, 35);
-            this.btnRemoveLabourExpenses.TabIndex = 4;
-            this.btnRemoveLabourExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabourExpenseCategoryMaster
             // 
