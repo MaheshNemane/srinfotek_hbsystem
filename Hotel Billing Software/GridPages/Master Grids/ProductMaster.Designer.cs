@@ -34,12 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductMaster));
             this.elipsProductMaster = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.gridCustomerMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.gridProductMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.btnRemoveProduct = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnEditProduct = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnNewProduct = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.gridCustomerMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProductMaster)).BeginInit();
             this.pnlHeadingButtons.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,13 +48,13 @@
             this.elipsProductMaster.ElipseRadius = 5;
             this.elipsProductMaster.TargetControl = this;
             // 
-            // gridCustomerMaster
+            // gridProductMaster
             // 
-            this.gridCustomerMaster.AllowUserToAddRows = false;
-            this.gridCustomerMaster.AllowUserToDeleteRows = false;
-            this.gridCustomerMaster.AllowUserToOrderColumns = true;
-            this.gridCustomerMaster.AllowUserToResizeColumns = false;
-            this.gridCustomerMaster.AllowUserToResizeRows = false;
+            this.gridProductMaster.AllowUserToAddRows = false;
+            this.gridProductMaster.AllowUserToDeleteRows = false;
+            this.gridProductMaster.AllowUserToOrderColumns = true;
+            this.gridProductMaster.AllowUserToResizeColumns = false;
+            this.gridProductMaster.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.MistyRose;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -62,13 +62,13 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Plum;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomerMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridCustomerMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridCustomerMaster.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.gridCustomerMaster.BackgroundColor = System.Drawing.Color.White;
-            this.gridCustomerMaster.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridCustomerMaster.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridCustomerMaster.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridProductMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridProductMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridProductMaster.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.gridProductMaster.BackgroundColor = System.Drawing.Color.White;
+            this.gridProductMaster.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridProductMaster.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridProductMaster.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.MediumPurple;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -76,8 +76,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MediumPurple;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomerMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridCustomerMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridProductMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridProductMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,18 +86,18 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCustomerMaster.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gridCustomerMaster.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridCustomerMaster.DoubleBuffered = true;
-            this.gridCustomerMaster.EnableHeadersVisualStyles = false;
-            this.gridCustomerMaster.HeaderBgColor = System.Drawing.Color.MediumPurple;
-            this.gridCustomerMaster.HeaderForeColor = System.Drawing.Color.White;
-            this.gridCustomerMaster.Location = new System.Drawing.Point(0, 55);
-            this.gridCustomerMaster.Name = "gridCustomerMaster";
-            this.gridCustomerMaster.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridCustomerMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridCustomerMaster.Size = new System.Drawing.Size(847, 549);
-            this.gridCustomerMaster.TabIndex = 7;
+            this.gridProductMaster.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridProductMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridProductMaster.DoubleBuffered = true;
+            this.gridProductMaster.EnableHeadersVisualStyles = false;
+            this.gridProductMaster.HeaderBgColor = System.Drawing.Color.MediumPurple;
+            this.gridProductMaster.HeaderForeColor = System.Drawing.Color.White;
+            this.gridProductMaster.Location = new System.Drawing.Point(0, 55);
+            this.gridProductMaster.Name = "gridProductMaster";
+            this.gridProductMaster.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridProductMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridProductMaster.Size = new System.Drawing.Size(847, 549);
+            this.gridProductMaster.TabIndex = 7;
             // 
             // pnlHeadingButtons
             // 
@@ -134,6 +134,7 @@
             this.btnRemoveProduct.Size = new System.Drawing.Size(155, 35);
             this.btnRemoveProduct.TabIndex = 0;
             this.btnRemoveProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRemoveProduct.Click += new System.EventHandler(this.btnRemoveProduct_Click);
             // 
             // btnEditProduct
             // 
@@ -159,6 +160,7 @@
             this.btnEditProduct.Size = new System.Drawing.Size(155, 35);
             this.btnEditProduct.TabIndex = 0;
             this.btnEditProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // btnNewProduct
             // 
@@ -184,6 +186,7 @@
             this.btnNewProduct.Size = new System.Drawing.Size(155, 35);
             this.btnNewProduct.TabIndex = 0;
             this.btnNewProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewProduct.Click += new System.EventHandler(this.btnNewProduct_Click);
             // 
             // ProductMaster
             // 
@@ -191,13 +194,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(847, 604);
-            this.Controls.Add(this.gridCustomerMaster);
+            this.Controls.Add(this.gridProductMaster);
             this.Controls.Add(this.pnlHeadingButtons);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ProductMaster";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ProductMaster";
-            ((System.ComponentModel.ISupportInitialize)(this.gridCustomerMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProductMaster)).EndInit();
             this.pnlHeadingButtons.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -206,7 +209,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse elipsProductMaster;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid gridCustomerMaster;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid gridProductMaster;
         private System.Windows.Forms.Panel pnlHeadingButtons;
         private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveProduct;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEditProduct;
