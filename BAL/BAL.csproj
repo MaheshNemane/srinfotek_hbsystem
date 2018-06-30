@@ -71,6 +71,7 @@
     <Compile Include="Transaction\PurchaseBillingMaster.cs" />
     <Compile Include="Transaction\SaleBillHead.cs" />
     <Compile Include="Transaction\SalesBillDetails.cs" />
+    <Compile Include="Transaction\Stock.cs" />
     <Compile Include="Transaction\Wineory.cs" />
   </ItemGroup>
   <ItemGroup>
