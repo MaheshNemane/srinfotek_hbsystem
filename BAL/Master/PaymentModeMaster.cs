@@ -35,6 +35,7 @@ namespace BAL.Master
             this.PaymentId = PaymentId;
             this.cmd = "getPaymentCategory";
             return Common.getData(this, "sp_PaymentModeCategory");
+            fillPaymentModeInfo(Common.getData(this, "sp_Employee"));
         }
 
 
@@ -48,6 +49,16 @@ namespace BAL.Master
         {
             this.cmd = "getAllPaymentCategoryCmb";
             return Common.getData(this, spname: "sp_PaymentModeCategory");
+        }
+        private PaymentModeMaster fillPaymentModeInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.PaymentId = Convert.ToInt32(ds.Tables[0].Rows[0]["PaymentId"]);
+                this.PaymentCategoryName = ds.Tables[0].Rows[0]["PaymentCategoryName"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
         }
     }
 }
