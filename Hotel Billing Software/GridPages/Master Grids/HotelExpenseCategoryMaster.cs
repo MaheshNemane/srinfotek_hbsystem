@@ -9,11 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Hotel_Billing_Software.GridPages.Master_Grids
 {
     public partial class HotelExpenseCategoryMaster : Form
     {
         BAL.Master.HotelExpenseCategoryMaster category = new BAL.Master.HotelExpenseCategoryMaster();
+        static Bunifu.Framework.UI.BunifuFlatButton btn;
+
         public HotelExpenseCategoryMaster()
         {
             InitializeComponent();
@@ -45,6 +48,47 @@ namespace Hotel_Billing_Software.GridPages.Master_Grids
             catch (Exception ex)
             {
                 Common.showDenger(ex.Message);
+            }
+        }
+
+        private void btnEditHotelExpense_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                Master.HotelExpenseCategory objForm = getHotelExpenseCategory();
+                btn = objForm.btnSave;
+                objForm.btnSave = Common.setUpdate(btn);
+                objForm.ShowDialog();
+                onPageLoad();
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
+        }
+
+        public Master.HotelExpenseCategory getHotelExpenseCategory()
+        {
+            try
+            {
+                Master.HotelExpenseCategory obj = new Master.HotelExpenseCategory();
+                DataGridViewSelectedRowCollection row = gridHotelExpenseCategoryMaster.SelectedRows;
+                if (row.Count > 0)
+                {
+                    category = category.getHotelExpenseCategory(Convert.ToInt32(row[0].Cells["CategoryId"].Value));
+                    obj.txtExpenseCategory.Text = category.CategoryId.ToString();
+                    return obj;
+                }
+                else
+                {
+                    return new Master.HotelExpenseCategory();
+                }
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+                return null;
             }
         }
     }

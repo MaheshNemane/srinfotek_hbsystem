@@ -159,6 +159,7 @@
             this.btnEditHotelExpense.Size = new System.Drawing.Size(212, 35);
             this.btnEditHotelExpense.TabIndex = 3;
             this.btnEditHotelExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditHotelExpense.Click += new System.EventHandler(this.btnEditHotelExpense_Click);
             // 
             // bunifuSeparator1
             // 
