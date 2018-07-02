@@ -9,7 +9,7 @@ namespace BAL.Account
 {
     public class Role
     {
-        public Int64 RoleId { get; set; }
+        public Int32 RoleId { get; set; }
         public string RoleName { get; set; }
         public string Status { get; set; }
         public string cmd { get; set; }
@@ -20,11 +20,23 @@ namespace BAL.Account
             return Common.putData(role, "sp_Role");
         }
 
-        public DataSet getRole(Int64 RoleId)
+        public string UpdateRole(Role role)
+        {
+            return Common.putData(role, "sp_Role");
+        }
+
+        public string DeleteRole(Role role)
+        {
+            return Common.putData(role, "sp_Role");
+        }
+
+
+        public DataSet getRole(Int32 RoleId)
         {
             this.RoleId = RoleId;
             this.cmd = "getRole";
-            return Common.getData(this, "sp_Role");
+            fillRoleInfo(Common.getData(this, "sp_Role"));
+            return this;
         }
 
         public DataSet getAllRole()
@@ -37,6 +49,17 @@ namespace BAL.Account
         {
             this.cmd = "getAllRoleCmb";
             return Common.getData(this, "sp_Role");
+        }
+
+        private Role fillRoleInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.RoleId = Convert.ToInt32(ds.Tables[0].Rows[0]["RoleId"]);
+                this.RoleName = ds.Tables[0].Rows[0]["RoleName"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
         }
     }
 }
