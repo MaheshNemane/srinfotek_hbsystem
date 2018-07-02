@@ -37,7 +37,9 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblHeading = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panelBottom = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.panelMiddle = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.pnlGrid = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.gridDateWiseBillReport = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlSearch = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -45,14 +47,12 @@
             this.lblToDate = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dtpFromDate = new Bunifu.Framework.UI.BunifuDatepicker();
             this.lblFormDate = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panelMiddle = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.pnlGrid = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.gridDateWiseBillReport = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panelBottom = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.pnlHeading.SuspendLayout();
-            this.pnlSearch.SuspendLayout();
             this.panelMiddle.SuspendLayout();
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDateWiseBillReport)).BeginInit();
+            this.pnlSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // ElipseDateWiseBillReport
@@ -69,7 +69,7 @@
             this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlHeading.Name = "pnlHeading";
-            this.pnlHeading.Size = new System.Drawing.Size(559, 43);
+            this.pnlHeading.Size = new System.Drawing.Size(624, 43);
             this.pnlHeading.TabIndex = 2;
             // 
             // btnClose
@@ -81,7 +81,7 @@
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(527, 6);
+            this.btnClose.Location = new System.Drawing.Point(592, 6);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 21);
             this.btnClose.TabIndex = 4;
@@ -92,11 +92,12 @@
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(0, 30);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(556, 13);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(624, 13);
             this.bunifuSeparator1.TabIndex = 2;
             this.bunifuSeparator1.Transparency = 100;
             this.bunifuSeparator1.Vertical = false;
@@ -111,21 +112,66 @@
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "Date Wise Bill Report";
             // 
-            // panelBottom
+            // panelMiddle
             // 
-            this.panelBottom.BackColor = System.Drawing.Color.Transparent;
-            this.panelBottom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBottom.BackgroundImage")));
-            this.panelBottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBottom.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelBottom.GradientBottomRight = System.Drawing.Color.White;
-            this.panelBottom.GradientTopLeft = System.Drawing.Color.White;
-            this.panelBottom.GradientTopRight = System.Drawing.Color.White;
-            this.panelBottom.Location = new System.Drawing.Point(0, 43);
-            this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Quality = 10;
-            this.panelBottom.Size = new System.Drawing.Size(559, 493);
-            this.panelBottom.TabIndex = 3;
+            this.panelMiddle.BackColor = System.Drawing.Color.Transparent;
+            this.panelMiddle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMiddle.BackgroundImage")));
+            this.panelMiddle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMiddle.Controls.Add(this.pnlGrid);
+            this.panelMiddle.Controls.Add(this.pnlSearch);
+            this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMiddle.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelMiddle.GradientBottomRight = System.Drawing.Color.White;
+            this.panelMiddle.GradientTopLeft = System.Drawing.Color.White;
+            this.panelMiddle.GradientTopRight = System.Drawing.Color.White;
+            this.panelMiddle.Location = new System.Drawing.Point(0, 43);
+            this.panelMiddle.Name = "panelMiddle";
+            this.panelMiddle.Quality = 10;
+            this.panelMiddle.Size = new System.Drawing.Size(624, 493);
+            this.panelMiddle.TabIndex = 4;
+            // 
+            // pnlGrid
+            // 
+            this.pnlGrid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGrid.BackgroundImage")));
+            this.pnlGrid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlGrid.Controls.Add(this.gridDateWiseBillReport);
+            this.pnlGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlGrid.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlGrid.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlGrid.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlGrid.GradientTopRight = System.Drawing.Color.White;
+            this.pnlGrid.Location = new System.Drawing.Point(0, 100);
+            this.pnlGrid.Name = "pnlGrid";
+            this.pnlGrid.Quality = 10;
+            this.pnlGrid.Size = new System.Drawing.Size(624, 393);
+            this.pnlGrid.TabIndex = 1;
+            // 
+            // gridDateWiseBillReport
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gridDateWiseBillReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridDateWiseBillReport.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.gridDateWiseBillReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridDateWiseBillReport.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridDateWiseBillReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridDateWiseBillReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDateWiseBillReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridDateWiseBillReport.DoubleBuffered = true;
+            this.gridDateWiseBillReport.EnableHeadersVisualStyles = false;
+            this.gridDateWiseBillReport.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.gridDateWiseBillReport.HeaderForeColor = System.Drawing.Color.SeaGreen;
+            this.gridDateWiseBillReport.Location = new System.Drawing.Point(0, 0);
+            this.gridDateWiseBillReport.Name = "gridDateWiseBillReport";
+            this.gridDateWiseBillReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridDateWiseBillReport.Size = new System.Drawing.Size(624, 393);
+            this.gridDateWiseBillReport.TabIndex = 0;
             // 
             // pnlSearch
             // 
@@ -146,17 +192,18 @@
             this.pnlSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlSearch.Name = "pnlSearch";
             this.pnlSearch.Quality = 10;
-            this.pnlSearch.Size = new System.Drawing.Size(559, 100);
+            this.pnlSearch.Size = new System.Drawing.Size(624, 100);
             this.pnlSearch.TabIndex = 0;
             // 
             // bunifuSeparator2
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(3, 84);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(0, 87);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(556, 13);
+            this.bunifuSeparator2.Size = new System.Drawing.Size(624, 13);
             this.bunifuSeparator2.TabIndex = 26;
             this.bunifuSeparator2.Transparency = 100;
             this.bunifuSeparator2.Vertical = false;
@@ -242,73 +289,28 @@
             this.lblFormDate.TabIndex = 21;
             this.lblFormDate.Text = "From";
             // 
-            // panelMiddle
+            // panelBottom
             // 
-            this.panelMiddle.BackColor = System.Drawing.Color.Transparent;
-            this.panelMiddle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMiddle.BackgroundImage")));
-            this.panelMiddle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelMiddle.Controls.Add(this.pnlGrid);
-            this.panelMiddle.Controls.Add(this.pnlSearch);
-            this.panelMiddle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMiddle.GradientBottomLeft = System.Drawing.Color.White;
-            this.panelMiddle.GradientBottomRight = System.Drawing.Color.White;
-            this.panelMiddle.GradientTopLeft = System.Drawing.Color.White;
-            this.panelMiddle.GradientTopRight = System.Drawing.Color.White;
-            this.panelMiddle.Location = new System.Drawing.Point(0, 43);
-            this.panelMiddle.Name = "panelMiddle";
-            this.panelMiddle.Quality = 10;
-            this.panelMiddle.Size = new System.Drawing.Size(559, 493);
-            this.panelMiddle.TabIndex = 4;
-            // 
-            // pnlGrid
-            // 
-            this.pnlGrid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGrid.BackgroundImage")));
-            this.pnlGrid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlGrid.Controls.Add(this.gridDateWiseBillReport);
-            this.pnlGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlGrid.GradientBottomLeft = System.Drawing.Color.White;
-            this.pnlGrid.GradientBottomRight = System.Drawing.Color.White;
-            this.pnlGrid.GradientTopLeft = System.Drawing.Color.White;
-            this.pnlGrid.GradientTopRight = System.Drawing.Color.White;
-            this.pnlGrid.Location = new System.Drawing.Point(0, 100);
-            this.pnlGrid.Name = "pnlGrid";
-            this.pnlGrid.Quality = 10;
-            this.pnlGrid.Size = new System.Drawing.Size(559, 393);
-            this.pnlGrid.TabIndex = 1;
-            // 
-            // gridDateWiseBillReport
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.gridDateWiseBillReport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridDateWiseBillReport.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.gridDateWiseBillReport.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridDateWiseBillReport.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridDateWiseBillReport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridDateWiseBillReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridDateWiseBillReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridDateWiseBillReport.DoubleBuffered = true;
-            this.gridDateWiseBillReport.EnableHeadersVisualStyles = false;
-            this.gridDateWiseBillReport.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.gridDateWiseBillReport.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.gridDateWiseBillReport.Location = new System.Drawing.Point(0, 0);
-            this.gridDateWiseBillReport.Name = "gridDateWiseBillReport";
-            this.gridDateWiseBillReport.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridDateWiseBillReport.Size = new System.Drawing.Size(559, 393);
-            this.gridDateWiseBillReport.TabIndex = 0;
+            this.panelBottom.BackColor = System.Drawing.Color.Transparent;
+            this.panelBottom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBottom.BackgroundImage")));
+            this.panelBottom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBottom.GradientBottomLeft = System.Drawing.Color.White;
+            this.panelBottom.GradientBottomRight = System.Drawing.Color.White;
+            this.panelBottom.GradientTopLeft = System.Drawing.Color.White;
+            this.panelBottom.GradientTopRight = System.Drawing.Color.White;
+            this.panelBottom.Location = new System.Drawing.Point(0, 43);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Quality = 10;
+            this.panelBottom.Size = new System.Drawing.Size(624, 493);
+            this.panelBottom.TabIndex = 3;
             // 
             // DateWiseBillReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(559, 536);
+            this.ClientSize = new System.Drawing.Size(624, 536);
             this.Controls.Add(this.panelMiddle);
             this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.pnlHeading);
@@ -319,11 +321,11 @@
             this.Text = "DateWiseBillReport";
             this.pnlHeading.ResumeLayout(false);
             this.pnlHeading.PerformLayout();
-            this.pnlSearch.ResumeLayout(false);
-            this.pnlSearch.PerformLayout();
             this.panelMiddle.ResumeLayout(false);
             this.pnlGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridDateWiseBillReport)).EndInit();
+            this.pnlSearch.ResumeLayout(false);
+            this.pnlSearch.PerformLayout();
             this.ResumeLayout(false);
 
         }
