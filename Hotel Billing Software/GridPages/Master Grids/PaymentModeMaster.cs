@@ -32,5 +32,21 @@ namespace Hotel_Billing_Software.GridPages.Master_Grids
             objForm.ShowDialog();
             onPageLoad();
         }
+
+        private void btnEditPaymentMode_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Master.PaymentMode objForm = getPaymentCategory();
+                btn = objForm.btnSave;
+                objForm.btnSave = Common.setUpdate(btn);
+                objForm.ShowDialog();
+                onPageLoad();
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
+        }
     }
 }
