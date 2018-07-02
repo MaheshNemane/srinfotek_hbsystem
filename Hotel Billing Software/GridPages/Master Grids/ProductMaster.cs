@@ -59,6 +59,18 @@ namespace Hotel_Billing_Software.GridPages.Master_Grids
 
         private void btnEditProduct_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Master.ProductRegistration objForm = getProduct();
+                btn = objForm.btnSave;
+                objForm.btnSave = Common.setUpdate(btn);
+                objForm.ShowDialog();
+                onPageLoad();
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
 
         }
 
