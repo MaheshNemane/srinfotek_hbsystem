@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserMaster));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserMaster));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewUser = new Bunifu.Framework.UI.BunifuThinButton2();
             this.gridUserMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnRemoveUser = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditUser = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnlHeadingButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridUserMaster)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +51,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveUser);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditUser);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator2);
             this.pnlHeadingButtons.Controls.Add(this.btnNewUser);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -88,7 +92,7 @@
             this.btnNewUser.IdleFillColor = System.Drawing.Color.White;
             this.btnNewUser.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewUser.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewUser.Location = new System.Drawing.Point(610, 15);
+            this.btnNewUser.Location = new System.Drawing.Point(358, 12);
             this.btnNewUser.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Size = new System.Drawing.Size(135, 35);
@@ -147,6 +151,56 @@
             this.gridUserMaster.Size = new System.Drawing.Size(847, 549);
             this.gridUserMaster.TabIndex = 7;
             // 
+            // btnRemoveUser
+            // 
+            this.btnRemoveUser.ActiveBorderThickness = 1;
+            this.btnRemoveUser.ActiveCornerRadius = 20;
+            this.btnRemoveUser.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveUser.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveUser.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveUser.BackColor = System.Drawing.Color.White;
+            this.btnRemoveUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveUser.BackgroundImage")));
+            this.btnRemoveUser.ButtonText = "Remove User";
+            this.btnRemoveUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveUser.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveUser.IdleBorderThickness = 1;
+            this.btnRemoveUser.IdleCornerRadius = 20;
+            this.btnRemoveUser.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveUser.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveUser.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveUser.Location = new System.Drawing.Point(655, 12);
+            this.btnRemoveUser.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveUser.Name = "btnRemoveUser";
+            this.btnRemoveUser.Size = new System.Drawing.Size(131, 35);
+            this.btnRemoveUser.TabIndex = 7;
+            this.btnRemoveUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEditUser
+            // 
+            this.btnEditUser.ActiveBorderThickness = 1;
+            this.btnEditUser.ActiveCornerRadius = 20;
+            this.btnEditUser.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditUser.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditUser.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditUser.BackColor = System.Drawing.Color.White;
+            this.btnEditUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditUser.BackgroundImage")));
+            this.btnEditUser.ButtonText = "Edit User";
+            this.btnEditUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditUser.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditUser.IdleBorderThickness = 1;
+            this.btnEditUser.IdleCornerRadius = 20;
+            this.btnEditUser.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditUser.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditUser.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditUser.Location = new System.Drawing.Point(503, 12);
+            this.btnEditUser.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditUser.Name = "btnEditUser";
+            this.btnEditUser.Size = new System.Drawing.Size(142, 35);
+            this.btnEditUser.TabIndex = 8;
+            this.btnEditUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,5 +228,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnNewUser;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridUserMaster;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveUser;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditUser;
     }
 }
