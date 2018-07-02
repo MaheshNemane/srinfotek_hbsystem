@@ -10,4 +10,6 @@ namespace BAL.Master
     {
         public string CategoryName { get; set; }
     }
-}
+   
+    }
+
