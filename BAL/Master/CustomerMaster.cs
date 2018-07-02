@@ -53,7 +53,7 @@ namespace BAL.Master
             {
                 this.CustomerId=Convert.ToInt32(ds.Tables[0].Rows[0]["CustomerId"]);
                 this.CustomerName = ds.Tables[0].Rows[0]["CustomerName"].ToString();
-                this.MobileNo=ds.Tables[0].Rows[0]["MobileNo"].ToString();
+                this.MobileNo = ds.Tables[0].Rows[0]["MobileNo"].ToString();
                 this.Address = ds.Tables[0].Rows[0]["Address"].ToString();
                 this.CreditLimit = Convert.ToDouble(ds.Tables[0].Rows[0]["CreditLimit"]);                
             }
