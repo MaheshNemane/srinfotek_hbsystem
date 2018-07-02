@@ -49,5 +49,15 @@ namespace BAL.Master
             this.cmd = "getAllHotelExpenseCategoryCmb";
             return Common.getData(this, spname: "sp_HotelExpenseCategory");
         }
+        private HotelExpenseCategoryMaster fillHotelExpenseCategoryInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.CategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["CategoryId"]);
+                this.CategoryName = ds.Tables[0].Rows[0]["CategoryName"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
+        }
     }
 }
