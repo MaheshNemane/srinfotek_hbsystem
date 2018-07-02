@@ -72,6 +72,18 @@ namespace BAL.Master
             {
                 return null;
             }
+            private MenuSubCategoryMaster fillSubMenuCategoryInfo(DataSet ds)
+           {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.SubCategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["SubCategoryId"]);
+                this.CategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["CategoryId"]);
+                this.SubCategoryName = ds.Tables[0].Rows[0]["SubCategoryName"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+
+            }
+            return this;
         }
+    }
     }
 }
