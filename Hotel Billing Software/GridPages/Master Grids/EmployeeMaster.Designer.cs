@@ -85,6 +85,7 @@
             this.btnRemoveEmployee.Size = new System.Drawing.Size(155, 35);
             this.btnRemoveEmployee.TabIndex = 3;
             this.btnRemoveEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRemoveEmployee.Click += new System.EventHandler(this.btnRemoveEmployee_Click);
             // 
             // btnEditEmployee
             // 
@@ -110,6 +111,7 @@
             this.btnEditEmployee.Size = new System.Drawing.Size(155, 35);
             this.btnEditEmployee.TabIndex = 4;
             this.btnEditEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditEmployee.Click += new System.EventHandler(this.btnEditEmployee_Click);
             // 
             // bunifuSeparator1
             // 

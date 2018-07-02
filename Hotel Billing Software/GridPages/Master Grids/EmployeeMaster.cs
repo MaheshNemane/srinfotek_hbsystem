@@ -38,5 +38,58 @@ namespace Hotel_Billing_Software.GridPages
             onPageLoad();
         }
 
+        private void btnEditEmployee_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Master.EmployeeRegistration objForm =getEmployee();
+                btn = objForm.btnSave;
+                objForm.btnSave = Common.setUpdate(btn);
+                objForm.ShowDialog();
+                onPageLoad();
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
+        }
+
+        private void btnRemoveEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
+        public Master.EmployeeRegistration getEmployee()
+        {
+            try
+            {
+                Master.EmployeeRegistration obj = new Master.EmployeeRegistration();
+                DataGridViewSelectedRowCollection row = gridEmployeeMaster.SelectedRows;
+                if (row.Count > 0)
+                {
+                    EmpMst = EmpMst.getEmployee(Convert.ToInt32(row[0].Cells["EmployeeId"].Value));
+                    obj.txtEmployeeId.Text = EmpMst.EmployeeId.ToString();
+                    obj.txtname.Text = EmpMst.EmployeeName;
+                    obj.txtMobile.Text = EmpMst.MobileNo;
+                    obj.txtaddress.Text = EmpMst.Address;
+                    obj.txtSalary.Text = EmpMst.Salary.ToString();
+                    return obj;
+                }
+                else
+                {
+                    return new Master.EmployeeRegistration();
+                }
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+                return null;
+            }
+        }
+
+        private void gridEmployeeMaster_MouseClick(object sender, MouseEventArgs e)
+        {
+            gridEmployeeMaster.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+
     }
 }
