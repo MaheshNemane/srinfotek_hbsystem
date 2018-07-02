@@ -36,6 +36,8 @@ namespace BAL.Master
             this.SupplierId = SupplierId;
             this.cmd = "getSupplier";
             return Common.getData(this, "sp_Supplier");
+            fillSupplierInfo(Common.getData(this, "sp_Supplier"));
+            return this;
         }
 
 
@@ -49,6 +51,19 @@ namespace BAL.Master
         {
             this.cmd = "getAllSupplierCmb";
             return Common.getData(this, spname: "sp_Supplier");
+        }
+        private SupplierMaster fillSupplierInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.SupplierId = Convert.ToInt32(ds.Tables[0].Rows[0]["SupplierId"]);
+                this.Name = ds.Tables[0].Rows[0]["Name"].ToString();
+                this.MobileNo = ds.Tables[0].Rows[0]["MobileNo"].ToString();
+                this.Address = ds.Tables[0].Rows[0]["Address"].ToString();
+                this.ShopName = ds.Tables[0].Rows[0]["ShopName"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
         }
     }
 }
