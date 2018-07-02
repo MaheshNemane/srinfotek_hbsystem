@@ -26,6 +26,14 @@ namespace BAL.Account
         {
             return Common.putData(user, "sp_User");
         }
+        public string UpdateUser(User user)
+        {
+            return Common.putData(user, "sp_User");
+        }
+        public string DeleteUser(User user)
+        {
+            return Common.putData(user, "sp_User");
+        }
 
 
         public DataSet getUser()
@@ -38,7 +46,8 @@ namespace BAL.Account
         {
             this.cmd = "getLogin";
             this.UserName = UserName;
-            return Common.getData(this, "sp_User");
+            fillUserInfo(Common.getData(this, "sp_User"));
+            return this;
         }
 
 
@@ -46,6 +55,24 @@ namespace BAL.Account
         {
             this.cmd = "getAllUser";
             return Common.getData(this, "sp_User");
+        }
+
+        private User fillUserInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.UserId = Convert.ToInt32(ds.Tables[0].Rows[0]["UserId"]);
+                this.RoleId = Convert.ToInt32(ds.Tables[0].Rows[0]["RoleId"]);
+                this.UserName = ds.Tables[0].Rows[0]["UserName"].ToString();
+                this.FirstName = ds.Tables[0].Rows[0]["FirstName"].ToString();
+                this.LastName = ds.Tables[0].Rows[0]["LastName"].ToString();
+                this.EmailId = ds.Tables[0].Rows[0]["EmailId"].ToString();
+                this.MobileNo = ds.Tables[0].Rows[0]["MobileNo"].ToString();
+                this.Password = ds.Tables[0].Rows[0]["Password"].ToString();
+                this.PasswordHint = ds.Tables[0].Rows[0]["PasswordHint"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
         }
     }
 }
