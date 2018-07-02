@@ -72,8 +72,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(699, 43);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
+         
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.DarkRed;
@@ -112,7 +111,7 @@
             this.lblHeading.Size = new System.Drawing.Size(171, 17);
             this.lblHeading.TabIndex = 0;
             this.lblHeading.Text = "Customer Wise Bill Report";
-            this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
+            
             // 
             // panelMiddle
             // 
@@ -130,7 +129,7 @@
             this.panelMiddle.Quality = 10;
             this.panelMiddle.Size = new System.Drawing.Size(699, 555);
             this.panelMiddle.TabIndex = 3;
-            this.panelMiddle.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMiddle_Paint);
+          
             // 
             // bunifuGradientPanel1
             // 
