@@ -39,6 +39,8 @@ namespace BAL.Master
             this.SubCategoryId = SubCategoryId;
             this.cmd = "getHotelSubExpenseCategory";
             return Common.getData(this, "sp_HotelSubExpense");
+            fillHotelSubExpenseCategoryInfo(Common.getData(this, "sp_HotelSubExpenseCategory"));
+            return this;
         }
 
 
@@ -59,6 +61,17 @@ namespace BAL.Master
             this.CategoryId = CategoryId;
             this.cmd = "getAllHotelSubExpenseCategoryCmbByCategory";
             return Common.getData(this, "sp_HotelSubExpense");
+        }
+        private HotelSubExpenseCatergoryMaster fillHotelSubExpenseCatergoryInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.SubCategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["SubCategoryId"]);
+                this.CategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["CategoryId"]);
+                this.SubCategoryName = ds.Tables[0].Rows[0]["SubCategoryName"].ToString();
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
         }
     }
 }
