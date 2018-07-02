@@ -21,6 +21,7 @@ namespace BAL.Master
         {
             this.cmd = "getMenuCategory";
             return Common.getData(this, "sp_MenuCategory");
+            fillMenuCategoryInfo(Common.getData(this, "sp_MenuCategory"));
         }
 
         public DataSet getAllMenuCategory()
@@ -34,6 +35,15 @@ namespace BAL.Master
             this.cmd = "getAllMenuCategoryCmb";
             return Common.getData(this, "sp_MenuCategory");
         }
-
+        private MenuCategoryMaster fillMenuCategoryInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                
+                this.CategoryName = ds.Tables[0].Rows[0]["CategoryName"].ToString();
+                
+            }
+            return this;
+        }
     }
 }
