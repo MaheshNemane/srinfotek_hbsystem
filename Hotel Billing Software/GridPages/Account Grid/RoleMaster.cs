@@ -15,7 +15,7 @@ namespace Hotel_Billing_Software.GridPages.Account_Grid
     public partial class RoleMaster : Form
     {
         Role role = new Role();
-
+        static Bunifu.Framework.UI.BunifuFlatButton btn;
         public RoleMaster()
         {
             InitializeComponent();
@@ -39,7 +39,43 @@ namespace Hotel_Billing_Software.GridPages.Account_Grid
 
         private void btnEditRole_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Account.RoleMaster objForm = getRole();
+                btn = objForm.btnSave;
+                objForm.btnSave = Common.setUpdate(btn);
+                objForm.ShowDialog();
+                onPageLoad();
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+            }
+        }
 
+
+        public Account.RoleMaster getRole()
+        {
+            try
+            {
+                Account.RoleMaster obj = new Account.RoleMaster();
+                DataGridViewSelectedRowCollection row = gridRoleMaster.SelectedRows;
+                if (row.Count > 0)
+                {
+                    role = role.getRole(Convert.ToInt32(row[0].Cells["RoleId"].Value));
+                    obj.txtRolename.Text = role.RoleName;
+                    return obj;
+                }
+                else
+                {
+                    return new Account.RoleMaster();
+                }
+            }
+            catch (Exception ex)
+            {
+                Common.showDenger(ex.Message);
+                return null;
+            }
         }
 
     }
