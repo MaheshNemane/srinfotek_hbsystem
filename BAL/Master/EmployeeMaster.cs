@@ -37,6 +37,8 @@ namespace BAL.Master
             this.EmployeeId = EmployeeId;
             this.cmd = "getEmployee";
             return Common.getData(this, "sp_Employee");
+            fillEmployeeInfo(Common.getData(this, "sp_Employee"));
+            return this;
         }
 
 
@@ -50,6 +52,19 @@ namespace BAL.Master
         {
             this.cmd = "getAllEmployeeCmb";
             return Common.getData(this, spname: "sp_Employee");
+        }
+        private EmployeeMaster fillEmployeeInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.EmployeeId = Convert.ToInt32(ds.Tables[0].Rows[0]["EmployeeId"]);
+                this.Name = ds.Tables[0].Rows[0]["Name"].ToString();
+                this.MobileNo = ds.Tables[0].Rows[0]["MobileNo"].ToString();
+                this.Address = ds.Tables[0].Rows[0]["Address"].ToString();
+                this.Salary = Convert.ToDouble(ds.Tables[0].Rows[0]["Salary"]);
+                this.Status = ds.Tables[0].Rows[0]["Status"].ToString();
+            }
+            return this;
         }
     }
 }
