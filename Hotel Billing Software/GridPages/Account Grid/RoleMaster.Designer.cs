@@ -36,6 +36,8 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlHeadingButtons = new System.Windows.Forms.Panel();
+            this.btnRemoveRole = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEditRole = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnNewRole = new Bunifu.Framework.UI.BunifuThinButton2();
             this.gridRoleMaster = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -55,6 +57,8 @@
             // 
             // pnlHeadingButtons
             // 
+            this.pnlHeadingButtons.Controls.Add(this.btnRemoveRole);
+            this.pnlHeadingButtons.Controls.Add(this.btnEditRole);
             this.pnlHeadingButtons.Controls.Add(this.bunifuSeparator2);
             this.pnlHeadingButtons.Controls.Add(this.btnNewRole);
             this.pnlHeadingButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -62,6 +66,57 @@
             this.pnlHeadingButtons.Name = "pnlHeadingButtons";
             this.pnlHeadingButtons.Size = new System.Drawing.Size(847, 55);
             this.pnlHeadingButtons.TabIndex = 6;
+            // 
+            // btnRemoveRole
+            // 
+            this.btnRemoveRole.ActiveBorderThickness = 1;
+            this.btnRemoveRole.ActiveCornerRadius = 20;
+            this.btnRemoveRole.ActiveFillColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveRole.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRemoveRole.ActiveLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveRole.BackColor = System.Drawing.Color.White;
+            this.btnRemoveRole.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveRole.BackgroundImage")));
+            this.btnRemoveRole.ButtonText = "Remove Role";
+            this.btnRemoveRole.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveRole.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveRole.IdleBorderThickness = 1;
+            this.btnRemoveRole.IdleCornerRadius = 20;
+            this.btnRemoveRole.IdleFillColor = System.Drawing.Color.White;
+            this.btnRemoveRole.IdleForecolor = System.Drawing.Color.DarkRed;
+            this.btnRemoveRole.IdleLineColor = System.Drawing.Color.DarkRed;
+            this.btnRemoveRole.Location = new System.Drawing.Point(654, 12);
+            this.btnRemoveRole.Margin = new System.Windows.Forms.Padding(5);
+            this.btnRemoveRole.Name = "btnRemoveRole";
+            this.btnRemoveRole.Size = new System.Drawing.Size(131, 35);
+            this.btnRemoveRole.TabIndex = 5;
+            this.btnRemoveRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEditRole
+            // 
+            this.btnEditRole.ActiveBorderThickness = 1;
+            this.btnEditRole.ActiveCornerRadius = 20;
+            this.btnEditRole.ActiveFillColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditRole.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEditRole.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditRole.BackColor = System.Drawing.Color.White;
+            this.btnEditRole.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditRole.BackgroundImage")));
+            this.btnEditRole.ButtonText = "Edit Role";
+            this.btnEditRole.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditRole.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditRole.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditRole.IdleBorderThickness = 1;
+            this.btnEditRole.IdleCornerRadius = 20;
+            this.btnEditRole.IdleFillColor = System.Drawing.Color.White;
+            this.btnEditRole.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.btnEditRole.IdleLineColor = System.Drawing.Color.RoyalBlue;
+            this.btnEditRole.Location = new System.Drawing.Point(502, 12);
+            this.btnEditRole.Margin = new System.Windows.Forms.Padding(5);
+            this.btnEditRole.Name = "btnEditRole";
+            this.btnEditRole.Size = new System.Drawing.Size(142, 35);
+            this.btnEditRole.TabIndex = 6;
+            this.btnEditRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditRole.Click += new System.EventHandler(this.btnEditRole_Click);
             // 
             // bunifuSeparator2
             // 
@@ -94,7 +149,7 @@
             this.btnNewRole.IdleFillColor = System.Drawing.Color.White;
             this.btnNewRole.IdleForecolor = System.Drawing.Color.MediumPurple;
             this.btnNewRole.IdleLineColor = System.Drawing.Color.MediumPurple;
-            this.btnNewRole.Location = new System.Drawing.Point(610, 15);
+            this.btnNewRole.Location = new System.Drawing.Point(357, 12);
             this.btnNewRole.Margin = new System.Windows.Forms.Padding(5);
             this.btnNewRole.Name = "btnNewRole";
             this.btnNewRole.Size = new System.Drawing.Size(135, 35);
@@ -180,5 +235,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridRoleMaster;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRemoveRole;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEditRole;
     }
 }

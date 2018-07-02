@@ -36,5 +36,11 @@ namespace Hotel_Billing_Software.GridPages.Account_Grid
             objForm.ShowDialog();
             onPageLoad();
         }
+
+        private void btnEditRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
