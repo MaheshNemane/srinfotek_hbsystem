@@ -32,6 +32,8 @@ namespace BAL.Master
             this.SubCategoryId = SubCategoryId;
             this.cmd = "getLaboursubExpenseCategory";
             return Common.getData(this, "sp_LabourSubExpenseCategory");
+            fillLabourSubExpenseCategoryInfo(Common.getData(this, "sp_LabourExpenseCategory"));
+            return this;
         }
         public DataSet getAllLabourSubExpenseCategory()
         {
@@ -48,6 +50,17 @@ namespace BAL.Master
             this.CategoryId = CategoryId;
             this.cmd = "getAllLabourSubExpenseCategoryCmb";
             return Common.getData(this, "sp_LabourSubExpenseCategory");
+        }
+        private LabourSubExpensesCategoryMaster fillLabourSubExpensesCategoryInfo(DataSet ds)
+        {
+            if (!Common.isDataSetEmpty(ds))
+            {
+                this.SubCategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["SubCategoryId"]);
+                this.CategoryId = Convert.ToInt32(ds.Tables[0].Rows[0]["CategoryId"]);
+                this.SubCategoryName = ds.Tables[0].Rows[0]["SubCategoryName"].ToString();
+
+            }
+            return this;
         }
 
     }
